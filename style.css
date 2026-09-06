@@ -7118,10 +7118,13 @@ a.service-card:hover {
 
 
   .home-pricing-teaser {
-    padding:
-      80px
-      5%;
-  }
+  padding:
+    80px
+    5%;
+}
+
+}
+
 /* =========================================================
    HOLDAWAY — 2 BEFORE / 2 AFTER
    ========================================================= */
@@ -7219,4 +7222,24 @@ a.service-card:hover {
   }
 
 }
+
+
+/* =========================================================
+   FINAL HERO POSITION FIX
+   DESKTOP ONLY
+   ========================================================= */
+
+@media (min-width: 1001px) {
+
+  .hero-main-flamingo {
+    left: 85px;
+    top: 95px;
+  }
+
+  .hero-logo-websites {
+    left: 335px;
+  }
+
 }
+
+}}
