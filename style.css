@@ -6870,3 +6870,252 @@ a {
   }
 
 }}}
+
+/* =========================================================
+   HOME FINAL LINKING EXTRAS
+   ========================================================= */
+
+
+/* =========================================================
+   HOME SECTION LINKS
+   ========================================================= */
+
+.home-section-link-wrap {
+  margin-top: 55px;
+
+  text-align: center;
+}
+
+
+.home-section-link {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  color: var(--pink);
+
+  font-size: .76rem;
+  font-weight: 900;
+
+  letter-spacing: .1em;
+
+  border-bottom:
+    3px solid
+    var(--gold);
+
+  transition: .2s ease;
+}
+
+
+.home-section-link:hover {
+  color: var(--teal);
+
+  transform: translateY(-2px);
+}
+
+
+.home-section-link-dark .home-section-link {
+  color: var(--white);
+}
+
+
+.home-section-link-dark .home-section-link:hover {
+  color: var(--teal);
+}
+
+
+/* =========================================================
+   CLICKABLE HOME CARDS
+   ========================================================= */
+
+a.work-card {
+  color: inherit;
+}
+
+
+a.service-card {
+  color: inherit;
+}
+
+
+a.service-card:hover {
+  color: inherit;
+}
+
+
+/* =========================================================
+   HOME PRICING TEASER
+   ========================================================= */
+
+.home-pricing-teaser {
+  min-height: 540px;
+
+  padding:
+    100px
+    7%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8ed 0%,
+      #ffdce9 100%
+    );
+}
+
+
+.home-pricing-teaser > p:first-child {
+  color: var(--orange);
+
+  font-size: .75rem;
+  font-weight: 900;
+
+  letter-spacing: .15em;
+}
+
+
+.home-pricing-teaser h2 {
+  margin-top: 12px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(3.2rem, 6vw, 6rem);
+
+  line-height: .88;
+}
+
+
+.home-pricing-teaser h2 span {
+  display: block;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+}
+
+
+.home-pricing-copy {
+  max-width: 700px;
+
+  margin:
+    28px
+    auto
+    32px;
+
+  font-size: 1.05rem;
+
+  white-space: pre-line;
+}
+
+
+/* =========================================================
+   EXPANDED FOOTER
+   ========================================================= */
+
+.site-footer-expanded {
+  padding:
+    45px
+    5%;
+
+  display: grid;
+
+  grid-template-columns:
+    1.3fr
+    1fr
+    1fr;
+
+  align-items: start;
+
+  gap: 50px;
+}
+
+
+.footer-brand {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.footer-brand strong {
+  font-family: var(--serif);
+
+  font-size: 1.2rem;
+}
+
+
+.footer-brand span {
+  color:
+    rgba(255,255,255,.62);
+
+  font-size: .72rem;
+}
+
+
+.footer-nav,
+.footer-legal {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.footer-nav a,
+.footer-legal a {
+  color:
+    rgba(255,255,255,.72);
+
+  font-size: .72rem;
+  font-weight: 800;
+
+  letter-spacing: .06em;
+
+  transition: .2s ease;
+}
+
+
+.footer-nav a:hover,
+.footer-legal a:hover {
+  color: var(--pink);
+}
+
+
+/* =========================================================
+   FOOTER / HOME EXTRA RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .site-footer-expanded {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .footer-nav,
+  .footer-legal {
+    gap: 8px;
+  }
+
+
+  .home-pricing-teaser {
+    padding:
+      80px
+      5%;
+  }
+
+}
