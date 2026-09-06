@@ -642,12 +642,15 @@ a {
 }
 
 .hero-splash-outer {
-  width: 1750px;
+  width: 2600px;
+  height: 1500px;
 
   left: 54%;
   top: 50%;
 
   z-index: 1;
+
+  object-fit: fill;
 
   transform:
     translate(-50%, -50%)
@@ -656,18 +659,20 @@ a {
   opacity: .9;
 }
 
-
 /* =========================================================
    INNER SPLASH
    ========================================================= */
 
 .hero-splash-inner {
-  width: 1200px;
+  width: 1750px;
+  height: 1150px;
 
   left: 54%;
   top: 50%;
 
   z-index: 2;
+
+  object-fit: fill;
 
   transform:
     translate(-50%, -50%)
