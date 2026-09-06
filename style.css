@@ -1,6 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   CLEAN MASTER HOMEPAGE
+   FINAL CLEAN MASTER CSS
    ========================================================= */
 
 
@@ -14,7 +14,7 @@
   --paper: #fffdf8;
 
   --black: #0b0b0b;
-  --charcoal: #1c1c1c;
+  --charcoal: #1b1b1b;
 
   --pink: #f52282;
   --teal: #00b9c2;
@@ -47,17 +47,11 @@ html {
 
 
 body {
-
   background: var(--cream);
-
   color: var(--black);
-
   font-family: var(--sans);
-
   line-height: 1.55;
-
   overflow-x: hidden;
-
 }
 
 
@@ -88,7 +82,7 @@ a {
   display: grid;
 
   grid-template-columns:
-    190px
+    185px
     1fr
     auto;
 
@@ -105,7 +99,7 @@ a {
 }
 
 
-/* scribbly line */
+/* rough little scribble under nav */
 
 .site-header::after {
 
@@ -119,7 +113,7 @@ a {
 
   height: 2px;
 
-  opacity: .7;
+  opacity: .72;
 
   background:
     repeating-linear-gradient(
@@ -154,7 +148,7 @@ a {
 }
 
 
-/* hide whatever old image is still inside the HTML */
+/* hide old image in HTML */
 
 .header-logo img {
   display: none;
@@ -219,9 +213,7 @@ a {
 
 .main-nav a:hover::after,
 .main-nav a.active::after {
-
   width: 105%;
-
 }
 
 
@@ -316,11 +308,8 @@ a {
    ========================================================= */
 
 .hero-copy-wrap {
-
   position: relative;
-
   z-index: 10;
-
 }
 
 
@@ -342,22 +331,16 @@ a {
 
 
 .hero-eyebrow span {
-
-  margin:
-    0
-    4px;
-
+  margin: 0 4px;
 }
 
 
 /* =========================================================
-   HERO TYPE
+   BIG HERO TYPE
    ========================================================= */
 
 .hero-title {
-
   color: var(--white);
-
 }
 
 
@@ -380,9 +363,7 @@ a {
 
 
 .hero-website {
-
   margin-top: 17px;
-
 }
 
 
@@ -434,7 +415,7 @@ a {
 }
 
 
-/* gold underline */
+/* gold scribble */
 
 .personality-strip::after {
 
@@ -459,7 +440,7 @@ a {
 
 
 /* =========================================================
-   PERSONALITY WORDING
+   HAS PERSONALITY WORDING
    ========================================================= */
 
 .personality-text {
@@ -487,18 +468,19 @@ a {
 
 
 /* =========================================================
-   COOL FLAMINGO GRIPPING SIGN
+   COOL FLAMINGO
+   LOWER + MORE CENTERED TO ACTUALLY GRIP SIGN
    ========================================================= */
 
 .personality-flamingo {
 
-  width: 255px;
+  width: 250px;
   height: auto;
 
   position: absolute;
 
-  left: 63%;
-  top: -170px;
+  left: 66%;
+  top: -142px;
 
   z-index: 20;
 
@@ -528,44 +510,29 @@ a {
 @keyframes flamingoRise {
 
   0% {
-
-    transform:
-      translateY(130px);
-
+    transform: translateY(120px);
     opacity: 0;
-
   }
 
   65% {
-
-    transform:
-      translateY(-8px);
-
+    transform: translateY(-7px);
     opacity: 1;
-
   }
 
   82% {
-
-    transform:
-      translateY(4px);
-
+    transform: translateY(3px);
   }
 
   100% {
-
-    transform:
-      translateY(0);
-
+    transform: translateY(0);
     opacity: 1;
-
   }
 
 }
 
 
 /* =========================================================
-   LITTLE WHISPER
+   FLAMINGO WHISPER
    ========================================================= */
 
 .flamingo-whisper {
@@ -573,7 +540,7 @@ a {
   position: absolute;
 
   left: 91%;
-  top: -158px;
+  top: -144px;
 
   width: 200px;
 
@@ -664,7 +631,7 @@ a {
 
 
 /* =========================================================
-   HERO COPY
+   HERO DESCRIPTION
    ========================================================= */
 
 .hero-description {
@@ -790,15 +757,50 @@ a {
 
 
 /* =========================================================
-   PAINT EXPLOSION
+   LARGE OUTER SPLASH
+   ========================================================= */
+
+.hero-art::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 980px;
+  height: 820px;
+
+  left: 50%;
+  top: 50%;
+
+  z-index: 0;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(2deg);
+
+  background:
+    url("images/splash2.png")
+    center
+    / contain
+    no-repeat;
+
+  opacity: .95;
+
+  pointer-events: none;
+
+}
+
+
+/* =========================================================
+   INNER SPLASH
    ========================================================= */
 
 .paint-burst {
 
   position: absolute;
 
-  width: 820px;
-  height: 700px;
+  width: 800px;
+  height: 680px;
 
   left: 50%;
   top: 50%;
@@ -807,7 +809,7 @@ a {
 
   transform:
     translate(-50%, -50%)
-    rotate(-3deg);
+    rotate(-4deg);
 
   background:
     url("images/paint.png")
@@ -826,19 +828,19 @@ a {
 
 .gold-ring {
 
-  width: 535px;
-  height: 535px;
+  width: 545px;
+  height: 545px;
 
   position: absolute;
 
-  left: 53%;
+  left: 54%;
   top: 50%;
 
   z-index: 2;
 
   transform:
     translate(-50%, -50%)
-    rotate(-5deg);
+    rotate(-4deg);
 
   border:
     5px solid
@@ -855,7 +857,7 @@ a {
 }
 
 
-/* second hand-drawn gold ring */
+/* inner imperfect ring */
 
 .gold-ring::before {
 
@@ -876,7 +878,7 @@ a {
 }
 
 
-/* NO */
+/* "No" */
 
 .gold-ring::after {
 
@@ -884,8 +886,8 @@ a {
 
   position: absolute;
 
-  top: 15%;
-  left: 54%;
+  top: 11%;
+  left: 55%;
 
   z-index: 5;
 
@@ -894,7 +896,7 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(5.2rem, 7vw, 7.5rem);
+    clamp(5.5rem, 7vw, 7.7rem);
 
   font-weight: 700;
 
@@ -904,13 +906,13 @@ a {
 
 
 /* =========================================================
-   MAIN FLAMINGO CONTAINER
+   MAIN LOGO LAYER
    ========================================================= */
 
 .hero-logo-circle {
 
-  width: 690px;
-  height: 690px;
+  width: 720px;
+  height: 700px;
 
   position: relative;
 
@@ -925,19 +927,22 @@ a {
 }
 
 
-/* MAIN FLAMINGO */
+/* =========================================================
+   MAIN FLAMINGO
+   BIGGER + FURTHER LEFT + HIGHER
+   ========================================================= */
 
 .hero-logo-circle img {
 
   display: block;
 
-  width: 450px;
+  width: 500px;
   height: auto;
 
   position: absolute;
 
-  left: -15px;
-  bottom: 5px;
+  left: -45px;
+  bottom: 8px;
 
   z-index: 5;
 
@@ -948,7 +953,7 @@ a {
 
   filter:
     drop-shadow(
-      0 18px 20px
+      0 18px 22px
       rgba(0,0,0,.3)
     );
 
@@ -956,37 +961,31 @@ a {
 
 
 /* =========================================================
-   BEIGE WORD
+   PRETTY BEIGE WORD ASSET
    ========================================================= */
 
 .hero-logo-circle::before {
 
-  content: "Beige";
+  content: "";
 
   position: absolute;
 
-  left: 36%;
-  top: 37%;
+  width: 470px;
+  height: 250px;
+
+  left: 34%;
+  top: 36%;
 
   z-index: 8;
 
-  color: var(--pink);
-
-  font-family: var(--hand);
-
-  font-size:
-    clamp(6rem, 8vw, 9rem);
-
-  font-weight: 700;
-
-  line-height: .8;
+  background:
+    url("images/pretty.png")
+    center
+    / contain
+    no-repeat;
 
   transform:
-    rotate(-8deg);
-
-  text-shadow:
-    8px 5px 0
-    rgba(0,185,194,.9);
+    rotate(-4deg);
 
 }
 
@@ -1001,8 +1000,8 @@ a {
 
   position: absolute;
 
-  left: 47%;
-  top: 67%;
+  left: 46%;
+  top: 69%;
 
   z-index: 7;
 
@@ -1011,7 +1010,7 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(4rem, 5vw, 5.7rem);
+    clamp(4.2rem, 5vw, 5.8rem);
 
   font-weight: 700;
 
@@ -1231,8 +1230,6 @@ a {
 }
 
 
-/* tape */
-
 .work-card::before {
 
   content: "";
@@ -1354,9 +1351,7 @@ a {
 
 
 .work-card-copy p {
-
   color: #3a3a3a;
-
 }
 
 
@@ -1395,9 +1390,7 @@ a {
 
 
 .services-heading {
-
   margin-bottom: 55px;
-
 }
 
 
@@ -1680,45 +1673,45 @@ a {
 
 
   .main-nav {
-
     gap: 16px;
-
   }
 
 
   .main-nav a {
-
     font-size: .64rem;
-
   }
 
 
   .hero {
-
     grid-template-columns: 1fr;
-
   }
 
 
   .hero-art {
-
     min-height: 650px;
+  }
+
+
+  .hero-art::before {
+
+    width: 820px;
+    height: 700px;
 
   }
 
 
   .paint-burst {
 
-    width: 760px;
-    height: 650px;
+    width: 700px;
+    height: 600px;
 
   }
 
 
   .gold-ring {
 
-    width: 520px;
-    height: 520px;
+    width: 510px;
+    height: 510px;
 
   }
 
@@ -1726,22 +1719,18 @@ a {
   .hero-logo-circle {
 
     width: 650px;
-    height: 650px;
+    height: 640px;
 
   }
 
 
   .personality-flamingo {
-
     left: 62%;
-
   }
 
 
   .flamingo-whisper {
-
     left: 88%;
-
   }
 
 
@@ -1849,7 +1838,7 @@ a {
     width: 165px;
 
     left: 60%;
-    top: -120px;
+    top: -104px;
 
   }
 
@@ -1869,23 +1858,31 @@ a {
 
   .hero-art {
 
-    min-height: 470px;
+    min-height: 500px;
+
+  }
+
+
+  .hero-art::before {
+
+    width: 560px;
+    height: 470px;
 
   }
 
 
   .paint-burst {
 
-    width: 500px;
-    height: 440px;
+    width: 460px;
+    height: 400px;
 
   }
 
 
   .gold-ring {
 
-    width: 330px;
-    height: 330px;
+    width: 335px;
+    height: 335px;
 
   }
 
@@ -1907,29 +1904,29 @@ a {
 
   .hero-logo-circle img {
 
-    width: 280px;
+    width: 300px;
 
-    left: 0;
+    left: -5px;
+    bottom: 15px;
 
   }
 
 
   .hero-logo-circle::before {
 
-    left: 37%;
+    width: 290px;
+    height: 170px;
 
-    top: 39%;
-
-    font-size: 5rem;
+    left: 34%;
+    top: 38%;
 
   }
 
 
   .hero-logo-circle::after {
 
-    left: 45%;
-
-    top: 69%;
+    left: 44%;
+    top: 70%;
 
     font-size: 2.7rem;
 
@@ -1937,23 +1934,17 @@ a {
 
 
   .work-grid {
-
     grid-template-columns: 1fr;
-
   }
 
 
   .work-card-drop {
-
     margin-top: 0;
-
   }
 
 
   .services-grid {
-
     grid-template-columns: 1fr;
-
   }
 
 
