@@ -40,22 +40,32 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
+
   background: var(--cream);
+
   color: var(--black);
+
   font-family: var(--sans);
+
   line-height: 1.55;
+
   overflow-x: hidden;
+
 }
+
 
 img {
   display: block;
   max-width: 100%;
 }
+
 
 a {
   color: inherit;
@@ -95,7 +105,7 @@ a {
 }
 
 
-/* scribbly line */
+/* rough scribbly line */
 
 .site-header::after {
 
@@ -143,6 +153,7 @@ a {
 
 }
 
+
 .header-logo img {
   display: none;
 }
@@ -165,6 +176,7 @@ a {
 
 }
 
+
 .main-nav a {
 
   position: relative;
@@ -178,6 +190,7 @@ a {
   white-space: nowrap;
 
 }
+
 
 .main-nav a::after {
 
@@ -201,9 +214,12 @@ a {
 
 }
 
+
 .main-nav a:hover::after,
 .main-nav a.active::after {
+
   width: 105%;
+
 }
 
 
@@ -237,9 +253,11 @@ a {
 
 }
 
+
 .header-cta span {
   margin-left: 12px;
 }
+
 
 .header-cta:hover {
 
@@ -303,6 +321,7 @@ a {
 
 }
 
+
 .hero-eyebrow {
 
   margin-bottom: 22px;
@@ -319,6 +338,7 @@ a {
 
 }
 
+
 .hero-eyebrow span {
   margin: 0 4px;
 }
@@ -331,6 +351,7 @@ a {
 .hero-title {
   color: var(--white);
 }
+
 
 .hero-serif {
 
@@ -348,6 +369,7 @@ a {
   line-height: .77;
 
 }
+
 
 .hero-website {
   margin-top: 17px;
@@ -402,7 +424,7 @@ a {
 }
 
 
-/* gold underline */
+/* gold scribble */
 
 .personality-strip::after {
 
@@ -460,13 +482,13 @@ a {
 
 .personality-flamingo {
 
-  width: 255px;
+  width: 250px;
   height: auto;
 
   position: absolute;
 
-  left: 64%;
-  top: -148px;
+  left: 63%;
+  top: -128px;
 
   z-index: 20;
 
@@ -496,7 +518,7 @@ a {
 @keyframes flamingoRise {
 
   0% {
-    transform: translateY(120px);
+    transform: translateY(115px);
     opacity: 0;
   }
 
@@ -525,10 +547,10 @@ a {
 
   position: absolute;
 
-  left: 91%;
-  top: -145px;
+  left: 89%;
+  top: -135px;
 
-  width: 200px;
+  width: 205px;
 
   z-index: 21;
 
@@ -652,6 +674,7 @@ a {
 
 }
 
+
 .btn {
 
   min-height: 53px;
@@ -676,6 +699,7 @@ a {
 
 }
 
+
 .btn-pink {
 
   background: var(--pink);
@@ -690,6 +714,7 @@ a {
 
 }
 
+
 .btn-pink:hover {
 
   transform:
@@ -701,6 +726,7 @@ a {
     var(--orange);
 
 }
+
 
 .btn-outline {
 
@@ -719,6 +745,7 @@ a {
 
 /* =========================================================
    HERO RIGHT
+   MASTER VISUAL POSITIONING
    ========================================================= */
 
 .hero-art {
@@ -748,10 +775,10 @@ a {
 
   position: absolute;
 
-  width: 1020px;
-  height: 860px;
+  width: 920px;
+  height: 780px;
 
-  left: 50%;
+  left: 51%;
   top: 50%;
 
   z-index: 0;
@@ -766,7 +793,7 @@ a {
     / contain
     no-repeat;
 
-  opacity: .96;
+  opacity: .94;
 
   pointer-events: none;
 
@@ -781,10 +808,10 @@ a {
 
   position: absolute;
 
-  width: 830px;
-  height: 700px;
+  width: 760px;
+  height: 640px;
 
-  left: 50%;
+  left: 51%;
   top: 50%;
 
   z-index: 1;
@@ -810,19 +837,19 @@ a {
 
 .gold-ring {
 
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
 
   position: absolute;
 
-  left: 54%;
-  top: 50%;
+  left: 58%;
+  top: 49%;
 
   z-index: 2;
 
   transform:
     translate(-50%, -50%)
-    rotate(-4deg);
+    rotate(-3deg);
 
   border:
     5px solid
@@ -847,7 +874,7 @@ a {
 
   position: absolute;
 
-  inset: 11px;
+  inset: 10px;
 
   border:
     2px solid
@@ -860,41 +887,20 @@ a {
 }
 
 
-/* NO */
-
-.gold-ring::after {
-
-  content: "No";
-
-  position: absolute;
-
-  top: 11%;
-  left: 56%;
-
-  z-index: 5;
-
-  color: var(--black);
-
-  font-family: var(--serif);
-
-  font-size:
-    clamp(5.5rem, 7vw, 7.7rem);
-
-  font-weight: 700;
-
-  line-height: 1;
-
-}
+/*
+   DELIBERATELY NO .gold-ring::after
+   That was creating the second "No".
+*/
 
 
 /* =========================================================
-   MAIN HERO LOGO LAYER
+   MAIN HERO ART LAYER
    ========================================================= */
 
 .hero-logo-circle {
 
-  width: 720px;
-  height: 700px;
+  width: 680px;
+  height: 650px;
 
   position: relative;
 
@@ -917,13 +923,13 @@ a {
 
   display: block;
 
-  width: 520px;
+  width: 510px;
   height: auto;
 
   position: absolute;
 
-  left: -70px;
-  bottom: -5px;
+  left: -35px;
+  top: 85px;
 
   z-index: 5;
 
@@ -942,6 +948,34 @@ a {
 
 
 /* =========================================================
+   NO
+   ONLY ONE
+   ========================================================= */
+
+.hero-logo-circle .hero-logo-no {
+
+  position: absolute;
+
+  top: 14%;
+  left: 59%;
+
+  z-index: 7;
+
+  color: var(--black);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(5.2rem, 6vw, 6.8rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+}
+
+
+/* =========================================================
    PRETTY BEIGE WORD
    ========================================================= */
 
@@ -951,11 +985,11 @@ a {
 
   position: absolute;
 
-  width: 500px;
-  height: 250px;
+  width: 425px;
+  height: 215px;
 
-  left: 34%;
-  top: 36%;
+  left: 40%;
+  top: 34%;
 
   z-index: 8;
 
@@ -972,7 +1006,7 @@ a {
 
 
 /* =========================================================
-   WEBSITES WORD
+   WEBSITES
    ========================================================= */
 
 .hero-logo-circle::after {
@@ -981,8 +1015,8 @@ a {
 
   position: absolute;
 
-  left: 46%;
-  top: 69%;
+  left: 49%;
+  top: 66%;
 
   z-index: 7;
 
@@ -991,13 +1025,46 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(4.2rem, 5vw, 5.8rem);
+    clamp(3.7rem, 4.3vw, 4.9rem);
 
   font-weight: 700;
 
   line-height: 1;
 
   white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   IMPORTANT FALLBACK
+   If your HTML DOES NOT yet contain .hero-logo-no,
+   this creates the single No on the hero container instead.
+   ========================================================= */
+
+.hero-art::after {
+
+  content: "No";
+
+  position: absolute;
+
+  left: 64%;
+  top: 22%;
+
+  z-index: 7;
+
+  color: var(--black);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(5.2rem, 6vw, 6.8rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  pointer-events: none;
 
 }
 
@@ -1484,17 +1551,21 @@ a {
   color: var(--pink);
 }
 
+
 .service-card:nth-child(2) h3 {
   color: var(--orange);
 }
+
 
 .service-card:nth-child(3) h3 {
   color: var(--teal);
 }
 
+
 .service-card:nth-child(4) h3 {
   color: var(--pink);
 }
+
 
 .service-card p {
 
@@ -1626,10 +1697,11 @@ a {
 
 
 /* =========================================================
-   TABLET
+   LAPTOP / TABLET
+   Keep two columns for much longer
    ========================================================= */
 
-@media (max-width: 1150px) {
+@media (max-width: 900px) {
 
   .site-header {
 
@@ -1650,64 +1722,117 @@ a {
 
 
   .main-nav {
+
     gap: 16px;
+
   }
 
 
   .main-nav a {
+
     font-size: .64rem;
+
   }
 
 
   .hero {
+
     grid-template-columns: 1fr;
+
   }
 
 
   .hero-art {
+
     min-height: 650px;
+
   }
 
 
   .hero-art::before {
 
-    width: 830px;
-    height: 700px;
+    width: 820px;
+    height: 690px;
 
   }
 
 
   .paint-burst {
 
-    width: 700px;
-    height: 600px;
+    width: 680px;
+    height: 570px;
 
   }
 
 
   .gold-ring {
 
-    width: 510px;
-    height: 510px;
+    width: 470px;
+    height: 470px;
 
   }
 
 
   .hero-logo-circle {
 
-    width: 650px;
-    height: 640px;
+    width: 620px;
+    height: 600px;
+
+  }
+
+
+  .hero-logo-circle img {
+
+    width: 460px;
+
+    left: -25px;
+    top: 90px;
+
+  }
+
+
+  .hero-logo-circle::before {
+
+    width: 390px;
+    height: 200px;
+
+    left: 40%;
+    top: 35%;
+
+  }
+
+
+  .hero-logo-circle::after {
+
+    left: 49%;
+    top: 67%;
+
+    font-size: 4rem;
+
+  }
+
+
+  .hero-art::after {
+
+    left: 63%;
+    top: 24%;
+
+    font-size: 5.5rem;
 
   }
 
 
   .personality-flamingo {
-    left: 62%;
+
+    left: 60%;
+
   }
 
 
   .flamingo-whisper {
-    left: 88%;
+
+    left: 86%;
+
   }
 
 
@@ -1814,8 +1939,8 @@ a {
 
     width: 165px;
 
-    left: 60%;
-    top: -106px;
+    left: 58%;
+    top: -100px;
 
   }
 
@@ -1842,84 +1967,97 @@ a {
 
   .hero-art::before {
 
-    width: 560px;
-    height: 470px;
+    width: 550px;
+    height: 460px;
 
   }
 
 
   .paint-burst {
 
-    width: 460px;
-    height: 400px;
+    width: 450px;
+    height: 390px;
 
   }
 
 
   .gold-ring {
 
-    width: 335px;
-    height: 335px;
+    width: 330px;
+    height: 330px;
 
-  }
+    left: 57%;
 
-
-  .gold-ring::after {
-    font-size: 4.5rem;
   }
 
 
   .hero-logo-circle {
 
-    width: 430px;
-    height: 430px;
+    width: 420px;
+    height: 420px;
 
   }
 
 
   .hero-logo-circle img {
 
-    width: 310px;
+    width: 300px;
 
-    left: -10px;
-    bottom: 10px;
+    left: -5px;
+    top: 80px;
 
   }
 
 
   .hero-logo-circle::before {
 
-    width: 300px;
-    height: 170px;
+    width: 280px;
+    height: 150px;
 
-    left: 34%;
-    top: 38%;
+    left: 38%;
+    top: 36%;
 
   }
 
 
   .hero-logo-circle::after {
 
-    left: 44%;
-    top: 70%;
+    left: 43%;
+    top: 69%;
 
     font-size: 2.7rem;
 
   }
 
 
+  .hero-art::after {
+
+    left: 64%;
+    top: 23%;
+
+    font-size: 4.3rem;
+
+  }
+
+
   .work-grid {
+
     grid-template-columns: 1fr;
+
   }
 
 
   .work-card-drop {
+
     margin-top: 0;
+
   }
 
 
   .services-grid {
+
     grid-template-columns: 1fr;
+
   }
 
 
