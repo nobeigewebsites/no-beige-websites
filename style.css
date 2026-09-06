@@ -1,6 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   FINAL CLEAN MASTER CSS
+   CLEAN MASTER CSS
    ========================================================= */
 
 
@@ -40,11 +40,9 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   background: var(--cream);
@@ -54,12 +52,10 @@ body {
   overflow-x: hidden;
 }
 
-
 img {
   display: block;
   max-width: 100%;
 }
-
 
 a {
   color: inherit;
@@ -99,7 +95,7 @@ a {
 }
 
 
-/* rough little scribble under nav */
+/* scribbly line */
 
 .site-header::after {
 
@@ -147,16 +143,13 @@ a {
 
 }
 
-
-/* hide old image in HTML */
-
 .header-logo img {
   display: none;
 }
 
 
 /* =========================================================
-   NAV
+   NAVIGATION
    ========================================================= */
 
 .main-nav {
@@ -172,7 +165,6 @@ a {
 
 }
 
-
 .main-nav a {
 
   position: relative;
@@ -186,7 +178,6 @@ a {
   white-space: nowrap;
 
 }
-
 
 .main-nav a::after {
 
@@ -209,7 +200,6 @@ a {
   transition: .2s ease;
 
 }
-
 
 .main-nav a:hover::after,
 .main-nav a.active::after {
@@ -247,11 +237,9 @@ a {
 
 }
 
-
 .header-cta span {
   margin-left: 12px;
 }
-
 
 .header-cta:hover {
 
@@ -308,10 +296,12 @@ a {
    ========================================================= */
 
 .hero-copy-wrap {
-  position: relative;
-  z-index: 10;
-}
 
+  position: relative;
+
+  z-index: 10;
+
+}
 
 .hero-eyebrow {
 
@@ -329,7 +319,6 @@ a {
 
 }
 
-
 .hero-eyebrow span {
   margin: 0 4px;
 }
@@ -342,7 +331,6 @@ a {
 .hero-title {
   color: var(--white);
 }
-
 
 .hero-serif {
 
@@ -360,7 +348,6 @@ a {
   line-height: .77;
 
 }
-
 
 .hero-website {
   margin-top: 17px;
@@ -415,7 +402,7 @@ a {
 }
 
 
-/* gold scribble */
+/* gold underline */
 
 .personality-strip::after {
 
@@ -440,7 +427,7 @@ a {
 
 
 /* =========================================================
-   HAS PERSONALITY WORDING
+   PERSONALITY TEXT
    ========================================================= */
 
 .personality-text {
@@ -468,19 +455,18 @@ a {
 
 
 /* =========================================================
-   COOL FLAMINGO
-   LOWER + MORE CENTERED TO ACTUALLY GRIP SIGN
+   PEEKING FLAMINGO
    ========================================================= */
 
 .personality-flamingo {
 
-  width: 250px;
+  width: 255px;
   height: auto;
 
   position: absolute;
 
-  left: 66%;
-  top: -142px;
+  left: 64%;
+  top: -148px;
 
   z-index: 20;
 
@@ -489,7 +475,7 @@ a {
   pointer-events: none;
 
   content:
-    url("images/cool.png");
+    url("images/cool-clean.png");
 
   filter:
     drop-shadow(
@@ -540,7 +526,7 @@ a {
   position: absolute;
 
   left: 91%;
-  top: -144px;
+  top: -145px;
 
   width: 200px;
 
@@ -666,7 +652,6 @@ a {
 
 }
 
-
 .btn {
 
   min-height: 53px;
@@ -691,7 +676,6 @@ a {
 
 }
 
-
 .btn-pink {
 
   background: var(--pink);
@@ -706,7 +690,6 @@ a {
 
 }
 
-
 .btn-pink:hover {
 
   transform:
@@ -718,7 +701,6 @@ a {
     var(--orange);
 
 }
-
 
 .btn-outline {
 
@@ -757,7 +739,7 @@ a {
 
 
 /* =========================================================
-   LARGE OUTER SPLASH
+   BIG OUTER SPLASH
    ========================================================= */
 
 .hero-art::before {
@@ -766,8 +748,8 @@ a {
 
   position: absolute;
 
-  width: 980px;
-  height: 820px;
+  width: 1020px;
+  height: 860px;
 
   left: 50%;
   top: 50%;
@@ -779,12 +761,12 @@ a {
     rotate(2deg);
 
   background:
-    url("images/splash2.png")
+    url("images/splash2-clean.png")
     center
     / contain
     no-repeat;
 
-  opacity: .95;
+  opacity: .96;
 
   pointer-events: none;
 
@@ -799,8 +781,8 @@ a {
 
   position: absolute;
 
-  width: 800px;
-  height: 680px;
+  width: 830px;
+  height: 700px;
 
   left: 50%;
   top: 50%;
@@ -812,7 +794,7 @@ a {
     rotate(-4deg);
 
   background:
-    url("images/paint.png")
+    url("images/paint-clean.png")
     center
     / contain
     no-repeat;
@@ -828,8 +810,8 @@ a {
 
 .gold-ring {
 
-  width: 545px;
-  height: 545px;
+  width: 550px;
+  height: 550px;
 
   position: absolute;
 
@@ -857,7 +839,7 @@ a {
 }
 
 
-/* inner imperfect ring */
+/* inner gold ring */
 
 .gold-ring::before {
 
@@ -878,7 +860,7 @@ a {
 }
 
 
-/* "No" */
+/* NO */
 
 .gold-ring::after {
 
@@ -887,7 +869,7 @@ a {
   position: absolute;
 
   top: 11%;
-  left: 55%;
+  left: 56%;
 
   z-index: 5;
 
@@ -906,7 +888,7 @@ a {
 
 
 /* =========================================================
-   MAIN LOGO LAYER
+   MAIN HERO LOGO LAYER
    ========================================================= */
 
 .hero-logo-circle {
@@ -929,25 +911,24 @@ a {
 
 /* =========================================================
    MAIN FLAMINGO
-   BIGGER + FURTHER LEFT + HIGHER
    ========================================================= */
 
 .hero-logo-circle img {
 
   display: block;
 
-  width: 500px;
+  width: 520px;
   height: auto;
 
   position: absolute;
 
-  left: -45px;
-  bottom: 8px;
+  left: -70px;
+  bottom: -5px;
 
   z-index: 5;
 
   content:
-    url("images/glam.png");
+    url("images/glam-clean.png");
 
   object-fit: contain;
 
@@ -961,7 +942,7 @@ a {
 
 
 /* =========================================================
-   PRETTY BEIGE WORD ASSET
+   PRETTY BEIGE WORD
    ========================================================= */
 
 .hero-logo-circle::before {
@@ -970,7 +951,7 @@ a {
 
   position: absolute;
 
-  width: 470px;
+  width: 500px;
   height: 250px;
 
   left: 34%;
@@ -979,7 +960,7 @@ a {
   z-index: 8;
 
   background:
-    url("images/pretty.png")
+    url("images/pretty-clean.png")
     center
     / contain
     no-repeat;
@@ -1022,7 +1003,7 @@ a {
 
 
 /* =========================================================
-   MOVING BRAND STRIP
+   BRAND STRIP
    ========================================================= */
 
 .brand-strip {
@@ -1229,6 +1210,8 @@ a {
 
 }
 
+
+/* tape */
 
 .work-card::before {
 
@@ -1501,21 +1484,17 @@ a {
   color: var(--pink);
 }
 
-
 .service-card:nth-child(2) h3 {
   color: var(--orange);
 }
-
 
 .service-card:nth-child(3) h3 {
   color: var(--teal);
 }
 
-
 .service-card:nth-child(4) h3 {
   color: var(--pink);
 }
-
 
 .service-card p {
 
@@ -1632,9 +1611,7 @@ a {
 
 
 .site-footer strong {
-
   font-family: var(--serif);
-
 }
 
 
@@ -1694,7 +1671,7 @@ a {
 
   .hero-art::before {
 
-    width: 820px;
+    width: 830px;
     height: 700px;
 
   }
@@ -1838,7 +1815,7 @@ a {
     width: 165px;
 
     left: 60%;
-    top: -104px;
+    top: -106px;
 
   }
 
@@ -1888,9 +1865,7 @@ a {
 
 
   .gold-ring::after {
-
     font-size: 4.5rem;
-
   }
 
 
@@ -1904,17 +1879,17 @@ a {
 
   .hero-logo-circle img {
 
-    width: 300px;
+    width: 310px;
 
-    left: -5px;
-    bottom: 15px;
+    left: -10px;
+    bottom: 10px;
 
   }
 
 
   .hero-logo-circle::before {
 
-    width: 290px;
+    width: 300px;
     height: 170px;
 
     left: 34%;
