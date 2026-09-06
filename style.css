@@ -1,20 +1,19 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   CLEAN MASTER CSS
+   MASTER CSS — CLEAN HTML VERSION
    ========================================================= */
 
 
 /* =========================================================
-   BRAND VARIABLES
+   BRAND
    ========================================================= */
 
 :root {
-
   --cream: #fff8ed;
   --paper: #fffdf8;
 
   --black: #0b0b0b;
-  --charcoal: #1b1b1b;
+  --charcoal: #171717;
 
   --pink: #f52282;
   --teal: #00b9c2;
@@ -26,7 +25,6 @@
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
   --hand: "Caveat", cursive;
-
 }
 
 
@@ -40,32 +38,22 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
-
 body {
-
   background: var(--cream);
-
   color: var(--black);
-
   font-family: var(--sans);
-
   line-height: 1.55;
-
   overflow-x: hidden;
-
 }
-
 
 img {
   display: block;
   max-width: 100%;
 }
-
 
 a {
   color: inherit;
@@ -78,37 +66,26 @@ a {
    ========================================================= */
 
 .site-header {
-
   min-height: 132px;
 
-  padding:
-    12px
-    4%;
+  padding: 12px 4%;
 
   display: grid;
-
-  grid-template-columns:
-    185px
-    1fr
-    auto;
-
+  grid-template-columns: 180px 1fr auto;
   align-items: center;
 
   gap: 34px;
 
   position: relative;
-
   z-index: 100;
 
   background: var(--cream);
-
 }
 
 
-/* rough scribbly line */
+/* rough sketchy line under nav */
 
 .site-header::after {
-
   content: "";
 
   position: absolute;
@@ -119,7 +96,7 @@ a {
 
   height: 2px;
 
-  opacity: .72;
+  opacity: .7;
 
   background:
     repeating-linear-gradient(
@@ -130,7 +107,6 @@ a {
     );
 
   transform: rotate(-.4deg);
-
 }
 
 
@@ -139,23 +115,19 @@ a {
    ========================================================= */
 
 .header-logo {
-
-  width: 175px;
+  width: 170px;
   height: 105px;
 
-  display: block;
-
-  background:
-    url("images/beige.png")
-    center
-    / contain
-    no-repeat;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-
 .header-logo img {
-  display: none;
+  width: 155px;
+  height: auto;
+
+  object-fit: contain;
 }
 
 
@@ -164,36 +136,25 @@ a {
    ========================================================= */
 
 .main-nav {
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
-  gap:
-    clamp(22px, 2.8vw, 44px);
-
+  gap: clamp(22px, 2.8vw, 44px);
 }
 
-
 .main-nav a {
-
   position: relative;
 
   font-size: .77rem;
-
   font-weight: 900;
 
   letter-spacing: .055em;
 
   white-space: nowrap;
-
 }
 
-
 .main-nav a::after {
-
   content: "";
 
   position: absolute;
@@ -211,15 +172,11 @@ a {
     rotate(-2deg);
 
   transition: .2s ease;
-
 }
-
 
 .main-nav a:hover::after,
 .main-nav a.active::after {
-
   width: 105%;
-
 }
 
 
@@ -228,47 +185,34 @@ a {
    ========================================================= */
 
 .header-cta {
-
-  padding:
-    18px
-    31px;
+  padding: 18px 31px;
 
   background: var(--pink);
 
   color: var(--white);
 
   font-size: .8rem;
-
   font-weight: 900;
 
   letter-spacing: .08em;
 
-  box-shadow:
-    9px 9px 0
-    var(--black);
+  box-shadow: 9px 9px 0 var(--black);
 
   transform: rotate(-1deg);
 
   transition: .2s ease;
-
 }
-
 
 .header-cta span {
   margin-left: 12px;
 }
 
-
 .header-cta:hover {
-
   transform:
     rotate(1deg)
     translate(-2px, -2px);
 
-  box-shadow:
-    11px 11px 0
-    var(--teal);
-
+  box-shadow: 11px 11px 0 var(--teal);
 }
 
 
@@ -277,7 +221,6 @@ a {
    ========================================================= */
 
 .hero {
-
   min-height: 850px;
 
   padding:
@@ -286,11 +229,9 @@ a {
     60px;
 
   display: grid;
+  grid-template-columns: 47% 53%;
 
-  grid-template-columns:
-    48% 52%;
-
-  gap: 22px;
+  gap: 20px;
 
   align-items: center;
 
@@ -300,12 +241,11 @@ a {
 
   background:
     radial-gradient(
-      circle at 27% 20%,
-      #1c1c1c 0%,
-      #101010 45%,
+      circle at 28% 20%,
+      #1d1d1d 0%,
+      #111111 44%,
       #080808 100%
     );
-
 }
 
 
@@ -314,30 +254,23 @@ a {
    ========================================================= */
 
 .hero-copy-wrap {
-
   position: relative;
 
-  z-index: 10;
-
+  z-index: 20;
 }
 
-
 .hero-eyebrow {
-
   margin-bottom: 22px;
 
   color: var(--orange);
 
   font-size: .78rem;
-
   font-weight: 900;
 
   letter-spacing: .15em;
 
   text-transform: uppercase;
-
 }
-
 
 .hero-eyebrow span {
   margin: 0 4px;
@@ -345,34 +278,30 @@ a {
 
 
 /* =========================================================
-   BIG HERO TYPE
+   LARGE HERO TYPE
    ========================================================= */
 
 .hero-title {
   color: var(--white);
 }
 
-
 .hero-serif {
-
   display: block;
 
   font-family: var(--serif);
 
   font-size:
-    clamp(4rem, 6.4vw, 7rem);
+    clamp(4rem, 6.3vw, 7rem);
 
   font-weight: 800;
 
   letter-spacing: -.055em;
 
   line-height: .77;
-
 }
 
-
 .hero-website {
-  margin-top: 17px;
+  margin-top: 18px;
 }
 
 
@@ -381,11 +310,9 @@ a {
    ========================================================= */
 
 .personality-strip {
-
   min-height: 120px;
 
-  width:
-    min(750px, 105%);
+  width: min(750px, 105%);
 
   margin:
     18px
@@ -399,7 +326,6 @@ a {
     15px;
 
   display: flex;
-
   align-items: center;
 
   position: relative;
@@ -420,14 +346,12 @@ a {
     rgba(255,255,255,.13);
 
   transform: rotate(.7deg);
-
 }
 
 
-/* gold scribble */
+/* gold hand-drawn underline */
 
 .personality-strip::after {
-
   content: "";
 
   position: absolute;
@@ -440,11 +364,10 @@ a {
 
   background: var(--gold);
 
-  transform: rotate(-2deg);
-
   border-radius:
     80% 10% 70% 15%;
 
+  transform: rotate(-2deg);
 }
 
 
@@ -453,7 +376,6 @@ a {
    ========================================================= */
 
 .personality-text {
-
   display: block;
 
   position: relative;
@@ -472,7 +394,6 @@ a {
   line-height: .82;
 
   white-space: nowrap;
-
 }
 
 
@@ -481,44 +402,37 @@ a {
    ========================================================= */
 
 .personality-flamingo {
-
-  width: 250px;
+  width: 260px;
   height: auto;
 
   position: absolute;
 
-  left: 63%;
-  top: -128px;
+  left: 66%;
+  top: -150px;
 
   z-index: 20;
 
-  object-fit: contain;
-
   pointer-events: none;
 
-  content:
-    url("images/cool-clean.png");
+  object-fit: contain;
 
   filter:
     drop-shadow(
-      0 10px 12px
-      rgba(0,0,0,.4)
+      0 12px 13px
+      rgba(0,0,0,.42)
     );
 
   animation:
     flamingoRise
     1.05s
     cubic-bezier(.22,1.4,.36,1)
-    .45s
+    .4s
     both;
-
 }
 
-
 @keyframes flamingoRise {
-
   0% {
-    transform: translateY(115px);
+    transform: translateY(120px);
     opacity: 0;
   }
 
@@ -535,22 +449,20 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
-
 }
 
 
 /* =========================================================
-   FLAMINGO WHISPER
+   LITTLE FLAMINGO WHISPER
    ========================================================= */
 
 .flamingo-whisper {
-
   position: absolute;
 
-  left: 89%;
-  top: -135px;
+  left: 91%;
+  top: -145px;
 
-  width: 205px;
+  width: 195px;
 
   z-index: 21;
 
@@ -558,14 +470,12 @@ a {
 
   font-family: var(--hand);
 
-  font-size: 1.8rem;
-
+  font-size: 1.75rem;
   font-weight: 700;
 
-  line-height: .88;
+  line-height: .9;
 
   transform: rotate(-6deg);
-
 }
 
 
@@ -574,7 +484,6 @@ a {
    ========================================================= */
 
 .hero-should {
-
   display: block;
 
   margin-top: 10px;
@@ -584,19 +493,16 @@ a {
   font-family: var(--hand);
 
   font-size:
-    clamp(4rem, 5.9vw, 6.5rem);
+    clamp(4rem, 5.9vw, 6.4rem);
 
   font-weight: 700;
 
   line-height: .78;
 
   transform: rotate(-2deg);
-
 }
 
-
 .hero-should::after {
-
   content: "";
 
   display: block;
@@ -609,16 +515,14 @@ a {
   background: var(--gold);
 
   transform: rotate(-3deg);
-
 }
 
 
 /* =========================================================
-   HERO PUNCHLINE
+   HERO PUNCHLINE + COPY
    ========================================================= */
 
 .hero-punchline {
-
   margin:
     26px
     0
@@ -634,16 +538,9 @@ a {
   line-height: 1;
 
   transform: rotate(-1deg);
-
 }
 
-
-/* =========================================================
-   HERO DESCRIPTION
-   ========================================================= */
-
 .hero-description {
-
   max-width: 580px;
 
   color:
@@ -654,7 +551,6 @@ a {
   line-height: 1.55;
 
   white-space: pre-line;
-
 }
 
 
@@ -663,7 +559,6 @@ a {
    ========================================================= */
 
 .hero-buttons {
-
   margin-top: 27px;
 
   display: flex;
@@ -671,12 +566,9 @@ a {
   gap: 20px;
 
   flex-wrap: wrap;
-
 }
 
-
 .btn {
-
   min-height: 53px;
 
   padding:
@@ -686,22 +578,17 @@ a {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   font-size: .76rem;
-
   font-weight: 900;
 
   letter-spacing: .07em;
 
   transition: .2s ease;
-
 }
 
-
 .btn-pink {
-
   background: var(--pink);
 
   color: var(--white);
@@ -711,12 +598,9 @@ a {
     var(--teal);
 
   transform: rotate(-1deg);
-
 }
 
-
 .btn-pink:hover {
-
   transform:
     rotate(1deg)
     translate(-2px,-2px);
@@ -724,12 +608,9 @@ a {
   box-shadow:
     10px 10px 0
     var(--orange);
-
 }
 
-
 .btn-outline {
-
   border:
     2px solid
     var(--white);
@@ -739,117 +620,91 @@ a {
   box-shadow:
     0 6px 0
     var(--gold);
-
 }
 
 
 /* =========================================================
    HERO RIGHT
-   MASTER VISUAL POSITIONING
+   EVERY PIECE IS NOW REAL HTML
    ========================================================= */
 
 .hero-art {
-
   min-height: 720px;
 
   position: relative;
 
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
   isolation: isolate;
-
 }
 
 
 /* =========================================================
-   BIG OUTER SPLASH
+   OUTER PAINT SPLASH
    ========================================================= */
 
-.hero-art::before {
-
-  content: "";
-
+.hero-splash {
   position: absolute;
-
-  width: 920px;
-  height: 780px;
-
-  left: 51%;
-  top: 50%;
-
-  z-index: 0;
-
-  transform:
-    translate(-50%, -50%)
-    rotate(2deg);
-
-  background:
-    url("images/splash2-clean.png")
-    center
-    / contain
-    no-repeat;
-
-  opacity: .94;
 
   pointer-events: none;
 
+  object-fit: contain;
 }
 
+.hero-splash-outer {
+  width: 970px;
 
-/* =========================================================
-   INNER SPLASH
-   ========================================================= */
-
-.paint-burst {
-
-  position: absolute;
-
-  width: 760px;
-  height: 640px;
-
-  left: 51%;
+  left: 50%;
   top: 50%;
 
   z-index: 1;
 
   transform:
     translate(-50%, -50%)
-    rotate(-4deg);
+    rotate(2deg);
 
-  background:
-    url("images/paint-clean.png")
-    center
-    / contain
-    no-repeat;
-
-  pointer-events: none;
-
+  opacity: .94;
 }
 
 
 /* =========================================================
-   CREAM CIRCLE + GOLD RINGS
+   INNER PAINT SPLASH
    ========================================================= */
 
-.gold-ring {
+.hero-splash-inner {
+  width: 760px;
 
-  width: 500px;
-  height: 500px;
-
-  position: absolute;
-
-  left: 58%;
-  top: 49%;
+  left: 50%;
+  top: 50%;
 
   z-index: 2;
 
   transform:
     translate(-50%, -50%)
+    rotate(-5deg);
+
+  opacity: .98;
+}
+
+
+/* =========================================================
+   CREAM BADGE
+   ========================================================= */
+
+.hero-badge {
+  width: 520px;
+  height: 520px;
+
+  position: absolute;
+
+  left: 59%;
+  top: 49%;
+
+  z-index: 3;
+
+  transform:
+    translate(-50%, -50%)
     rotate(-3deg);
+
+  background: var(--cream);
 
   border:
     5px solid
@@ -857,24 +712,18 @@ a {
 
   border-radius: 50%;
 
-  background: var(--cream);
-
   box-shadow:
     0 0 45px
-    rgba(255,255,255,.04);
-
+    rgba(255,255,255,.05);
 }
 
 
-/* inner gold ring */
+/* second gold hand drawn ring */
 
-.gold-ring::before {
-
-  content: "";
-
+.hero-badge-inner {
   position: absolute;
 
-  inset: 10px;
+  inset: 11px;
 
   border:
     2px solid
@@ -883,35 +732,6 @@ a {
   border-radius: 50%;
 
   transform: rotate(7deg);
-
-}
-
-
-/*
-   DELIBERATELY NO .gold-ring::after
-   That was creating the second "No".
-*/
-
-
-/* =========================================================
-   MAIN HERO ART LAYER
-   ========================================================= */
-
-.hero-logo-circle {
-
-  width: 680px;
-  height: 650px;
-
-  position: relative;
-
-  z-index: 4;
-
-  overflow: visible;
-
-  background: none;
-
-  pointer-events: none;
-
 }
 
 
@@ -919,45 +739,39 @@ a {
    MAIN FLAMINGO
    ========================================================= */
 
-.hero-logo-circle img {
-
-  display: block;
-
+.hero-main-flamingo {
   width: 510px;
   height: auto;
 
   position: absolute;
 
-  left: -35px;
-  top: 85px;
+  left: -2%;
+  top: 12%;
 
-  z-index: 5;
-
-  content:
-    url("images/glam-clean.png");
+  z-index: 6;
 
   object-fit: contain;
+
+  pointer-events: none;
 
   filter:
     drop-shadow(
       0 18px 22px
-      rgba(0,0,0,.3)
+      rgba(0,0,0,.32)
     );
-
 }
 
 
 /* =========================================================
    NO
-   ONLY ONE
+   ONE. SINGLE. NO. 😂
    ========================================================= */
 
-.hero-logo-circle .hero-logo-no {
-
+.hero-logo-no {
   position: absolute;
 
-  top: 14%;
-  left: 59%;
+  left: 61%;
+  top: 19%;
 
   z-index: 7;
 
@@ -966,42 +780,32 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(5.2rem, 6vw, 6.8rem);
+    clamp(5rem, 6vw, 6.8rem);
 
   font-weight: 700;
 
   line-height: 1;
-
 }
 
 
 /* =========================================================
-   PRETTY BEIGE WORD
+   PAINTED BEIGE WORD
    ========================================================= */
 
-.hero-logo-circle::before {
-
-  content: "";
+.hero-beige-word {
+  width: 430px;
+  height: auto;
 
   position: absolute;
 
-  width: 425px;
-  height: 215px;
+  left: 41%;
+  top: 38%;
 
-  left: 40%;
-  top: 34%;
+  z-index: 9;
 
-  z-index: 8;
+  transform: rotate(-4deg);
 
-  background:
-    url("images/pretty-clean.png")
-    center
-    / contain
-    no-repeat;
-
-  transform:
-    rotate(-4deg);
-
+  pointer-events: none;
 }
 
 
@@ -1009,63 +813,30 @@ a {
    WEBSITES
    ========================================================= */
 
-.hero-logo-circle::after {
-
-  content: "Websites.";
-
+.hero-logo-websites {
   position: absolute;
 
-  left: 49%;
+  left: 48%;
   top: 66%;
 
-  z-index: 7;
+  z-index: 8;
 
   color: var(--black);
 
   font-family: var(--serif);
 
   font-size:
-    clamp(3.7rem, 4.3vw, 4.9rem);
+    clamp(3.8rem, 4.5vw, 5rem);
 
   font-weight: 700;
 
   line-height: 1;
 
   white-space: nowrap;
-
 }
 
-
-/* =========================================================
-   IMPORTANT FALLBACK
-   If your HTML DOES NOT yet contain .hero-logo-no,
-   this creates the single No on the hero container instead.
-   ========================================================= */
-
-.hero-art::after {
-
-  content: "No";
-
-  position: absolute;
-
-  left: 64%;
-  top: 22%;
-
-  z-index: 7;
-
-  color: var(--black);
-
-  font-family: var(--serif);
-
-  font-size:
-    clamp(5.2rem, 6vw, 6.8rem);
-
-  font-weight: 700;
-
-  line-height: 1;
-
-  pointer-events: none;
-
+.hero-logo-dot {
+  color: var(--pink);
 }
 
 
@@ -1074,7 +845,6 @@ a {
    ========================================================= */
 
 .brand-strip {
-
   overflow: hidden;
 
   padding:
@@ -1092,18 +862,14 @@ a {
   border-bottom:
     4px solid
     var(--black);
-
 }
 
-
 .brand-strip-track {
-
   width: max-content;
 
   white-space: nowrap;
 
   font-size: .74rem;
-
   font-weight: 900;
 
   letter-spacing: .14em;
@@ -1113,12 +879,9 @@ a {
     24s
     linear
     infinite;
-
 }
 
-
 @keyframes ticker {
-
   from {
     transform: translateX(0);
   }
@@ -1126,7 +889,6 @@ a {
   to {
     transform: translateX(-50%);
   }
-
 }
 
 
@@ -1135,28 +897,21 @@ a {
    ========================================================= */
 
 .work-section {
-
   padding:
     110px
     6%
     125px;
 
   background: var(--cream);
-
 }
 
-
 .work-heading {
-
   max-width: 940px;
 
   margin-bottom: 60px;
-
 }
 
-
 .pink-note {
-
   display: inline-block;
 
   margin-bottom: 16px;
@@ -1170,28 +925,21 @@ a {
   font-family: var(--hand);
 
   font-size: 1.35rem;
-
   font-weight: 700;
 
   transform: rotate(-3deg);
-
 }
 
-
 .work-heading h2 {
-
   font-family: var(--serif);
 
   font-size:
     clamp(3rem, 6vw, 6rem);
 
   line-height: .9;
-
 }
 
-
 .work-heading h2 span {
-
   display: block;
 
   color: var(--pink);
@@ -1199,16 +947,12 @@ a {
   font-family: var(--hand);
 
   transform: rotate(-1deg);
-
 }
 
-
 .work-heading p {
-
   max-width: 680px;
 
   margin-top: 25px;
-
 }
 
 
@@ -1217,7 +961,6 @@ a {
    ========================================================= */
 
 .work-grid {
-
   display: grid;
 
   grid-template-columns:
@@ -1226,12 +969,9 @@ a {
   gap:
     44px
     38px;
-
 }
 
-
 .work-card {
-
   position: relative;
 
   overflow: hidden;
@@ -1252,12 +992,9 @@ a {
   transform: rotate(-.6deg);
 
   transition: .25s ease;
-
 }
 
-
 .work-card:hover {
-
   transform:
     rotate(0)
     translateY(-7px);
@@ -1265,23 +1002,18 @@ a {
   box-shadow:
     13px 14px 0
     rgba(13,13,13,.16);
-
 }
 
-
 .work-card-drop {
-
   margin-top: 35px;
 
   transform: rotate(.8deg);
-
 }
 
 
 /* tape */
 
 .work-card::before {
-
   content: "";
 
   position: absolute;
@@ -1300,23 +1032,17 @@ a {
   transform:
     translateX(-50%)
     rotate(-4deg);
-
 }
 
-
 .work-card-image-wrap {
-
   height: 270px;
 
   position: relative;
 
   overflow: hidden;
-
 }
 
-
 .work-card-image-wrap img {
-
   width: 100%;
   height: 100%;
 
@@ -1324,19 +1050,13 @@ a {
 
   transition:
     transform .35s ease;
-
 }
-
 
 .work-card:hover .work-card-image-wrap img {
-
   transform: scale(1.035);
-
 }
 
-
 .work-card-image-wrap::after {
-
   content: "";
 
   position: absolute;
@@ -1348,12 +1068,9 @@ a {
       transparent 45%,
       rgba(0,0,0,.7)
     );
-
 }
 
-
 .work-card-image-wrap span {
-
   position: absolute;
 
   left: 22px;
@@ -1371,42 +1088,31 @@ a {
   color: var(--white);
 
   font-size: .67rem;
-
   font-weight: 900;
 
   border-radius: 999px;
-
 }
 
-
 .work-card-copy {
-
   padding:
     29px
     30px
     34px;
-
 }
 
-
 .work-card-copy h3 {
-
   margin-bottom: 10px;
 
   font-family: var(--serif);
 
   font-size: 2rem;
-
 }
-
 
 .work-card-copy p {
   color: #3a3a3a;
 }
 
-
 .work-card-copy small {
-
   display: inline-block;
 
   margin-top: 20px;
@@ -1418,7 +1124,6 @@ a {
   border-bottom:
     2px solid
     var(--gold);
-
 }
 
 
@@ -1427,7 +1132,6 @@ a {
    ========================================================= */
 
 .services-section {
-
   padding:
     105px
     6%;
@@ -1435,61 +1139,45 @@ a {
   background: var(--black);
 
   color: var(--white);
-
 }
-
 
 .services-heading {
   margin-bottom: 55px;
 }
 
-
 .services-heading > p {
-
   color: var(--orange);
 
   font-weight: 900;
 
   letter-spacing: .15em;
-
 }
 
-
 .services-heading h2 {
-
   font-family: var(--serif);
 
   font-size:
     clamp(3rem, 5vw, 5.5rem);
 
   line-height: .9;
-
 }
 
-
 .services-heading h2 span {
-
   color: var(--pink);
 
   font-family: var(--hand);
-
 }
 
-
 .services-grid {
-
   display: grid;
 
   grid-template-columns:
     repeat(4,1fr);
 
   gap: 18px;
-
 }
 
-
 .service-card {
-
   min-height: 280px;
 
   padding:
@@ -1513,74 +1201,54 @@ a {
     rgba(255,255,255,.035);
 
   transition: .25s ease;
-
 }
 
-
 .service-card:hover {
-
   transform: translateY(-6px);
 
   background:
     rgba(255,255,255,.07);
-
 }
 
-
 .service-number {
-
   color: var(--orange);
 
   font-family: var(--hand);
 
   font-size: 1.4rem;
-
 }
 
-
 .service-card h3 {
-
   font-family: var(--hand);
 
   font-size: 3.2rem;
-
 }
-
 
 .service-card:nth-child(1) h3 {
   color: var(--pink);
 }
 
-
 .service-card:nth-child(2) h3 {
   color: var(--orange);
 }
-
 
 .service-card:nth-child(3) h3 {
   color: var(--teal);
 }
 
-
 .service-card:nth-child(4) h3 {
   color: var(--pink);
 }
 
-
 .service-card p {
-
   color:
     rgba(255,255,255,.75);
-
 }
 
-
 .service-card small {
-
   font-weight: 900;
 
   letter-spacing: .1em;
-
 }
 
 
@@ -1589,7 +1257,6 @@ a {
    ========================================================= */
 
 .home-cta {
-
   min-height: 520px;
 
   padding:
@@ -1601,58 +1268,44 @@ a {
   flex-direction: column;
 
   align-items: center;
-
   justify-content: center;
 
   text-align: center;
 
   background: var(--cream);
-
 }
 
-
 .home-cta > p:first-child {
-
   color: var(--teal);
 
   font-weight: 900;
 
   letter-spacing: .16em;
-
 }
 
-
 .home-cta h2 {
-
   font-family: var(--serif);
 
   font-size:
     clamp(3.2rem, 6vw, 6.2rem);
 
   line-height: .9;
-
 }
 
-
 .home-cta h2 span {
-
   display: block;
 
   color: var(--pink);
 
   font-family: var(--hand);
-
 }
 
-
 .home-cta-copy {
-
   max-width: 650px;
 
   margin:
     26px
     auto;
-
 }
 
 
@@ -1661,7 +1314,6 @@ a {
    ========================================================= */
 
 .site-footer {
-
   padding:
     34px
     5%;
@@ -1669,7 +1321,6 @@ a {
   display: flex;
 
   align-items: center;
-
   justify-content: space-between;
 
   gap: 25px;
@@ -1677,172 +1328,108 @@ a {
   background: var(--black);
 
   color: var(--white);
-
 }
-
 
 .site-footer strong {
   font-family: var(--serif);
 }
 
-
 .site-footer span {
-
   color:
     rgba(255,255,255,.65);
 
   font-size: .76rem;
-
 }
 
 
 /* =========================================================
-   LAPTOP / TABLET
-   Keep two columns for much longer
+   SMALL LAPTOP / TABLET
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .site-header {
-
     grid-template-columns:
-      145px
+      140px
       1fr
       auto;
 
+    gap: 18px;
   }
-
 
   .header-logo {
-
-    width: 145px;
-    height: 92px;
-
+    width: 140px;
   }
 
+  .header-logo img {
+    width: 125px;
+  }
 
   .main-nav {
-
     gap: 16px;
-
   }
-
 
   .main-nav a {
-
     font-size: .64rem;
-
   }
-
 
   .hero {
-
     grid-template-columns: 1fr;
-
   }
 
+  .hero-copy-wrap {
+    max-width: 700px;
+  }
 
   .hero-art {
-
-    min-height: 650px;
-
+    min-height: 670px;
   }
 
-
-  .hero-art::before {
-
-    width: 820px;
-    height: 690px;
-
+  .hero-splash-outer {
+    width: 850px;
   }
 
-
-  .paint-burst {
-
+  .hero-splash-inner {
     width: 680px;
-    height: 570px;
-
   }
 
+  .hero-badge {
+    width: 480px;
+    height: 480px;
 
-  .gold-ring {
+    left: 58%;
+  }
 
+  .hero-main-flamingo {
     width: 470px;
-    height: 470px;
 
+    left: 7%;
+    top: 13%;
   }
 
-
-  .hero-logo-circle {
-
-    width: 620px;
-    height: 600px;
-
+  .hero-logo-no {
+    left: 60%;
+    top: 20%;
   }
 
-
-  .hero-logo-circle img {
-
-    width: 460px;
-
-    left: -25px;
-    top: 90px;
-
-  }
-
-
-  .hero-logo-circle::before {
-
+  .hero-beige-word {
     width: 390px;
-    height: 200px;
 
-    left: 40%;
-    top: 35%;
-
+    left: 42%;
+    top: 39%;
   }
 
-
-  .hero-logo-circle::after {
-
+  .hero-logo-websites {
     left: 49%;
     top: 67%;
 
     font-size: 4rem;
-
   }
-
-
-  .hero-art::after {
-
-    left: 63%;
-    top: 24%;
-
-    font-size: 5.5rem;
-
-  }
-
-
-  .personality-flamingo {
-
-    left: 60%;
-
-  }
-
-
-  .flamingo-whisper {
-
-    left: 86%;
-
-  }
-
 
   .services-grid {
-
     grid-template-columns:
       repeat(2,1fr);
-
   }
-
 }
 
 
@@ -1853,7 +1440,6 @@ a {
 @media (max-width: 760px) {
 
   .site-header {
-
     min-height: 88px;
 
     display: flex;
@@ -1863,210 +1449,138 @@ a {
     padding:
       10px
       4%;
-
   }
-
 
   .site-header::after {
     display: none;
   }
 
-
   .header-logo {
-
     width: 120px;
     height: 70px;
-
   }
 
+  .header-logo img {
+    width: 110px;
+  }
 
   .main-nav {
     display: none;
   }
 
-
   .header-cta {
-
     padding:
       11px
       15px;
 
     font-size: .65rem;
-
   }
 
-
   .hero {
-
     min-height: auto;
 
     padding:
       55px
       5%
       65px;
-
   }
-
 
   .hero-serif {
-
     font-size:
       clamp(3.3rem, 16vw, 5rem);
-
   }
 
-
   .personality-strip {
-
     width: 100%;
 
     min-height: 90px;
 
     margin-left: 0;
-
   }
-
 
   .personality-text {
-
     font-size:
       clamp(3rem, 14vw, 4.5rem);
-
   }
 
-
   .personality-flamingo {
-
     width: 165px;
 
     left: 58%;
     top: -100px;
-
   }
-
 
   .flamingo-whisper {
     display: none;
   }
 
-
   .hero-should {
-
     font-size:
       clamp(3rem, 14vw, 4.8rem);
-
   }
-
 
   .hero-art {
-
     min-height: 500px;
-
   }
 
-
-  .hero-art::before {
-
-    width: 550px;
-    height: 460px;
-
+  .hero-splash-outer {
+    width: 560px;
   }
 
-
-  .paint-burst {
-
+  .hero-splash-inner {
     width: 450px;
-    height: 390px;
-
   }
 
-
-  .gold-ring {
-
-    width: 330px;
-    height: 330px;
+  .hero-badge {
+    width: 335px;
+    height: 335px;
 
     left: 57%;
-
   }
 
+  .hero-main-flamingo {
+    width: 310px;
 
-  .hero-logo-circle {
-
-    width: 420px;
-    height: 420px;
-
+    left: -2%;
+    top: 20%;
   }
 
+  .hero-logo-no {
+    left: 61%;
+    top: 22%;
 
-  .hero-logo-circle img {
-
-    width: 300px;
-
-    left: -5px;
-    top: 80px;
-
+    font-size: 4.2rem;
   }
 
+  .hero-beige-word {
+    width: 285px;
 
-  .hero-logo-circle::before {
-
-    width: 280px;
-    height: 150px;
-
-    left: 38%;
-    top: 36%;
-
+    left: 37%;
+    top: 40%;
   }
 
-
-  .hero-logo-circle::after {
-
-    left: 43%;
+  .hero-logo-websites {
+    left: 42%;
     top: 69%;
 
     font-size: 2.7rem;
-
   }
-
-
-  .hero-art::after {
-
-    left: 64%;
-    top: 23%;
-
-    font-size: 4.3rem;
-
-  }
-
 
   .work-grid {
-
     grid-template-columns: 1fr;
-
   }
-
 
   .work-card-drop {
-
     margin-top: 0;
-
   }
-
 
   .services-grid {
-
     grid-template-columns: 1fr;
-
   }
 
-
   .site-footer {
-
     flex-direction: column;
 
     align-items: flex-start;
-
   }
-
 }
