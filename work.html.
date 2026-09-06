@@ -12,15 +12,13 @@
 
   <meta
     name="description"
-    content="A portfolio of custom website projects from No Beige Websites, including financial services, gaming, veterans support and personal branding."
+    content="Website design case studies from No Beige Websites, including gaming, financial services, personal branding and veterans support projects."
   >
 
   <title>
     The Work | No Beige Websites
   </title>
 
-
-  <!-- GOOGLE FONTS -->
 
   <link
     rel="preconnect"
@@ -57,7 +55,6 @@
 
   <header class="site-header">
 
-
     <a
       href="index.html"
       class="header-logo"
@@ -70,7 +67,6 @@
       >
 
     </a>
-
 
 
     <nav class="main-nav">
@@ -105,7 +101,6 @@
     </nav>
 
 
-
     <a
       href="contact.html"
       class="header-cta"
@@ -113,7 +108,6 @@
       LET'S TALK
       <span>→</span>
     </a>
-
 
   </header>
 
@@ -124,14 +118,13 @@
 
 
     <!-- ======================================================
-         WORK HERO
+         HERO
          ====================================================== -->
 
     <section class="work-page-hero">
 
 
       <div class="work-page-hero-copy">
-
 
         <p class="work-page-eyebrow">
 
@@ -148,29 +141,27 @@
         </p>
 
 
-
         <h1>
 
-          SAME SKILL.
+          THE WORK.
 
           <span>
-            Different result.
+            And the thinking behind it.
           </span>
 
         </h1>
 
 
-
         <p class="work-page-intro">
 
           A financial planner, a gaming guild,
-          a veterans support organisation and a life coach
-          should not look like they were built from the same bloody template.
+          a veterans support organisation and a personal brand
+          have absolutely no reason to look like they came
+          off the same template conveyor belt.
 
           So they don't.
 
         </p>
-
 
       </div>
 
@@ -178,23 +169,21 @@
 
       <div class="work-page-hero-art">
 
-
         <div class="work-scribble-card">
 
           <strong>
-            THIS IS THE POINT.
+            THE RULE:
           </strong>
 
           <span>
-            Different business.
+            Business first.
           </span>
 
           <em>
-            Different website.
+            Website second.
           </em>
 
         </div>
-
 
       </div>
 
@@ -205,14 +194,13 @@
 
 
     <!-- ======================================================
-         PROJECT 01 — ROTATING CHAOS
+         ROTATING CHAOS
          ====================================================== -->
 
     <section class="project-case project-case-dark">
 
 
       <div class="project-case-head">
-
 
         <span class="project-number">
           01
@@ -221,97 +209,135 @@
 
         <div>
 
-
           <p class="project-kicker">
             GAMING ◆ COMMUNITY ◆ CUSTOM BUILD
           </p>
 
-
           <h2>
+
             ROTATING
+
             <span>
               CHAOS.
             </span>
+
           </h2>
 
-
         </div>
-
 
       </div>
 
 
 
-      <div class="project-case-grid">
+
+      <div class="project-story-grid">
 
 
-        <div class="project-case-copy">
+        <div class="project-story-copy">
+
+
+          <h3>
+            WHAT IS IT?
+          </h3>
+
+          <p>
+
+            Rotating Chaos is a Neverwinter gaming guild
+            built around community, teamwork,
+            dungeon content and an impressive ability
+            to turn organised gameplay into complete chaos.
+
+          </p>
 
 
           <h3>
             THE BRIEF
           </h3>
 
-
           <p>
 
-            Build a Neverwinter guild website that actually feels like
-            the guild instead of looking like a generic gaming template.
+            Build a guild website that feels like the people
+            actually using it.
 
-            It needed personality, fantasy styling, useful guides,
-            dungeon mechanics, community information and enough structure
-            to handle a frankly ridiculous amount of content.
+            It needed to house class builds,
+            dungeon mechanics,
+            guild information,
+            events and community content
+            without becoming one enormous wall of gaming information.
 
           </p>
 
+
+          <h3>
+            THE CHALLENGE
+          </h3>
+
+          <p>
+
+            There is a lot of information.
+
+            A lot.
+
+            The site needed enough fantasy personality
+            to belong in Neverwinter,
+            while still making it ridiculously easy
+            for members to find the guide or mechanic
+            they came looking for.
+
+          </p>
 
 
           <h3>
             THE APPROACH
           </h3>
 
-
           <p>
 
-            Strong fantasy styling, custom navigation, bold visual hierarchy
-            and reusable page systems for guides, builds and dungeon content.
+            A dark fantasy identity,
+            strong gold and cream contrast,
+            custom visual assets,
+            clear navigation and reusable layouts
+            for builds and dungeon mechanics.
 
-            The website had to feel immersive without becoming impossible to use.
+            The visual design creates atmosphere.
+            The structure stops the atmosphere becoming a bloody maze.
 
           </p>
 
 
+          <h3>
+            WHAT IT NEEDED TO DO
+          </h3>
+
+          <p>
+
+            Feel unmistakably Rotating Chaos,
+            support a growing library of useful content
+            and remain easy enough for guild members
+            to actually use mid-game.
+
+          </p>
+
 
           <div class="project-tags">
 
-            <span>
-              GAMING
-            </span>
-
-            <span>
-              COMMUNITY
-            </span>
-
-            <span>
-              CONTENT HEAVY
-            </span>
-
-            <span>
-              CUSTOM DESIGN
-            </span>
+            <span>GAMING</span>
+            <span>COMMUNITY</span>
+            <span>CONTENT HEAVY</span>
+            <span>CUSTOM DESIGN</span>
 
           </div>
-
 
         </div>
 
 
 
-        <div class="project-case-visual">
+
+        <div class="project-case-visual project-large-visual">
 
           <img
             src="images/rotating-chaos.png"
-            alt="Rotating Chaos website"
+            alt="Rotating Chaos Neverwinter guild website"
           >
 
         </div>
@@ -326,14 +352,13 @@
 
 
     <!-- ======================================================
-         PROJECT 02 — HFS
+         HOLDAWAY FINANCIAL SERVICES
          ====================================================== -->
 
     <section class="project-case project-case-light">
 
 
       <div class="project-case-head">
-
 
         <span class="project-number">
           02
@@ -342,114 +367,201 @@
 
         <div>
 
-
           <p class="project-kicker">
-            FINANCIAL SERVICES ◆ WEBSITE RESCUE
+            FINANCIAL SERVICES ◆ WEBSITE RESCUE ◆ REDESIGN
           </p>
 
-
           <h2>
+
             HOLDAWAY
+
             <span>
               FINANCIAL SERVICES.
             </span>
+
           </h2>
 
-
         </div>
-
 
       </div>
 
 
 
-      <div class="project-case-grid project-case-grid-reverse">
+
+      <div class="project-story-grid project-story-grid-reverse">
 
 
-        <div class="project-case-copy">
+        <div class="project-story-copy">
+
+
+          <h3>
+            WHAT IS IT?
+          </h3>
+
+          <p>
+
+            Holdaway Financial Services is a financial planning business
+            helping clients understand their options
+            and make informed decisions about their finances.
+
+          </p>
 
 
           <h3>
             THE BRIEF
           </h3>
 
-
           <p>
 
-            Rebuild an existing financial planning website
-            that no longer reflected the quality of the business.
+            The technical version?
 
-            The original site worked, but visually it felt dated,
-            generic and disconnected from the service being offered.
+            Redesign the existing website
+            so it better reflects the quality,
+            credibility and personality of the business.
 
           </p>
 
+
+          <p class="project-translation">
+
+            The less technical version:
+            “Please sort this website out.” 😂
+
+          </p>
+
+
+          <h3>
+            THE PROBLEM
+          </h3>
+
+          <p>
+
+            The existing site did its basic job,
+            but visually it felt dated,
+            generic and much more corporate
+            than the business itself.
+
+            The expertise was there.
+
+            The website simply wasn't representing it particularly well.
+
+          </p>
 
 
           <h3>
             THE APPROACH
           </h3>
 
-
           <p>
 
-            Keep the business professional and trustworthy,
-            but remove the stiff corporate feel.
+            Keep the credibility financial services needs,
+            without making visitors feel like
+            they've accidentally wandered into a bank's annual report.
 
-            Stronger structure, cleaner hierarchy,
-            more intentional typography and a more modern visual identity.
+            The rebuild introduced clearer structure,
+            stronger typography,
+            cleaner content hierarchy
+            and a warmer, more modern visual identity.
 
           </p>
 
 
+          <h3>
+            WHAT IT NEEDED TO DO
+          </h3>
+
+          <p>
+
+            Look established and trustworthy,
+            make financial information easier to navigate
+            and feel considerably more like
+            the actual people behind the business.
+
+          </p>
+
 
           <div class="project-tags">
 
-            <span>
-              REDESIGN
-            </span>
+            <span>WEBSITE RESCUE</span>
+            <span>FINANCIAL SERVICES</span>
+            <span>REDESIGN</span>
+            <span>STRUCTURE</span>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="holdaway-comparison">
+
+
+          <div class="comparison-heading">
 
             <span>
-              PROFESSIONAL
+              BEFORE
             </span>
 
-            <span>
-              WEBSITE RESCUE
-            </span>
+            <strong>
+              → 
+            </strong>
 
             <span>
-              FINANCIAL SERVICES
+              AFTER
             </span>
+
+          </div>
+
+
+
+
+          <div class="comparison-grid">
+
+
+            <figure class="comparison-card comparison-before">
+
+              <div class="comparison-label">
+                BEFORE
+              </div>
+
+              <img
+                src="images/holdaway-before.png"
+                alt="Holdaway Financial Services website before redesign"
+              >
+
+              <figcaption>
+                The existing website before the No Beige rescue mission.
+              </figcaption>
+
+            </figure>
+
+
+
+
+            <figure class="comparison-card comparison-after">
+
+              <div class="comparison-label">
+                AFTER
+              </div>
+
+              <img
+                src="images/holdaway-financial-services.png"
+                alt="Holdaway Financial Services website after redesign"
+              >
+
+              <figcaption>
+                Same business. Same expertise. Much better clothes.
+              </figcaption>
+
+            </figure>
+
 
           </div>
 
 
         </div>
 
-
-
-        <div class="project-case-visual">
-
-          <img
-            src="images/holdaway-financial-services.png"
-            alt="Holdaway Financial Services redesigned website"
-          >
-
-        </div>
-
-
-      </div>
-
-
-      <div class="project-before-note">
-
-        <strong>
-          SAME BUSINESS.
-        </strong>
-
-        <span>
-          MUCH BETTER CLOTHES.
-        </span>
 
       </div>
 
@@ -460,14 +572,13 @@
 
 
     <!-- ======================================================
-         PROJECT 03 — FLAMINGO RISE
+         FLAMINGO RISE
          ====================================================== -->
 
     <section class="project-case project-case-pink">
 
 
       <div class="project-case-head">
-
 
         <span class="project-number">
           03
@@ -476,95 +587,131 @@
 
         <div>
 
-
           <p class="project-kicker">
-            LIFE COACHING ◆ PERSONAL BRAND
+            PERSONAL BRAND ◆ STORYTELLING ◆ COACHING
           </p>
 
-
           <h2>
+
             FLAMINGO
+
             <span>
               RISE.
             </span>
+
           </h2>
 
-
         </div>
-
 
       </div>
 
 
 
-      <div class="project-case-grid">
+
+      <div class="project-story-grid">
 
 
-        <div class="project-case-copy">
+        <div class="project-story-copy">
+
+
+          <h3>
+            WHAT IS IT?
+          </h3>
+
+          <p>
+
+            Flamingo Rise is a personal,
+            emotionally-led brand centred around growth,
+            lived experience,
+            encouragement and connection.
+
+          </p>
 
 
           <h3>
             THE BRIEF
           </h3>
 
-
           <p>
 
-            Create a softer, emotionally-led website
-            centred around personal storytelling,
-            connection and an individual coaching presence.
+            Create something warm,
+            approachable and personal.
+
+            The site couldn't feel like
+            a generic coaching template
+            with a stock photograph of somebody
+            staring thoughtfully at a mountain.
 
           </p>
 
+
+          <h3>
+            THE CHALLENGE
+          </h3>
+
+          <p>
+
+            Personal brands need personality,
+            but they also need enough structure
+            to stop the website becoming a diary.
+
+            The story needed room to breathe
+            while still guiding visitors
+            towards the important information.
+
+          </p>
 
 
           <h3>
             THE APPROACH
           </h3>
 
-
           <p>
 
-            Warm colours, softer spacing, more emotional copy
-            and a completely different visual rhythm from the other projects.
+            Softer colours,
+            warmer typography,
+            personal storytelling
+            and more emotional visual pacing.
 
-            Still structured. Still clear.
-            Just intentionally more personal.
+            Completely different from Rotating Chaos
+            because it should be.
 
           </p>
 
 
+          <h3>
+            WHAT IT NEEDED TO DO
+          </h3>
+
+          <p>
+
+            Create trust,
+            make the person behind the brand visible
+            and give the business an online identity
+            that feels genuinely personal.
+
+          </p>
+
 
           <div class="project-tags">
 
-            <span>
-              LIFE COACHING
-            </span>
-
-            <span>
-              PERSONAL BRAND
-            </span>
-
-            <span>
-              STORYTELLING
-            </span>
-
-            <span>
-              SOFTER DESIGN
-            </span>
+            <span>PERSONAL BRAND</span>
+            <span>STORYTELLING</span>
+            <span>COACHING</span>
+            <span>SOFTER DESIGN</span>
 
           </div>
-
 
         </div>
 
 
 
-        <div class="project-case-visual">
+
+        <div class="project-case-visual project-large-visual">
 
           <img
             src="images/flamingo-rise.png"
-            alt="Flamingo Rise website"
+            alt="Flamingo Rise personal brand website"
           >
 
         </div>
@@ -579,14 +726,13 @@
 
 
     <!-- ======================================================
-         PROJECT 04 — VETERANS BACKBONE
+         VETERANS BACKBONE
          ====================================================== -->
 
     <section class="project-case project-case-teal">
 
 
       <div class="project-case-head">
-
 
         <span class="project-number">
           04
@@ -595,93 +741,130 @@
 
         <div>
 
-
           <p class="project-kicker">
-            VETERANS SUPPORT ◆ ORGANISATION
+            VETERANS SUPPORT ◆ INFORMATION ◆ ORGANISATION
           </p>
 
-
           <h2>
+
             VETERANS
+
             <span>
               BACKBONE.
             </span>
+
           </h2>
 
-
         </div>
-
 
       </div>
 
 
 
-      <div class="project-case-grid project-case-grid-reverse">
+
+      <div class="project-story-grid project-story-grid-reverse">
 
 
-        <div class="project-case-copy">
+        <div class="project-story-copy">
+
+
+          <h3>
+            WHAT IS IT?
+          </h3>
+
+          <p>
+
+            Veterans Backbone is a support organisation
+            designed around helping veterans
+            find practical support,
+            understand what is available
+            and reach the right people.
+
+          </p>
 
 
           <h3>
             THE BRIEF
           </h3>
 
-
           <p>
 
-            Build a support website that feels human,
-            direct and accessible without slipping into
-            the usual institutional charity look.
+            Build a support website
+            that feels human and direct
+            without looking like another
+            institutional charity website.
 
           </p>
 
+
+          <h3>
+            THE CHALLENGE
+          </h3>
+
+          <p>
+
+            Support websites can contain
+            a huge amount of information.
+
+            The site needed to make that information accessible
+            without overwhelming someone
+            who may already be looking for help
+            in difficult circumstances.
+
+          </p>
 
 
           <h3>
             THE APPROACH
           </h3>
 
-
           <p>
 
-            Clear navigation, strong information structure,
-            direct language and a visual identity that feels supportive
-            without becoming overly formal or clinical.
+            Clear navigation,
+            strong information hierarchy,
+            plain language
+            and a distinctive visual identity.
+
+            Serious where it needs to be.
+            Human everywhere else.
 
           </p>
 
 
+          <h3>
+            WHAT IT NEEDED TO DO
+          </h3>
+
+          <p>
+
+            Help people find information quickly,
+            explain what the organisation actually does
+            and create trust
+            without becoming cold,
+            clinical or unnecessarily formal.
+
+          </p>
+
 
           <div class="project-tags">
 
-            <span>
-              SUPPORT
-            </span>
-
-            <span>
-              ACCESSIBILITY
-            </span>
-
-            <span>
-              STRUCTURE
-            </span>
-
-            <span>
-              ORGANISATION
-            </span>
+            <span>SUPPORT</span>
+            <span>ACCESSIBILITY</span>
+            <span>STRUCTURE</span>
+            <span>INFORMATION</span>
 
           </div>
-
 
         </div>
 
 
 
-        <div class="project-case-visual">
+
+        <div class="project-case-visual project-large-visual">
 
           <img
             src="images/veterans-backbone.png"
-            alt="Veterans Backbone website"
+            alt="Veterans Backbone support organisation website"
           >
 
         </div>
@@ -696,7 +879,7 @@
 
 
     <!-- ======================================================
-         PORTFOLIO POINT
+         WHY THEY LOOK DIFFERENT
          ====================================================== -->
 
     <section class="work-point-section">
@@ -724,9 +907,11 @@
 
         The business decides the look.
         The audience decides the structure.
+        The content decides what needs space.
         The personality decides the feel.
 
-        That's why these websites don't look like siblings wearing matching outfits.
+        That's why these websites don't look
+        like siblings wearing matching outfits.
 
       </p>
 
@@ -737,23 +922,23 @@
 
 
     <!-- ======================================================
-         CTA
+         FINAL CTA
          ====================================================== -->
 
     <section class="work-bottom-cta">
 
 
       <p>
-        YOUR BUSINESS NEXT?
+        GOT YOUR OWN “SORT THIS SHIT OUT” PROJECT?
       </p>
 
 
       <h2>
 
-        GOOD.
+        EXCELLENT.
 
         <span>
-          LET'S MAKE IT DIFFERENT.
+          I LIKE THOSE.
         </span>
 
       </h2>
@@ -781,21 +966,17 @@
 
   <footer class="site-footer">
 
-
     <strong>
       NO BEIGE WEBSITES
     </strong>
-
 
     <span>
       BESPOKE WEBSITES WITH PERSONALITY
     </span>
 
-
     <span>
       © 2026 No Beige Websites
     </span>
-
 
   </footer>
 
