@@ -1,6 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   MASTER CSS — LOCKED HERO VERSION
+   MASTER CSS — FIXED HERO CANVAS VERSION
    ========================================================= */
 
 
@@ -67,13 +67,11 @@ a {
 
 .site-header {
   min-height: 132px;
-
   padding: 12px 4%;
 
   display: grid;
   grid-template-columns: 180px 1fr auto;
   align-items: center;
-
   gap: 34px;
 
   position: relative;
@@ -82,20 +80,15 @@ a {
   background: var(--cream);
 }
 
-
-/* little rough line under nav */
-
 .site-header::after {
   content: "";
 
   position: absolute;
-
   left: 29%;
   right: 6%;
   bottom: 12px;
 
   height: 2px;
-
   opacity: .7;
 
   background:
@@ -126,7 +119,6 @@ a {
 .header-logo img {
   width: 155px;
   height: auto;
-
   object-fit: contain;
 }
 
@@ -139,7 +131,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: clamp(22px, 2.8vw, 44px);
 }
 
@@ -157,7 +148,6 @@ a {
   content: "";
 
   position: absolute;
-
   left: 50%;
   bottom: -10px;
 
@@ -187,7 +177,6 @@ a {
   padding: 18px 31px;
 
   background: var(--pink);
-
   color: var(--white);
 
   font-size: .8rem;
@@ -222,19 +211,17 @@ a {
   min-height: 850px;
 
   padding:
-    48px
+    70px
     4.7%
-    60px;
+    70px;
 
   display: grid;
   grid-template-columns: 48% 52%;
-
   gap: 18px;
 
   align-items: center;
 
   position: relative;
-
   overflow: hidden;
 
   background:
@@ -253,8 +240,8 @@ a {
 
 .hero-copy-wrap {
   position: relative;
-
   z-index: 20;
+  padding-top: 12px;
 }
 
 .hero-eyebrow {
@@ -293,7 +280,6 @@ a {
   font-weight: 800;
 
   letter-spacing: -.055em;
-
   line-height: .78;
 }
 
@@ -326,7 +312,6 @@ a {
   align-items: center;
 
   position: relative;
-
   overflow: visible;
 
   background: var(--black);
@@ -345,14 +330,10 @@ a {
   transform: rotate(.6deg);
 }
 
-
-/* gold underline */
-
 .personality-strip::after {
   content: "";
 
   position: absolute;
-
   left: 8%;
   right: 14%;
   bottom: 8px;
@@ -374,7 +355,6 @@ a {
 
 .personality-text {
   position: relative;
-
   z-index: 8;
 
   color: var(--pink);
@@ -385,7 +365,6 @@ a {
     clamp(4rem, 5.5vw, 6rem);
 
   font-weight: 700;
-
   line-height: .82;
 
   white-space: nowrap;
@@ -394,7 +373,7 @@ a {
 
 /* =========================================================
    PEEKING FLAMINGO
-   LOCKED TO THE SIGN
+   LOCKED TO SIGN EDGE
    ========================================================= */
 
 .personality-flamingo {
@@ -403,21 +382,13 @@ a {
 
   position: absolute;
 
-  /*
-     IMPORTANT:
-     Anchored to RIGHT edge of sign instead of left:69%.
-     This stops the flamingo wandering when browser zoom changes.
-  */
-
   right: -58px;
-  top: -152px;
-
   left: auto;
+  top: -152px;
 
   z-index: 20;
 
   pointer-events: none;
-
   object-fit: contain;
 
   filter:
@@ -434,9 +405,7 @@ a {
     both;
 }
 
-
 @keyframes flamingoRise {
-
   0% {
     transform: translateY(110px);
     opacity: 0;
@@ -455,22 +424,20 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
-
 }
 
 
 /* =========================================================
    FLAMINGO WHISPER
-   ALSO LOCKED TO SIGN
+   LOCKED TO SIGN TOO
    ========================================================= */
 
 .flamingo-whisper {
   position: absolute;
 
   right: -165px;
-  top: -138px;
-
   left: auto;
+  top: -138px;
 
   width: 190px;
 
@@ -482,7 +449,6 @@ a {
 
   font-size: 1.65rem;
   font-weight: 700;
-
   line-height: .9;
 
   transform: rotate(-6deg);
@@ -506,7 +472,6 @@ a {
     clamp(4rem, 5.8vw, 6.2rem);
 
   font-weight: 700;
-
   line-height: .78;
 
   transform: rotate(-2deg);
@@ -557,7 +522,6 @@ a {
     rgba(255,255,255,.84);
 
   font-size: 1.05rem;
-
   line-height: 1.55;
 
   white-space: pre-line;
@@ -572,9 +536,7 @@ a {
   margin-top: 27px;
 
   display: flex;
-
   gap: 20px;
-
   flex-wrap: wrap;
 }
 
@@ -586,13 +548,11 @@ a {
     27px;
 
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
   font-size: .76rem;
   font-weight: 900;
-
   letter-spacing: .07em;
 
   transition: .2s ease;
@@ -600,7 +560,6 @@ a {
 
 .btn-pink {
   background: var(--pink);
-
   color: var(--white);
 
   box-shadow:
@@ -635,67 +594,71 @@ a {
 
 /* =========================================================
    HERO RIGHT
+   FIXED INTERNAL CANVAS
    ========================================================= */
 
 .hero-art {
-  min-height: 720px;
+  width: 760px;
+  height: 720px;
 
   position: relative;
 
+  justify-self: center;
+  align-self: center;
+
   isolation: isolate;
+
+  flex-shrink: 0;
 }
 
 
 /* =========================================================
-   PAINT SPLASHES
+   OUTER PAINT SPLASH
    ========================================================= */
-
-.hero-splash {
-  position: absolute;
-
-  pointer-events: none;
-}
-
-
-/* BIG OUTER SPLASH */
 
 .hero-splash-outer {
   width: 2600px;
   height: 1000px;
 
-  left: 54%;
-  top: 50%;
+  position: absolute;
+
+  left: -920px;
+  top: -140px;
 
   z-index: 1;
 
   object-fit: fill;
 
-  transform:
-    translate(-50%, -50%)
-    rotate(4deg);
+  transform: rotate(4deg);
 
   opacity: .9;
+
+  pointer-events: none;
 }
 
 
-/* INNER SPLASH */
+/* =========================================================
+   INNER PAINT SPLASH
+   ========================================================= */
 
 .hero-splash-inner {
   width: 1750px;
   height: 750px;
 
-  left: 54%;
-  top: 50%;
+  position: absolute;
+
+  left: -495px;
+  top: -15px;
 
   z-index: 2;
 
   object-fit: fill;
 
-  transform:
-    translate(-50%, -50%)
-    rotate(-6deg);
+  transform: rotate(-6deg);
 
   opacity: .98;
+
+  pointer-events: none;
 }
 
 
@@ -709,14 +672,10 @@ a {
 
   position: absolute;
 
-  left: 60%;
-  top: 49%;
+  left: 230px;
+  top: 110px;
 
   z-index: 3;
-
-  transform:
-    translate(-50%, -50%)
-    rotate(-3deg);
 
   background: var(--cream);
 
@@ -726,13 +685,12 @@ a {
 
   border-radius: 50%;
 
+  transform: rotate(-3deg);
+
   box-shadow:
     0 0 48px
     rgba(255,255,255,.05);
 }
-
-
-/* inner ring */
 
 .hero-badge-inner {
   position: absolute;
@@ -759,8 +717,8 @@ a {
 
   position: absolute;
 
-  left: -5%;
-  top: 11%;
+  left: -30px;
+  top: 80px;
 
   z-index: 6;
 
@@ -783,8 +741,8 @@ a {
 .hero-logo-no {
   position: absolute;
 
-  left: 60%;
-  top: 17%;
+  left: 455px;
+  top: 125px;
 
   z-index: 7;
 
@@ -792,11 +750,8 @@ a {
 
   font-family: var(--serif);
 
-  font-size:
-    clamp(5rem, 5.7vw, 6.4rem);
-
+  font-size: 6rem;
   font-weight: 700;
-
   line-height: 1;
 }
 
@@ -811,8 +766,8 @@ a {
 
   position: absolute;
 
-  left: 38%;
-  top: 37%;
+  left: 290px;
+  top: 275px;
 
   z-index: 9;
 
@@ -829,8 +784,8 @@ a {
 .hero-logo-websites {
   position: absolute;
 
-  left: 50%;
-  top: 66%;
+  left: 375px;
+  top: 470px;
 
   z-index: 8;
 
@@ -838,11 +793,8 @@ a {
 
   font-family: var(--serif);
 
-  font-size:
-    clamp(3.7rem, 4.2vw, 4.8rem);
-
+  font-size: 4.6rem;
   font-weight: 700;
-
   line-height: 1;
 
   white-space: nowrap;
@@ -884,7 +836,6 @@ a {
 
   font-size: .74rem;
   font-weight: 900;
-
   letter-spacing: .14em;
 
   animation:
@@ -895,7 +846,6 @@ a {
 }
 
 @keyframes ticker {
-
   from {
     transform: translateX(0);
   }
@@ -903,7 +853,6 @@ a {
   to {
     transform: translateX(-50%);
   }
-
 }
 
 
@@ -1024,9 +973,6 @@ a {
 
   transform: rotate(.8deg);
 }
-
-
-/* tape */
 
 .work-card::before {
   content: "";
@@ -1202,7 +1148,6 @@ a {
   display: flex;
 
   flex-direction: column;
-
   justify-content: space-between;
 
   border:
@@ -1279,7 +1224,6 @@ a {
     7%;
 
   display: flex;
-
   flex-direction: column;
 
   align-items: center;
@@ -1294,7 +1238,6 @@ a {
   color: var(--teal);
 
   font-weight: 900;
-
   letter-spacing: .16em;
 }
 
@@ -1358,7 +1301,7 @@ a {
 
 
 /* =========================================================
-   SMALL LAPTOP / TABLET
+   TABLET / SMALL LAPTOP
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -1396,61 +1339,69 @@ a {
     max-width: 700px;
   }
 
-  .hero-art {
-    min-height: 660px;
-  }
-
-
-  /* flamingo stays attached to sign */
-
   .personality-flamingo {
     right: -42px;
-    left: auto;
   }
 
   .flamingo-whisper {
     right: -145px;
-    left: auto;
   }
 
+  .hero-art {
+    width: 680px;
+    height: 650px;
+
+    min-height: 650px;
+  }
 
   .hero-splash-outer {
-    width: 830px;
+    width: 1500px;
+    height: 720px;
+
+    left: -400px;
+    top: -35px;
   }
 
   .hero-splash-inner {
-    width: 650px;
+    width: 1100px;
+    height: 580px;
+
+    left: -220px;
+    top: 30px;
   }
 
   .hero-badge {
     width: 460px;
     height: 460px;
 
-    left: 57%;
+    left: 185px;
+    top: 95px;
   }
 
   .hero-main-flamingo {
     width: 450px;
 
-    left: 4%;
-    top: 14%;
+    left: -15px;
+    top: 85px;
   }
 
   .hero-logo-no {
-    left: 60%;
-    top: 20%;
+    left: 395px;
+    top: 115px;
+
+    font-size: 5.2rem;
   }
 
   .hero-beige-word {
     width: 390px;
 
-    left: 40%;
-    top: 39%;
+    left: 250px;
+    top: 245px;
   }
 
   .hero-logo-websites {
-    left: 48%;
-    top: 67%;
+    left: 325px;
+    top: 435px;
 
     font-size: 4rem;
   }
@@ -1472,7 +1423,6 @@ a {
     min-height: 88px;
 
     display: flex;
-
     justify-content: space-between;
 
     padding:
@@ -1522,7 +1472,6 @@ a {
   .personality-strip {
     width: 100%;
     max-width: 100%;
-
     min-height: 90px;
 
     margin-left: 0;
@@ -1533,15 +1482,10 @@ a {
       clamp(3rem, 14vw, 4.5rem);
   }
 
-
-  /* mobile flamingo still grips same sign */
-
   .personality-flamingo {
     width: 170px;
 
     right: -20px;
-    left: auto;
-
     top: -105px;
   }
 
@@ -1549,51 +1493,52 @@ a {
     display: none;
   }
 
-
   .hero-should {
     font-size:
       clamp(3rem, 14vw, 4.8rem);
   }
 
   .hero-art {
+    width: 430px;
+    height: 500px;
+
     min-height: 500px;
   }
 
   .hero-splash-outer {
-    width: 560px;
-    height: auto;
+    width: 800px;
+    height: 430px;
 
-    left: 50%;
-
-    object-fit: contain;
+    left: -185px;
+    top: 30px;
   }
 
   .hero-splash-inner {
-    width: 440px;
-    height: auto;
+    width: 620px;
+    height: 360px;
 
-    left: 50%;
-
-    object-fit: contain;
+    left: -90px;
+    top: 70px;
   }
 
   .hero-badge {
     width: 325px;
     height: 325px;
 
-    left: 57%;
+    left: 90px;
+    top: 90px;
   }
 
   .hero-main-flamingo {
     width: 300px;
 
-    left: -2%;
-    top: 20%;
+    left: -25px;
+    top: 100px;
   }
 
   .hero-logo-no {
-    left: 60%;
-    top: 22%;
+    left: 260px;
+    top: 105px;
 
     font-size: 4rem;
   }
@@ -1601,13 +1546,13 @@ a {
   .hero-beige-word {
     width: 285px;
 
-    left: 36%;
-    top: 40%;
+    left: 150px;
+    top: 205px;
   }
 
   .hero-logo-websites {
-    left: 42%;
-    top: 69%;
+    left: 175px;
+    top: 345px;
 
     font-size: 2.65rem;
   }
@@ -1626,7 +1571,6 @@ a {
 
   .site-footer {
     flex-direction: column;
-
     align-items: flex-start;
   }
 }
