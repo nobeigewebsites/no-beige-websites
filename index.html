@@ -2,26 +2,50 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="No Beige Websites creates bold, personality-led websites for small businesses, organisations and people who refuse to blend in."
+    content="No Beige Websites creates bold, bespoke websites with actual personality. Design, build, website rescue and ongoing support."
   >
 
-  <title>No Beige Websites | Design. Build. Rescue.</title>
+  <title>No Beige Websites | Bespoke Websites With Personality</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- GOOGLE FONTS -->
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap"
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css">
+
+  <!-- MASTER CSS -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
+
 
 
 <body>
@@ -33,38 +57,73 @@
 
   <header class="site-header">
 
-    <a href="#home" class="brand">
-      <span class="brand-main">NO BEIGE</span>
-      <span class="brand-sub">WEBSITES.</span>
-    </a>
 
+    <!-- LOGO -->
+
+    <a
+      href="index.html"
+      class="brand"
+      aria-label="No Beige Websites home"
+    ></a>
+
+
+
+    <!-- POP-UP SUNGLASSES FLAMINGO -->
+
+    <div
+      class="header-flamingo"
+      aria-hidden="true"
+    ></div>
+
+
+
+    <!-- NAVIGATION -->
 
     <nav class="main-nav">
 
-      <a href="#services">
-        SERVICES
+      <a
+        href="index.html"
+        class="active"
+      >
+        HOME
       </a>
 
-      <a href="#work">
-        MY WORK
+      <a href="services.html">
+        WHAT I DO
       </a>
 
-      <a href="#pricing">
+      <a href="work.html">
+        THE WORK
+      </a>
+
+      <a href="pricing.html">
         PRICING
       </a>
 
-      <a href="#about">
-        ABOUT
+      <a href="about.html">
+        WHO THE HELL AM I?
+      </a>
+
+      <a href="contact.html">
+        CONTACT
       </a>
 
     </nav>
 
 
-    <a href="#contact" class="header-button">
-      START A PROJECT
+
+    <!-- HEADER CTA -->
+
+    <a
+      href="contact.html"
+      class="header-button"
+    >
+      LET'S TALK
     </a>
 
+
   </header>
+
 
 
 
@@ -75,202 +134,501 @@
          HERO
          ====================================================== -->
 
-    <section class="hero" id="home">
+    <section class="hero">
 
-      <div class="hero-splash hero-splash-pink"></div>
-      <div class="hero-splash hero-splash-orange"></div>
-      <div class="hero-splash hero-splash-teal"></div>
 
+      <!-- PAINT ELEMENTS -->
+
+      <div
+        class="hero-splash hero-splash-pink"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-splash hero-splash-orange"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-splash hero-splash-teal"
+        aria-hidden="true"
+      ></div>
+
+
+
+      <!-- HERO COPY -->
 
       <div class="hero-content">
 
+
         <p class="eyebrow">
-          DESIGN ◆ BUILD ◆ RESCUE
+          BESPOKE WEBSITES ◆ REAL BUSINESSES ◆ MORE PERSONALITY
         </p>
+
 
 
         <h1>
-          YOUR BUSINESS
-          <span>HAS PERSONALITY.</span>
-          YOUR WEBSITE
-          <span class="hero-highlight">SHOULD TOO.</span>
+
+          <span class="hero-line">
+            YOUR BUSINESS
+          </span>
+
+          <span class="hero-personality">
+            has personality.
+          </span>
+
+          <span class="hero-line">
+            YOUR WEBSITE
+          </span>
+
+          <span class="hero-highlight">
+            should too.
+          </span>
+
         </h1>
 
 
-        <p class="hero-copy">
-          Bold, distinctive websites for small businesses,
-          organisations and people who would rather not look
-          like everybody else.
+
+        <p class="hero-punchline">
+          Otherwise... what's the bloody point?
         </p>
+
+
+
+        <p class="hero-copy">
+
+          Websites designed around your business,
+          your audience and your personality.
+
+          No squeezing you into whatever template happens
+          to be fashionable this week.
+
+        </p>
+
 
 
         <div class="hero-actions">
 
-          <a href="#contact" class="button button-primary">
-            LET'S BUILD SOMETHING
+          <a
+            href="contact.html"
+            class="button button-primary"
+          >
+            LET'S CREATE SOMETHING DIFFERENT
           </a>
 
-          <a href="#work" class="button button-secondary">
-            SEE MY WORK
+
+          <a
+            href="work.html"
+            class="button button-secondary"
+          >
+            SEE THE WORK
           </a>
 
         </div>
 
+
       </div>
 
 
+
+      <!-- HERO BRAND ART -->
+
       <div class="hero-logo-wrap">
 
-        <div class="hero-logo-glow"></div>
+        <div
+          class="hero-logo-glow"
+          aria-hidden="true"
+        ></div>
 
         <img
           src="images/beigelogo.png"
-          alt="No Beige Websites flamingo logo"
+          alt="No Beige Websites colourful flamingo logo"
           class="hero-logo"
         >
 
       </div>
 
+
     </section>
 
 
 
+
     <!-- ======================================================
-         MARQUEE
+         MOVING BRAND STRIP
          ====================================================== -->
 
-    <section class="colour-strip">
+    <section
+      class="colour-strip"
+      aria-label="No Beige Websites values"
+    >
 
       <div class="colour-strip-track">
-        NO BORING TEMPLATES ◆ NO CORPORATE WAFFLE ◆ NO BEIGE WEBSITES ◆
-        DESIGN ◆ BUILD ◆ RESCUE ◆ NO BORING TEMPLATES ◆ NO CORPORATE WAFFLE ◆
+
+        NO BORING TEMPLATES ◆
+        NO BEIGE THINKING ◆
+        REAL BUSINESSES ◆
+        DIFFERENT WEBSITES ◆
+        DESIGN ◆
+        BUILD ◆
+        RESCUE ◆
+        SUPPORT ◆
+        NO BORING TEMPLATES ◆
+        NO BEIGE THINKING ◆
+        REAL BUSINESSES ◆
+        DIFFERENT WEBSITES ◆
+        DESIGN ◆
+        BUILD ◆
+        RESCUE ◆
+        SUPPORT ◆
+
       </div>
 
     </section>
 
 
 
+
     <!-- ======================================================
-         INTRO
+         PORTFOLIO
          ====================================================== -->
 
-    <section class="intro-section">
+    <section
+      class="work-section"
+      id="work"
+    >
 
-      <div class="intro-heading">
+
+      <div class="section-heading section-heading-light">
+
 
         <p class="section-label">
-          NOT YOUR AVERAGE WEB DESIGNER
+          THE WORK
         </p>
+
 
         <h2>
-          Beige is a colour.
-          <span>It shouldn't be a business strategy.</span>
+          DIFFERENT BUSINESSES.
+          <span>
+            Different websites.
+          </span>
         </h2>
 
+
+        <p>
+
+          A financial planner, a gaming guild,
+          a veterans support organisation and a life coach
+          have absolutely no reason to own the same website.
+
+          So they don't.
+
+        </p>
+
+
       </div>
 
 
-      <div class="intro-copy">
 
-        <p>
-          Your website should actually feel like your business.
-          Not a generic template with your logo shoved in the corner
-          and three stock photos of people pointing at laptops.
-        </p>
+      <div class="work-grid">
 
-        <p>
-          No Beige Websites creates websites with personality,
-          clarity and enough visual punch to make people remember
-          who the hell you are.
-        </p>
+
+        <!-- ================================================
+             ROTATING CHAOS
+             ================================================ -->
+
+        <article class="work-card">
+
+
+          <div class="work-card-top work-card-chaos">
+
+            <span>
+              GAMING ◆ COMMUNITY
+            </span>
+
+          </div>
+
+
+          <div class="work-card-content">
+
+            <h3>
+              Rotating Chaos
+            </h3>
+
+
+            <p>
+
+              A custom Neverwinter guild website built around
+              community, fantasy and a frankly ridiculous amount
+              of useful content.
+
+            </p>
+
+
+            <span class="work-status">
+              CUSTOM BUILD ◆ GAMING
+            </span>
+
+          </div>
+
+
+        </article>
+
+
+
+
+        <!-- ================================================
+             HOLDAWAY FINANCIAL SERVICES
+             ================================================ -->
+
+        <article class="work-card">
+
+
+          <div class="work-card-top work-card-hfs">
+
+            <span>
+              FINANCIAL SERVICES ◆ WEBSITE RESCUE
+            </span>
+
+          </div>
+
+
+          <div class="work-card-content">
+
+            <h3>
+              Holdaway Financial Services
+            </h3>
+
+
+            <p>
+
+              A complete rebuild of an existing financial
+              planning website.
+
+              Same business. Same expertise.
+              A website that finally looks like it.
+
+            </p>
+
+
+            <span class="work-status">
+              REDESIGN ◆ WEBSITE RESCUE
+            </span>
+
+          </div>
+
+
+        </article>
+
+
+
+
+        <!-- ================================================
+             FLAMINGO RISE
+             ================================================ -->
+
+        <article class="work-card">
+
+
+          <div class="work-card-top work-card-flamingo">
+
+            <span>
+              LIFE COACHING ◆ PERSONAL BRAND
+            </span>
+
+          </div>
+
+
+          <div class="work-card-content">
+
+            <h3>
+              Flamingo Rise
+            </h3>
+
+
+            <p>
+
+              A softer, emotionally led website built around
+              personal storytelling, warmth and a completely
+              different kind of online presence.
+
+            </p>
+
+
+            <span class="work-status">
+              DESIGN ◆ PERSONAL BRAND
+            </span>
+
+          </div>
+
+
+        </article>
+
+
+
+
+        <!-- ================================================
+             VETERANS BACKBONE
+             ================================================ -->
+
+        <article class="work-card">
+
+
+          <div class="work-card-top work-card-veterans">
+
+            <span>
+              VETERANS SUPPORT ◆ ORGANISATION
+            </span>
+
+          </div>
+
+
+          <div class="work-card-content">
+
+            <h3>
+              Veterans Backbone
+            </h3>
+
+
+            <p>
+
+              A support website designed to feel human,
+              direct and accessible without turning into
+              another institutional charity website.
+
+            </p>
+
+
+            <span class="work-status">
+              STRUCTURE ◆ DESIGN ◆ SUPPORT
+            </span>
+
+          </div>
+
+
+        </article>
+
 
       </div>
+
 
     </section>
 
 
 
+
     <!-- ======================================================
-         SERVICES
+         WHAT I DO
          ====================================================== -->
 
-    <section class="services-section" id="services">
+    <section
+      class="services-section"
+      id="services"
+    >
+
 
       <div class="section-heading">
+
 
         <p class="section-label">
           WHAT I DO
         </p>
 
+
         <h2>
-          Three ways to escape the beige.
+          MORE THAN JUST
+          <span>
+            pretty pages.
+          </span>
         </h2>
 
+
       </div>
+
 
 
       <div class="services-grid">
 
 
-        <article class="service-card service-pink">
+        <!-- DESIGN -->
+
+        <article class="service-card">
 
           <span class="service-number">
             01
           </span>
 
           <h3>
-            DESIGN
+            Design
           </h3>
 
           <p>
-            A strong visual direction built around your business,
-            your personality and the people you're trying to reach.
+
+            Visual direction built around your business,
+            your audience and how you actually want people
+            to feel when they land on your website.
+
           </p>
 
           <span class="service-tag">
-            LOOK LIKE YOU
+            WITH PURPOSE
           </span>
 
         </article>
 
 
 
-        <article class="service-card service-orange">
+
+        <!-- BUILD -->
+
+        <article class="service-card">
 
           <span class="service-number">
             02
           </span>
 
           <h3>
-            BUILD
+            Build
           </h3>
 
           <p>
-            Responsive websites that look bloody good on desktop,
-            tablet and mobile — without unnecessary tech nonsense.
+
+            Responsive, functional websites built properly
+            for desktop, tablet and mobile.
+
+            Looking good is useless if the bastard doesn't work.
+
           </p>
 
           <span class="service-tag">
-            WORK BEAUTIFULLY
+            BUILT TO LAST
           </span>
 
         </article>
 
 
 
-        <article class="service-card service-teal">
+
+        <!-- RESCUE -->
+
+        <article class="service-card">
 
           <span class="service-number">
             03
           </span>
 
           <h3>
-            RESCUE
+            Rescue
           </h3>
 
           <p>
-            Already have a website that's awkward, outdated,
-            confusing or just plain ugly? Give it here.
+
+            Already have a website that's outdated,
+            awkward, confusing or simply doesn't feel
+            like your business anymore?
+
+            Give it here.
+
           </p>
 
           <span class="service-tag">
@@ -280,283 +638,32 @@
         </article>
 
 
-      </div>
 
-    </section>
 
+        <!-- SUPPORT -->
 
+        <article class="service-card">
 
-    <!-- ======================================================
-         PORTFOLIO
-         ====================================================== -->
-
-    <section class="work-section" id="work">
-
-      <div class="section-heading section-heading-light">
-
-        <p class="section-label">
-          SELECTED WORK
-        </p>
-
-        <h2>
-          Things I've already built.
-        </h2>
-
-        <p>
-          Different audiences. Different styles.
-          Same refusal to make everything look identical.
-        </p>
-
-      </div>
-
-
-      <div class="work-grid">
-
-
-        <article class="work-card">
-
-          <div class="work-card-top work-card-chaos">
-            <span>GAMING ◆ COMMUNITY</span>
-          </div>
-
-          <div class="work-card-content">
-
-            <h3>
-              Rotating Chaos
-            </h3>
-
-            <p>
-              A large custom gaming community website with build guides,
-              dungeon mechanics, events, merch and a strong fantasy identity.
-            </p>
-
-            <span class="work-status">
-              CUSTOM BUILD
-            </span>
-
-          </div>
-
-        </article>
-
-
-
-        <article class="work-card">
-
-          <div class="work-card-top work-card-flamingo">
-            <span>BRAND ◆ COMMUNITY</span>
-          </div>
-
-          <div class="work-card-content">
-
-            <h3>
-              Flamingo Rise
-            </h3>
-
-            <p>
-              A personality-led website shaped around strong branding,
-              clear messaging and an identity that doesn't disappear
-              into the internet wallpaper.
-            </p>
-
-            <span class="work-status">
-              DESIGN + BUILD
-            </span>
-
-          </div>
-
-        </article>
-
-
-
-        <article class="work-card">
-
-          <div class="work-card-top work-card-veterans">
-            <span>SUPPORT ◆ ORGANISATION</span>
-          </div>
-
-          <div class="work-card-content">
-
-            <h3>
-              Veterans Backbone
-            </h3>
-
-            <p>
-              A structured support organisation website balancing
-              serious information, accessibility and a distinctive voice.
-            </p>
-
-            <span class="work-status">
-              STRUCTURE + DESIGN
-            </span>
-
-          </div>
-
-        </article>
-
-
-
-        <article class="work-card">
-
-          <div class="work-card-top work-card-johnny">
-            <span>BESPOKE ◆ PERSONALITY</span>
-          </div>
-
-          <div class="work-card-content">
-
-            <h3>
-              Johnny's Project
-            </h3>
-
-            <p>
-              A separate bespoke build with its own identity,
-              audience and visual direction.
-            </p>
-
-            <span class="work-status">
-              BESPOKE BUILD
-            </span>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ======================================================
-         PRICING
-         ====================================================== -->
-
-    <section class="pricing-section" id="pricing">
-
-      <div class="section-heading">
-
-        <p class="section-label">
-          STARTING PRICES
-        </p>
-
-        <h2>
-          Clear pricing.
-          <span>No mysterious agency maths.</span>
-        </h2>
-
-      </div>
-
-
-      <div class="pricing-grid">
-
-
-        <article class="price-card">
-
-          <p class="price-type">
-            ONE PAGE
-          </p>
-
-          <h3>
-            Not Beige Basics
-          </h3>
-
-          <div class="price">
-            £395
-          </div>
-
-          <p>
-            Perfect for a new business, freelancer or simple service
-            that needs one strong scrolling website.
-          </p>
-
-          <a href="#contact">
-            ENQUIRE →
-          </a>
-
-        </article>
-
-
-
-        <article class="price-card">
-
-          <p class="price-type">
-            UP TO 3 PAGES
-          </p>
-
-          <h3>
-            Little Bit Loud
-          </h3>
-
-          <div class="price">
-            £695
-          </div>
-
-          <p>
-            A compact website with room to tell people who you are,
-            what you do and why they should care.
-          </p>
-
-          <a href="#contact">
-            ENQUIRE →
-          </a>
-
-        </article>
-
-
-
-        <article class="price-card featured-price">
-
-          <span class="popular-tag">
-            MOST POPULAR
+          <span class="service-number">
+            04
           </span>
 
-          <p class="price-type">
-            UP TO 5 PAGES
-          </p>
-
           <h3>
-            Full Personality
+            Support
           </h3>
 
-          <div class="price">
-            £995
-          </div>
-
           <p>
-            A proper business website with enough space to build
-            your brand, explain your services and show off your work.
+
+            Launching the website doesn't mean I disappear
+            dramatically into the sunset.
+
+            Ongoing help is available when you need it.
+
           </p>
 
-          <a href="#contact">
-            ENQUIRE →
-          </a>
-
-        </article>
-
-
-
-        <article class="price-card">
-
-          <p class="price-type">
-            6–10+ PAGES
-          </p>
-
-          <h3>
-            Big & Bold
-          </h3>
-
-          <div class="price">
-            FROM £1,495
-          </div>
-
-          <p>
-            Larger sites, more complex content and custom functionality.
-            Quoted properly rather than pulled from thin air.
-          </p>
-
-          <a href="#contact">
-            LET'S TALK →
-          </a>
+          <span class="service-tag">
+            AFTER LAUNCH
+          </span>
 
         </article>
 
@@ -564,166 +671,71 @@
       </div>
 
 
-      <p class="pricing-note">
-        Domain names, hosting, platform subscriptions and third-party
-        services are paid separately by the client.
-      </p>
-
     </section>
 
 
 
-    <!-- ======================================================
-         WEBSITE RESCUE
-         ====================================================== -->
-
-    <section class="rescue-section">
-
-      <div class="rescue-art">
-
-        <span class="rescue-small">
-          CURRENT WEBSITE:
-        </span>
-
-        <span class="rescue-big">
-          OH DEAR.
-        </span>
-
-        <span class="rescue-arrow">
-          ↓
-        </span>
-
-        <span class="rescue-fix">
-          GIVE IT HERE.
-        </span>
-
-      </div>
-
-
-      <div class="rescue-content">
-
-        <p class="section-label">
-          WEBSITE RESCUE
-        </p>
-
-        <h2>
-          It might not need replacing.
-          It might just need unfucking.
-        </h2>
-
-        <p>
-          If your existing website is outdated, cluttered,
-          confusing or embarrassing enough that you avoid giving
-          people the link, I can redesign and rebuild what's already there.
-        </p>
-
-        <p class="rescue-price">
-          Website Rescue from <strong>£350</strong>
-        </p>
-
-        <a href="#contact" class="button button-dark">
-          RESCUE MY WEBSITE
-        </a>
-
-      </div>
-
-    </section>
-
-
 
     <!-- ======================================================
-         ABOUT
+         FINAL CTA
          ====================================================== -->
 
-    <section class="about-section" id="about">
-
-      <div class="about-logo">
-
-        <img
-          src="images/beigelogo.png"
-          alt="No Beige Websites logo"
-        >
-
-      </div>
-
-
-      <div class="about-content">
-
-        <p class="section-label">
-          HELLO. I'M SHELLEY.
-        </p>
-
-        <h2>
-          I build websites that actually have a pulse.
-        </h2>
-
-        <p>
-          No Beige Websites started after I realised I'd somehow
-          built a growing collection of websites for real projects
-          and was apparently quite bloody good at it.
-        </p>
-
-        <p>
-          I care about how a website feels as much as how it works.
-          Strong identity, clear structure, thoughtful details and
-          absolutely no requirement to sound like a corporate brochure.
-        </p>
-
-        <p class="about-location">
-          Based near Evesham, Worcestershire.
-          Working with clients anywhere in the UK.
-        </p>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ======================================================
-         CONTACT
-         ====================================================== -->
-
-    <section class="contact-section" id="contact">
-
-      <div class="contact-splash contact-pink"></div>
-      <div class="contact-splash contact-teal"></div>
+    <section
+      class="contact-section"
+      id="contact"
+    >
 
 
       <div class="contact-content">
 
+
         <p class="section-label">
-          GOT A PROJECT?
+          YOUR TURN
         </p>
 
+
         <h2>
-          Let's make the internet
-          <span>less beige.</span>
+
+          READY TO DITCH
+          <span>
+            the beige?
+          </span>
+
         </h2>
 
+
         <p>
-          Tell me what you're building, fixing or rescuing.
-          I'll tell you what I think it needs and what it'll cost.
+
+          Tell me what you're building,
+          rebuilding or rescuing.
+
+          We'll work out what it actually needs
+          and build something that feels like you.
+
         </p>
 
 
         <a
-  href="mailto:nobeigewebsites@gmail.com"
-  class="button button-primary contact-button"
->
-  START A CONVERSATION
-</a>
+          href="mailto:nobeigewebsites@gmail.com"
+          class="button button-primary contact-button"
+        >
+          LET'S TALK
+        </a>
+
 
         <p class="contact-small">
-          No jargon. No hard sell. No beige.
+          Ideas, questions and mildly tragic existing websites welcome.
         </p>
 
+
       </div>
+
 
     </section>
 
 
   </main>
+
 
 
 
@@ -733,22 +745,31 @@
 
   <footer class="site-footer">
 
+
     <div class="footer-brand">
 
-      <span>NO BEIGE</span>
-      <strong>WEBSITES.</strong>
+      <span>
+        NO BEIGE
+      </span>
+
+      <strong>
+        WEBSITES.
+      </strong>
 
     </div>
 
 
+
     <p>
-      Your business has personality. Your website should too.
+      Bespoke websites with actual personality.
     </p>
+
 
 
     <p class="footer-copy">
       © 2026 No Beige Websites
     </p>
+
 
   </footer>
 
