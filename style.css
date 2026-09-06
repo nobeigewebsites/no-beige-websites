@@ -2461,4 +2461,750 @@ a {
       5%;
   }
 
+   /* =========================================================
+   WORK PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   WORK HERO
+   ========================================================= */
+
+.work-page-hero {
+  min-height: 650px;
+
+  padding:
+    90px
+    6%;
+
+  display: grid;
+
+  grid-template-columns:
+    60%
+    40%;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      #222222,
+      #111111 48%,
+      #080808 100%
+    );
+
+  color: var(--white);
+}
+
+
+.work-page-hero-copy {
+  max-width: 850px;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+
+.work-page-eyebrow {
+  margin-bottom: 22px;
+
+  color: var(--orange);
+
+  font-size: .78rem;
+  font-weight: 900;
+
+  letter-spacing: .15em;
+}
+
+
+.work-page-eyebrow span {
+  margin: 0 5px;
+}
+
+
+.work-page-hero h1 {
+  font-family: var(--serif);
+
+  font-size:
+    clamp(4rem, 7vw, 7.3rem);
+
+  line-height: .84;
+
+  letter-spacing: -.05em;
+}
+
+
+.work-page-hero h1 span {
+  display: block;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+
+  transform: rotate(-2deg);
+}
+
+
+.work-page-intro {
+  max-width: 680px;
+
+  margin-top: 30px;
+
+  color:
+    rgba(255,255,255,.82);
+
+  font-size: 1.08rem;
+
+  white-space: pre-line;
+}
+
+
+/* =========================================================
+   WORK HERO ART
+   ========================================================= */
+
+.work-page-hero-art {
+  min-height: 450px;
+
+  position: relative;
+}
+
+
+.work-scribble-card {
+  width: 330px;
+
+  padding:
+    38px
+    30px;
+
+  position: absolute;
+
+  right: 10%;
+  top: 22%;
+
+  background: var(--cream);
+
+  color: var(--black);
+
+  border:
+    4px solid
+    var(--gold);
+
+  border-radius:
+    28px 17px 33px 20px;
+
+  box-shadow:
+    14px 14px 0
+    var(--pink);
+
+  transform: rotate(5deg);
+}
+
+
+.work-scribble-card strong {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: .85rem;
+
+  letter-spacing: .12em;
+}
+
+
+.work-scribble-card span {
+  display: block;
+
+  font-family: var(--serif);
+
+  font-size: 2.1rem;
+
+  line-height: 1;
+}
+
+
+.work-scribble-card em {
+  display: block;
+
+  margin-top: 10px;
+
+  color: var(--teal);
+
+  font-family: var(--hand);
+
+  font-size: 2.8rem;
+
+  font-style: normal;
+
+  line-height: .9;
+}
+
+
+/* =========================================================
+   PROJECT CASES
+   ========================================================= */
+
+.project-case {
+  padding:
+    100px
+    7%
+    115px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+.project-case-dark {
+  background: var(--black);
+
+  color: var(--white);
+}
+
+
+.project-case-light {
+  background: var(--cream);
+
+  color: var(--black);
+}
+
+
+.project-case-pink {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8ed 0%,
+      #ffd4e5 100%
+    );
+
+  color: var(--black);
+}
+
+
+.project-case-teal {
+  background:
+    linear-gradient(
+      135deg,
+      #e8fbfb 0%,
+      #fff8ed 72%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================================
+   CASE HEADINGS
+   ========================================================= */
+
+.project-case-head {
+  margin-bottom: 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    100px
+    minmax(0,1fr);
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+
+.project-number {
+  color: var(--pink);
+
+  font-family: var(--hand);
+
+  font-size: 5rem;
+
+  line-height: 1;
+}
+
+
+.project-kicker {
+  margin-bottom: 12px;
+
+  color: var(--orange);
+
+  font-size: .75rem;
+  font-weight: 900;
+
+  letter-spacing: .14em;
+}
+
+
+.project-case h2 {
+  font-family: var(--serif);
+
+  font-size:
+    clamp(3.3rem, 6vw, 6rem);
+
+  line-height: .87;
+}
+
+
+.project-case h2 span {
+  display: block;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+}
+
+
+/* =========================================================
+   PROJECT GRID
+   ========================================================= */
+
+.project-case-grid {
+  display: grid;
+
+  grid-template-columns:
+    45%
+    55%;
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+.project-case-grid-reverse {
+  grid-template-columns:
+    55%
+    45%;
+}
+
+
+.project-case-grid-reverse .project-case-copy {
+  order: 2;
+}
+
+
+.project-case-grid-reverse .project-case-visual {
+  order: 1;
+}
+
+
+/* =========================================================
+   CASE COPY
+   ========================================================= */
+
+.project-case-copy h3 {
+  margin:
+    0
+    0
+    10px;
+
+  color: var(--pink);
+
+  font-size: .8rem;
+  font-weight: 900;
+
+  letter-spacing: .13em;
+}
+
+
+.project-case-copy h3:not(:first-child) {
+  margin-top: 34px;
+}
+
+
+.project-case-copy p {
+  max-width: 620px;
+
+  font-size: 1.05rem;
+
+  line-height: 1.65;
+
+  white-space: pre-line;
+}
+
+
+.project-case-dark .project-case-copy p {
+  color:
+    rgba(255,255,255,.8);
+}
+
+
+/* =========================================================
+   PROJECT TAGS
+   ========================================================= */
+
+.project-tags {
+  margin-top: 35px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+
+.project-tags span {
+  padding:
+    10px
+    14px;
+
+  border:
+    2px solid
+    currentColor;
+
+  border-radius: 999px;
+
+  font-size: .67rem;
+  font-weight: 900;
+
+  letter-spacing: .09em;
+}
+
+
+.project-tags span:nth-child(2n) {
+  color: var(--pink);
+}
+
+
+.project-tags span:nth-child(3n) {
+  color: var(--teal);
+}
+
+
+/* =========================================================
+   PROJECT VISUAL
+   ========================================================= */
+
+.project-case-visual {
+  position: relative;
+
+  padding: 18px;
+
+  background: var(--paper);
+
+  border:
+    3px solid
+    var(--black);
+
+  border-radius:
+    28px 17px 34px 20px;
+
+  box-shadow:
+    13px 14px 0
+    rgba(13,13,13,.16);
+
+  transform: rotate(1deg);
+}
+
+
+.project-case-dark .project-case-visual {
+  border-color: var(--white);
+
+  box-shadow:
+    13px 14px 0
+    var(--pink);
+}
+
+
+.project-case-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 110px;
+  height: 28px;
+
+  left: 50%;
+  top: -12px;
+
+  background:
+    rgba(229,205,153,.85);
+
+  transform:
+    translateX(-50%)
+    rotate(-4deg);
+
+  z-index: 10;
+}
+
+
+.project-case-visual img {
+  width: 100%;
+  height: auto;
+
+  border-radius:
+    18px 12px 22px 14px;
+}
+
+
+/* =========================================================
+   HFS LITTLE NOTE
+   ========================================================= */
+
+.project-before-note {
+  width: fit-content;
+
+  margin:
+    70px
+    0
+    0
+    auto;
+
+  padding:
+    18px
+    24px;
+
+  background: var(--black);
+
+  color: var(--white);
+
+  transform: rotate(-2deg);
+
+  box-shadow:
+    8px 8px 0
+    var(--teal);
+}
+
+
+.project-before-note strong,
+.project-before-note span {
+  display: block;
+}
+
+
+.project-before-note span {
+  margin-top: 5px;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+
+  font-size: 1.8rem;
+}
+
+
+/* =========================================================
+   WORK POINT SECTION
+   ========================================================= */
+
+.work-point-section {
+  padding:
+    110px
+    7%;
+
+  background: var(--black);
+
+  color: var(--white);
+
+  text-align: center;
+}
+
+
+.work-point-section > p:first-child {
+  color: var(--orange);
+
+  font-size: .76rem;
+  font-weight: 900;
+
+  letter-spacing: .15em;
+}
+
+
+.work-point-section h2 {
+  margin-top: 12px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(3.3rem, 6vw, 6.1rem);
+
+  line-height: .88;
+}
+
+
+.work-point-section h2 span {
+  display: block;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+}
+
+
+.work-point-copy {
+  max-width: 720px;
+
+  margin:
+    30px
+    auto
+    0;
+
+  color:
+    rgba(255,255,255,.8);
+
+  font-size: 1.05rem;
+
+  white-space: pre-line;
+}
+
+
+/* =========================================================
+   WORK CTA
+   ========================================================= */
+
+.work-bottom-cta {
+  min-height: 500px;
+
+  padding:
+    100px
+    7%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: var(--cream);
+}
+
+
+.work-bottom-cta > p {
+  color: var(--teal);
+
+  font-size: .76rem;
+  font-weight: 900;
+
+  letter-spacing: .15em;
+}
+
+
+.work-bottom-cta h2 {
+  margin:
+    12px
+    0
+    32px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(3.2rem, 6vw, 6rem);
+
+  line-height: .88;
+}
+
+
+.work-bottom-cta h2 span {
+  display: block;
+
+  color: var(--pink);
+
+  font-family: var(--hand);
+}
+
+
+/* =========================================================
+   WORK RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .work-page-hero {
+    grid-template-columns: 1fr;
+  }
+
+
+  .work-page-hero-art {
+    min-height: 400px;
+  }
+
+
+  .project-case-grid,
+  .project-case-grid-reverse {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+
+  .project-case-grid-reverse .project-case-copy,
+  .project-case-grid-reverse .project-case-visual {
+    order: initial;
+  }
+
+
+  .project-case-head {
+    grid-template-columns:
+      75px
+      1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .work-page-hero {
+    padding:
+      70px
+      5%;
+  }
+
+
+  .work-page-hero h1 {
+    font-size: 4rem;
+  }
+
+
+  .work-scribble-card {
+    width: 280px;
+
+    right: 5%;
+  }
+
+
+  .project-case {
+    padding:
+      75px
+      5%
+      85px;
+  }
+
+
+  .project-case-head {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .project-number {
+    font-size: 3.5rem;
+  }
+
+
+  .project-case-visual {
+    padding: 12px;
+  }
+
+
+  .work-point-section,
+  .work-bottom-cta {
+    padding:
+      80px
+      5%;
+  }
+
+}
 }}
