@@ -6805,4 +6805,68 @@ a {
   }
 
 }
-}}
+
+
+/* =========================================================
+   COOKIE POLICY EXTRAS
+   ========================================================= */
+
+.cookie-type-grid {
+  margin:
+    25px
+    0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0,1fr));
+
+  gap: 16px;
+}
+
+
+.cookie-type-grid > div {
+  padding:
+    22px;
+
+  background: var(--cream);
+
+  border:
+    2px solid
+    var(--black);
+
+  border-radius:
+    21px 13px 25px 15px;
+}
+
+
+.cookie-type-grid strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--pink);
+
+  font-size: .76rem;
+
+  letter-spacing: .1em;
+}
+
+
+.cookie-type-grid p {
+  margin-bottom: 10px;
+}
+
+
+.cookie-type-grid p:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 650px) {
+
+  .cookie-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+}}}
