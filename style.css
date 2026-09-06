@@ -622,14 +622,16 @@ a {
 
   position: absolute;
 
-  left: -920px;
-  top: -140px;
+  left: 54%;
+  top: 50%;
 
   z-index: 1;
 
   object-fit: fill;
 
-  transform: rotate(4deg);
+  transform:
+    translate(-50%, -50%)
+    rotate(4deg);
 
   opacity: .9;
 
@@ -647,14 +649,16 @@ a {
 
   position: absolute;
 
-  left: -495px;
-  top: -15px;
+  left: 54%;
+  top: 50%;
 
   z-index: 2;
 
   object-fit: fill;
 
-  transform: rotate(-6deg);
+  transform:
+    translate(-50%, -50%)
+    rotate(-6deg);
 
   opacity: .98;
 
