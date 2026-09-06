@@ -1,6 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   MASTER CSS — FINAL ASSET VERSION
+   MASTER CSS — LOCKED HERO VERSION
    ========================================================= */
 
 
@@ -253,6 +253,7 @@ a {
 
 .hero-copy-wrap {
   position: relative;
+
   z-index: 20;
 }
 
@@ -306,9 +307,9 @@ a {
    ========================================================= */
 
 .personality-strip {
+  width: 730px;
+  max-width: 104%;
   min-height: 118px;
-
-  width: min(730px, 104%);
 
   margin:
     18px
@@ -373,6 +374,7 @@ a {
 
 .personality-text {
   position: relative;
+
   z-index: 8;
 
   color: var(--pink);
@@ -392,6 +394,7 @@ a {
 
 /* =========================================================
    PEEKING FLAMINGO
+   LOCKED TO THE SIGN
    ========================================================= */
 
 .personality-flamingo {
@@ -400,8 +403,16 @@ a {
 
   position: absolute;
 
-  left: 69%;
+  /*
+     IMPORTANT:
+     Anchored to RIGHT edge of sign instead of left:69%.
+     This stops the flamingo wandering when browser zoom changes.
+  */
+
+  right: -58px;
   top: -152px;
+
+  left: auto;
 
   z-index: 20;
 
@@ -423,7 +434,9 @@ a {
     both;
 }
 
+
 @keyframes flamingoRise {
+
   0% {
     transform: translateY(110px);
     opacity: 0;
@@ -442,18 +455,22 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 
 /* =========================================================
    FLAMINGO WHISPER
+   ALSO LOCKED TO SIGN
    ========================================================= */
 
 .flamingo-whisper {
   position: absolute;
 
-  left: 96%;
+  right: -165px;
   top: -138px;
+
+  left: auto;
 
   width: 190px;
 
@@ -630,16 +647,17 @@ a {
 
 
 /* =========================================================
-   BIG OUTER SPLASH
+   PAINT SPLASHES
    ========================================================= */
 
 .hero-splash {
   position: absolute;
 
   pointer-events: none;
-
-  object-fit: contain;
 }
+
+
+/* BIG OUTER SPLASH */
 
 .hero-splash-outer {
   width: 2600px;
@@ -659,9 +677,8 @@ a {
   opacity: .9;
 }
 
-/* =========================================================
-   INNER SPLASH
-   ========================================================= */
+
+/* INNER SPLASH */
 
 .hero-splash-inner {
   width: 1750px;
@@ -878,6 +895,7 @@ a {
 }
 
 @keyframes ticker {
+
   from {
     transform: translateX(0);
   }
@@ -885,6 +903,7 @@ a {
   to {
     transform: translateX(-50%);
   }
+
 }
 
 
@@ -1381,16 +1400,26 @@ a {
     min-height: 660px;
   }
 
+
+  /* flamingo stays attached to sign */
+
+  .personality-flamingo {
+    right: -42px;
+    left: auto;
+  }
+
+  .flamingo-whisper {
+    right: -145px;
+    left: auto;
+  }
+
+
   .hero-splash-outer {
     width: 830px;
-
-    left: 50%;
   }
 
   .hero-splash-inner {
     width: 650px;
-
-    left: 50%;
   }
 
   .hero-badge {
@@ -1492,6 +1521,7 @@ a {
 
   .personality-strip {
     width: 100%;
+    max-width: 100%;
 
     min-height: 90px;
 
@@ -1503,16 +1533,22 @@ a {
       clamp(3rem, 14vw, 4.5rem);
   }
 
+
+  /* mobile flamingo still grips same sign */
+
   .personality-flamingo {
     width: 170px;
 
-    left: 58%;
+    right: -20px;
+    left: auto;
+
     top: -105px;
   }
 
   .flamingo-whisper {
     display: none;
   }
+
 
   .hero-should {
     font-size:
@@ -1525,14 +1561,20 @@ a {
 
   .hero-splash-outer {
     width: 560px;
+    height: auto;
 
     left: 50%;
+
+    object-fit: contain;
   }
 
   .hero-splash-inner {
     width: 440px;
+    height: auto;
 
     left: 50%;
+
+    object-fit: contain;
   }
 
   .hero-badge {
