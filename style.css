@@ -1,6 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
-   MASTER CSS — CLEAN HTML VERSION
+   MASTER CSS — FINAL ASSET VERSION
    ========================================================= */
 
 
@@ -83,7 +83,7 @@ a {
 }
 
 
-/* rough sketchy line under nav */
+/* little rough line under nav */
 
 .site-header::after {
   content: "";
@@ -132,7 +132,7 @@ a {
 
 
 /* =========================================================
-   NAVIGATION
+   NAV
    ========================================================= */
 
 .main-nav {
@@ -148,7 +148,6 @@ a {
 
   font-size: .77rem;
   font-weight: 900;
-
   letter-spacing: .055em;
 
   white-space: nowrap;
@@ -193,7 +192,6 @@ a {
 
   font-size: .8rem;
   font-weight: 900;
-
   letter-spacing: .08em;
 
   box-shadow: 9px 9px 0 var(--black);
@@ -229,9 +227,9 @@ a {
     60px;
 
   display: grid;
-  grid-template-columns: 47% 53%;
+  grid-template-columns: 48% 52%;
 
-  gap: 20px;
+  gap: 18px;
 
   align-items: center;
 
@@ -255,7 +253,6 @@ a {
 
 .hero-copy-wrap {
   position: relative;
-
   z-index: 20;
 }
 
@@ -266,7 +263,6 @@ a {
 
   font-size: .78rem;
   font-weight: 900;
-
   letter-spacing: .15em;
 
   text-transform: uppercase;
@@ -278,7 +274,7 @@ a {
 
 
 /* =========================================================
-   LARGE HERO TYPE
+   MAIN HERO WORDING
    ========================================================= */
 
 .hero-title {
@@ -291,13 +287,13 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(4rem, 6.3vw, 7rem);
+    clamp(4rem, 6.1vw, 6.9rem);
 
   font-weight: 800;
 
   letter-spacing: -.055em;
 
-  line-height: .77;
+  line-height: .78;
 }
 
 .hero-website {
@@ -310,19 +306,19 @@ a {
    ========================================================= */
 
 .personality-strip {
-  min-height: 120px;
+  min-height: 118px;
 
-  width: min(750px, 105%);
+  width: min(730px, 104%);
 
   margin:
     18px
     0
     20px
-    -12px;
+    -10px;
 
   padding:
     14px
-    25px
+    28px
     15px;
 
   display: flex;
@@ -339,17 +335,17 @@ a {
     rgba(255,255,255,.92);
 
   border-radius:
-    14px 24px 12px 19px;
+    15px 24px 13px 20px;
 
   box-shadow:
     inset 0 0 0 1px
     rgba(255,255,255,.13);
 
-  transform: rotate(.7deg);
+  transform: rotate(.6deg);
 }
 
 
-/* gold hand-drawn underline */
+/* gold underline */
 
 .personality-strip::after {
   content: "";
@@ -372,14 +368,11 @@ a {
 
 
 /* =========================================================
-   PERSONALITY TEXT
+   HAS PERSONALITY
    ========================================================= */
 
 .personality-text {
-  display: block;
-
   position: relative;
-
   z-index: 8;
 
   color: var(--pink);
@@ -387,7 +380,7 @@ a {
   font-family: var(--hand);
 
   font-size:
-    clamp(4rem, 5.8vw, 6.4rem);
+    clamp(4rem, 5.5vw, 6rem);
 
   font-weight: 700;
 
@@ -402,13 +395,13 @@ a {
    ========================================================= */
 
 .personality-flamingo {
-  width: 260px;
+  width: 265px;
   height: auto;
 
   position: absolute;
 
-  left: 66%;
-  top: -150px;
+  left: 69%;
+  top: -152px;
 
   z-index: 20;
 
@@ -432,12 +425,12 @@ a {
 
 @keyframes flamingoRise {
   0% {
-    transform: translateY(120px);
+    transform: translateY(110px);
     opacity: 0;
   }
 
   65% {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
     opacity: 1;
   }
 
@@ -453,16 +446,16 @@ a {
 
 
 /* =========================================================
-   LITTLE FLAMINGO WHISPER
+   FLAMINGO WHISPER
    ========================================================= */
 
 .flamingo-whisper {
   position: absolute;
 
-  left: 91%;
-  top: -145px;
+  left: 96%;
+  top: -138px;
 
-  width: 195px;
+  width: 190px;
 
   z-index: 21;
 
@@ -470,7 +463,7 @@ a {
 
   font-family: var(--hand);
 
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 700;
 
   line-height: .9;
@@ -493,7 +486,7 @@ a {
   font-family: var(--hand);
 
   font-size:
-    clamp(4rem, 5.9vw, 6.4rem);
+    clamp(4rem, 5.8vw, 6.2rem);
 
   font-weight: 700;
 
@@ -519,7 +512,7 @@ a {
 
 
 /* =========================================================
-   HERO PUNCHLINE + COPY
+   HERO COPY
    ========================================================= */
 
 .hero-punchline {
@@ -533,7 +526,7 @@ a {
   font-family: var(--hand);
 
   font-size:
-    clamp(1.9rem, 2.5vw, 2.6rem);
+    clamp(1.9rem, 2.4vw, 2.5rem);
 
   line-height: 1;
 
@@ -541,7 +534,7 @@ a {
 }
 
 .hero-description {
-  max-width: 580px;
+  max-width: 575px;
 
   color:
     rgba(255,255,255,.84);
@@ -625,7 +618,6 @@ a {
 
 /* =========================================================
    HERO RIGHT
-   EVERY PIECE IS NOW REAL HTML
    ========================================================= */
 
 .hero-art {
@@ -638,7 +630,7 @@ a {
 
 
 /* =========================================================
-   OUTER PAINT SPLASH
+   BIG OUTER SPLASH
    ========================================================= */
 
 .hero-splash {
@@ -650,36 +642,36 @@ a {
 }
 
 .hero-splash-outer {
-  width: 970px;
+  width: 980px;
 
-  left: 50%;
+  left: 54%;
   top: 50%;
 
   z-index: 1;
 
   transform:
     translate(-50%, -50%)
-    rotate(2deg);
+    rotate(4deg);
 
-  opacity: .94;
+  opacity: .9;
 }
 
 
 /* =========================================================
-   INNER PAINT SPLASH
+   INNER SPLASH
    ========================================================= */
 
 .hero-splash-inner {
-  width: 760px;
+  width: 730px;
 
-  left: 50%;
+  left: 54%;
   top: 50%;
 
   z-index: 2;
 
   transform:
     translate(-50%, -50%)
-    rotate(-5deg);
+    rotate(-6deg);
 
   opacity: .98;
 }
@@ -690,12 +682,12 @@ a {
    ========================================================= */
 
 .hero-badge {
-  width: 520px;
-  height: 520px;
+  width: 500px;
+  height: 500px;
 
   position: absolute;
 
-  left: 59%;
+  left: 60%;
   top: 49%;
 
   z-index: 3;
@@ -713,12 +705,12 @@ a {
   border-radius: 50%;
 
   box-shadow:
-    0 0 45px
+    0 0 48px
     rgba(255,255,255,.05);
 }
 
 
-/* second gold hand drawn ring */
+/* inner ring */
 
 .hero-badge-inner {
   position: absolute;
@@ -740,13 +732,13 @@ a {
    ========================================================= */
 
 .hero-main-flamingo {
-  width: 510px;
+  width: 500px;
   height: auto;
 
   position: absolute;
 
-  left: -2%;
-  top: 12%;
+  left: -5%;
+  top: 11%;
 
   z-index: 6;
 
@@ -764,14 +756,13 @@ a {
 
 /* =========================================================
    NO
-   ONE. SINGLE. NO. 😂
    ========================================================= */
 
 .hero-logo-no {
   position: absolute;
 
-  left: 61%;
-  top: 19%;
+  left: 60%;
+  top: 17%;
 
   z-index: 7;
 
@@ -780,7 +771,7 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(5rem, 6vw, 6.8rem);
+    clamp(5rem, 5.7vw, 6.4rem);
 
   font-weight: 700;
 
@@ -789,17 +780,17 @@ a {
 
 
 /* =========================================================
-   PAINTED BEIGE WORD
+   BEIGE WORD
    ========================================================= */
 
 .hero-beige-word {
-  width: 430px;
+  width: 455px;
   height: auto;
 
   position: absolute;
 
-  left: 41%;
-  top: 38%;
+  left: 38%;
+  top: 37%;
 
   z-index: 9;
 
@@ -816,7 +807,7 @@ a {
 .hero-logo-websites {
   position: absolute;
 
-  left: 48%;
+  left: 50%;
   top: 66%;
 
   z-index: 8;
@@ -826,7 +817,7 @@ a {
   font-family: var(--serif);
 
   font-size:
-    clamp(3.8rem, 4.5vw, 5rem);
+    clamp(3.7rem, 4.2vw, 4.8rem);
 
   font-weight: 700;
 
@@ -1382,29 +1373,33 @@ a {
   }
 
   .hero-art {
-    min-height: 670px;
+    min-height: 660px;
   }
 
   .hero-splash-outer {
-    width: 850px;
+    width: 830px;
+
+    left: 50%;
   }
 
   .hero-splash-inner {
-    width: 680px;
+    width: 650px;
+
+    left: 50%;
   }
 
   .hero-badge {
-    width: 480px;
-    height: 480px;
+    width: 460px;
+    height: 460px;
 
-    left: 58%;
+    left: 57%;
   }
 
   .hero-main-flamingo {
-    width: 470px;
+    width: 450px;
 
-    left: 7%;
-    top: 13%;
+    left: 4%;
+    top: 14%;
   }
 
   .hero-logo-no {
@@ -1415,12 +1410,12 @@ a {
   .hero-beige-word {
     width: 390px;
 
-    left: 42%;
+    left: 40%;
     top: 39%;
   }
 
   .hero-logo-websites {
-    left: 49%;
+    left: 48%;
     top: 67%;
 
     font-size: 4rem;
@@ -1504,10 +1499,10 @@ a {
   }
 
   .personality-flamingo {
-    width: 165px;
+    width: 170px;
 
     left: 58%;
-    top: -100px;
+    top: -105px;
   }
 
   .flamingo-whisper {
@@ -1525,37 +1520,41 @@ a {
 
   .hero-splash-outer {
     width: 560px;
+
+    left: 50%;
   }
 
   .hero-splash-inner {
-    width: 450px;
+    width: 440px;
+
+    left: 50%;
   }
 
   .hero-badge {
-    width: 335px;
-    height: 335px;
+    width: 325px;
+    height: 325px;
 
     left: 57%;
   }
 
   .hero-main-flamingo {
-    width: 310px;
+    width: 300px;
 
     left: -2%;
     top: 20%;
   }
 
   .hero-logo-no {
-    left: 61%;
+    left: 60%;
     top: 22%;
 
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 
   .hero-beige-word {
     width: 285px;
 
-    left: 37%;
+    left: 36%;
     top: 40%;
   }
 
@@ -1563,7 +1562,7 @@ a {
     left: 42%;
     top: 69%;
 
-    font-size: 2.7rem;
+    font-size: 2.65rem;
   }
 
   .work-grid {
