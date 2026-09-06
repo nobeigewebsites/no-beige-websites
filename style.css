@@ -1,12 +1,6 @@
 /* =========================================================
    NO BEIGE WEBSITES
    MASTER HOMEPAGE
-   Beautifully put together. Slightly badly behaved.
-   ========================================================= */
-
-
-/* =========================================================
-   BRAND
    ========================================================= */
 
 :root {
@@ -41,11 +35,9 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
 
@@ -59,12 +51,10 @@ body {
 
 }
 
-
 img {
   display: block;
   max-width: 100%;
 }
-
 
 a {
   color: inherit;
@@ -104,7 +94,7 @@ a {
 }
 
 
-/* SCRIBBLY LOWER LINE */
+/* scribbly lower line */
 
 .site-header::after {
 
@@ -144,20 +134,16 @@ a {
 
   display: block;
 
-  position: relative;
-
-  z-index: 5;
-
   background:
     url("images/logono.png")
     center
     / contain
     no-repeat;
 
+  position: relative;
+  z-index: 5;
+
 }
-
-
-/* hide old image still sitting inside the HTML */
 
 .header-logo img {
   display: none;
@@ -181,7 +167,6 @@ a {
 
 }
 
-
 .main-nav a {
 
   position: relative;
@@ -195,7 +180,6 @@ a {
   white-space: nowrap;
 
 }
-
 
 .main-nav a::after {
 
@@ -218,7 +202,6 @@ a {
   transition: .2s ease;
 
 }
-
 
 .main-nav a:hover::after,
 .main-nav a.active::after {
@@ -258,13 +241,9 @@ a {
 
 }
 
-
 .header-cta span {
-
   margin-left: 12px;
-
 }
-
 
 .header-cta:hover {
 
@@ -328,7 +307,6 @@ a {
 
 }
 
-
 .hero-eyebrow {
 
   margin-bottom: 24px;
@@ -343,7 +321,6 @@ a {
 
 }
 
-
 .hero-eyebrow span {
 
   color: var(--orange);
@@ -354,13 +331,11 @@ a {
 
 }
 
-
 .hero-title {
 
   color: var(--white);
 
 }
-
 
 .hero-serif {
 
@@ -379,11 +354,8 @@ a {
 
 }
 
-
 .hero-website {
-
   margin-top: 15px;
-
 }
 
 
@@ -434,9 +406,6 @@ a {
 
 }
 
-
-/* GOLD SCRIBBLE INSIDE BOX */
-
 .personality-strip::after {
 
   content: "";
@@ -457,9 +426,6 @@ a {
     80% 10% 70% 15%;
 
 }
-
-
-/* HANDWRITTEN PINK TEXT */
 
 .personality-text {
 
@@ -491,12 +457,12 @@ a {
 
 .personality-flamingo {
 
-  width: 245px;
+  width: 250px;
   height: auto;
 
   position: absolute;
 
-  left: 65%;
+  left: 66%;
   top: -174px;
 
   z-index: 20;
@@ -519,7 +485,6 @@ a {
     both;
 
 }
-
 
 @keyframes flamingoRise {
 
@@ -559,14 +524,11 @@ a {
 
 }
 
-
-/* LITTLE FLAMINGO COMMENT */
-
 .flamingo-whisper {
 
   position: absolute;
 
-  left: 91%;
+  left: 90%;
   top: -165px;
 
   width: 190px;
@@ -611,7 +573,6 @@ a {
 
 }
 
-
 .hero-should::after {
 
   content: "";
@@ -652,7 +613,6 @@ a {
 
 }
 
-
 .hero-description {
 
   max-width: 590px;
@@ -683,7 +643,6 @@ a {
 
 }
 
-
 .btn {
 
   min-height: 53px;
@@ -708,7 +667,6 @@ a {
 
 }
 
-
 .btn-pink {
 
   background: var(--pink);
@@ -723,7 +681,6 @@ a {
 
 }
 
-
 .btn-pink:hover {
 
   transform:
@@ -735,7 +692,6 @@ a {
     var(--orange);
 
 }
-
 
 .btn-outline {
 
@@ -768,6 +724,8 @@ a {
 
   justify-content: center;
 
+  isolation: isolate;
+
 }
 
 
@@ -779,17 +737,17 @@ a {
 
   position: absolute;
 
-  width: 820px;
-  height: 820px;
+  width: 930px;
+  height: 930px;
 
   left: 50%;
   top: 50%;
 
-  z-index: 1;
-
   transform:
     translate(-50%, -50%)
     rotate(-5deg);
+
+  z-index: 1;
 
   background:
     url("images/paint-splash.png")
@@ -797,17 +755,10 @@ a {
     / contain
     no-repeat;
 
-  opacity: .96;
+  opacity: 1;
 
   pointer-events: none;
 
-}
-
-
-/* no fake CSS sunburst */
-
-.paint-burst::after {
-  display: none;
 }
 
 
@@ -819,23 +770,27 @@ a {
 
   position: absolute;
 
-  width: 575px;
-  height: 575px;
+  width: 600px;
+  height: 600px;
 
-  border:
-    6px solid
-    rgba(201,152,59,.82);
+  left: 50%;
+  top: 50%;
 
-  border-radius: 50%;
-
-  transform: rotate(-9deg);
+  transform:
+    translate(-50%, -50%)
+    rotate(-9deg);
 
   z-index: 2;
 
+  border:
+    6px solid
+    rgba(201,152,59,.88);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
 }
-
-
-/* subtle second imperfect ring */
 
 .gold-ring::after {
 
@@ -847,7 +802,7 @@ a {
 
   border:
     2px solid
-    rgba(201,152,59,.46);
+    rgba(201,152,59,.45);
 
   border-radius: 50%;
 
@@ -857,21 +812,17 @@ a {
 
 
 /* =========================================================
-   HERO LOGO — TRANSPARENT VERSION
+   HERO LOGO
    ========================================================= */
 
 .hero-logo-circle {
 
-  width: 650px;
-  height: 650px;
+  width: 620px;
+  height: 620px;
 
   position: relative;
 
-  z-index: 4;
-
-  overflow: visible;
-
-  border-radius: 0;
+  z-index: 3;
 
   background:
     url("images/logono.png")
@@ -879,12 +830,15 @@ a {
     / contain
     no-repeat;
 
+  overflow: visible;
+
+  border-radius: 0;
+
   box-shadow: none;
 
+  pointer-events: none;
+
 }
-
-
-/* hide old beigelogo image in HTML */
 
 .hero-logo-circle img {
   display: none;
@@ -917,7 +871,6 @@ a {
 
 }
 
-
 .brand-strip-track {
 
   width: max-content;
@@ -937,7 +890,6 @@ a {
     infinite;
 
 }
-
 
 @keyframes ticker {
 
@@ -967,7 +919,6 @@ a {
 
 }
 
-
 .work-heading {
 
   max-width: 940px;
@@ -975,7 +926,6 @@ a {
   margin-bottom: 60px;
 
 }
-
 
 .pink-note {
 
@@ -999,7 +949,6 @@ a {
 
 }
 
-
 .work-heading h2 {
 
   font-family: var(--serif);
@@ -1010,7 +959,6 @@ a {
   line-height: .9;
 
 }
-
 
 .work-heading h2 span {
 
@@ -1023,7 +971,6 @@ a {
   transform: rotate(-1deg);
 
 }
-
 
 .work-heading p {
 
@@ -1051,7 +998,6 @@ a {
 
 }
 
-
 .work-card {
 
   position: relative;
@@ -1077,7 +1023,6 @@ a {
 
 }
 
-
 .work-card:hover {
 
   transform:
@@ -1090,7 +1035,6 @@ a {
 
 }
 
-
 .work-card-drop {
 
   margin-top: 35px;
@@ -1098,7 +1042,6 @@ a {
   transform: rotate(.8deg);
 
 }
-
 
 .work-card::before {
 
@@ -1123,7 +1066,6 @@ a {
 
 }
 
-
 .work-card-image-wrap {
 
   height: 270px;
@@ -1133,7 +1075,6 @@ a {
   overflow: hidden;
 
 }
-
 
 .work-card-image-wrap img {
 
@@ -1147,13 +1088,11 @@ a {
 
 }
 
-
 .work-card:hover .work-card-image-wrap img {
 
   transform: scale(1.035);
 
 }
-
 
 .work-card-image-wrap::after {
 
@@ -1170,7 +1109,6 @@ a {
     );
 
 }
-
 
 .work-card-image-wrap span {
 
@@ -1198,7 +1136,6 @@ a {
 
 }
 
-
 .work-card-copy {
 
   padding:
@@ -1207,7 +1144,6 @@ a {
     34px;
 
 }
-
 
 .work-card-copy h3 {
 
@@ -1219,13 +1155,11 @@ a {
 
 }
 
-
 .work-card-copy p {
 
   color: #3a3a3a;
 
 }
-
 
 .work-card-copy small {
 
@@ -1260,13 +1194,11 @@ a {
 
 }
 
-
 .services-heading {
 
   margin-bottom: 55px;
 
 }
-
 
 .services-heading > p {
 
@@ -1277,7 +1209,6 @@ a {
   letter-spacing: .15em;
 
 }
-
 
 .services-heading h2 {
 
@@ -1290,7 +1221,6 @@ a {
 
 }
 
-
 .services-heading h2 span {
 
   color: var(--pink);
@@ -1298,7 +1228,6 @@ a {
   font-family: var(--hand);
 
 }
-
 
 .services-grid {
 
@@ -1310,7 +1239,6 @@ a {
   gap: 18px;
 
 }
-
 
 .service-card {
 
@@ -1340,7 +1268,6 @@ a {
 
 }
 
-
 .service-card:hover {
 
   transform: translateY(-6px);
@@ -1349,7 +1276,6 @@ a {
     rgba(255,255,255,.07);
 
 }
-
 
 .service-number {
 
@@ -1361,7 +1287,6 @@ a {
 
 }
 
-
 .service-card h3 {
 
   font-family: var(--hand);
@@ -1370,26 +1295,21 @@ a {
 
 }
 
-
 .service-card:nth-child(1) h3 {
   color: var(--pink);
 }
-
 
 .service-card:nth-child(2) h3 {
   color: var(--orange);
 }
 
-
 .service-card:nth-child(3) h3 {
   color: var(--teal);
 }
 
-
 .service-card:nth-child(4) h3 {
   color: var(--pink);
 }
-
 
 .service-card p {
 
@@ -1397,7 +1317,6 @@ a {
     rgba(255,255,255,.75);
 
 }
-
 
 .service-card small {
 
@@ -1434,7 +1353,6 @@ a {
 
 }
 
-
 .home-cta > p:first-child {
 
   color: var(--teal);
@@ -1444,7 +1362,6 @@ a {
   letter-spacing: .16em;
 
 }
-
 
 .home-cta h2 {
 
@@ -1457,7 +1374,6 @@ a {
 
 }
 
-
 .home-cta h2 span {
 
   display: block;
@@ -1467,7 +1383,6 @@ a {
   font-family: var(--hand);
 
 }
-
 
 .home-cta-copy {
 
@@ -1504,13 +1419,11 @@ a {
 
 }
 
-
 .site-footer strong {
 
   font-family: var(--serif);
 
 }
-
 
 .site-footer span {
 
@@ -1535,7 +1448,6 @@ a {
 
   }
 
-
   .header-logo {
 
     width: 150px;
@@ -1543,13 +1455,11 @@ a {
 
   }
 
-
   .main-nav {
 
     gap: 17px;
 
   }
-
 
   .main-nav a {
 
@@ -1557,13 +1467,11 @@ a {
 
   }
 
-
   .hero {
 
     grid-template-columns: 1fr;
 
   }
-
 
   .hero-art {
 
@@ -1571,13 +1479,11 @@ a {
 
   }
 
-
   .personality-flamingo {
 
     left: 63%;
 
   }
-
 
   .flamingo-whisper {
 
@@ -1585,14 +1491,12 @@ a {
 
   }
 
-
   .paint-burst {
 
-    width: 720px;
-    height: 720px;
+    width: 760px;
+    height: 760px;
 
   }
-
 
   .hero-logo-circle {
 
@@ -1601,14 +1505,12 @@ a {
 
   }
 
-
   .gold-ring {
 
-    width: 525px;
-    height: 525px;
+    width: 540px;
+    height: 540px;
 
   }
-
 
   .services-grid {
 
@@ -1640,11 +1542,9 @@ a {
 
   }
 
-
   .site-header::after {
     display: none;
   }
-
 
   .header-logo {
 
@@ -1653,11 +1553,9 @@ a {
 
   }
 
-
   .main-nav {
     display: none;
   }
-
 
   .header-cta {
 
@@ -1668,7 +1566,6 @@ a {
     font-size: .65rem;
 
   }
-
 
   .hero {
 
@@ -1681,14 +1578,12 @@ a {
 
   }
 
-
   .hero-serif {
 
     font-size:
       clamp(3.3rem, 16vw, 5rem);
 
   }
-
 
   .personality-strip {
 
@@ -1700,14 +1595,12 @@ a {
 
   }
 
-
   .personality-text {
 
     font-size:
       clamp(3rem, 14vw, 4.5rem);
 
   }
-
 
   .personality-flamingo {
 
@@ -1718,11 +1611,9 @@ a {
 
   }
 
-
   .flamingo-whisper {
     display: none;
   }
-
 
   .hero-should {
 
@@ -1731,29 +1622,25 @@ a {
 
   }
 
-
   .hero-art {
 
     min-height: 440px;
 
   }
 
-
   .paint-burst {
 
-    width: 480px;
-    height: 480px;
+    width: 500px;
+    height: 500px;
 
   }
-
 
   .gold-ring {
 
-    width: 345px;
-    height: 345px;
+    width: 350px;
+    height: 350px;
 
   }
-
 
   .hero-logo-circle {
 
@@ -1762,13 +1649,11 @@ a {
 
   }
 
-
   .work-grid {
 
     grid-template-columns: 1fr;
 
   }
-
 
   .work-card-drop {
 
@@ -1776,13 +1661,11 @@ a {
 
   }
 
-
   .services-grid {
 
     grid-template-columns: 1fr;
 
   }
-
 
   .site-footer {
 
