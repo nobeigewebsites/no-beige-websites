@@ -494,19 +494,113 @@
 
 
 
-        <div class="holdaway-comparison">
+      <div class="holdaway-comparison">
 
 
-          <div class="comparison-heading">
+  <div class="comparison-heading">
 
-            <span>
-              BEFORE
-            </span>
+    <span>
+      BEFORE
+    </span>
 
-            <strong>
-              → 
-            </strong>
+    <strong>
+      →
+    </strong>
 
+    <span>
+      AFTER
+    </span>
+
+  </div>
+
+
+  <div class="holdaway-before-after-grid">
+
+
+    <!-- BEFORE -->
+
+    <div class="comparison-side">
+
+      <div class="comparison-side-title comparison-side-title-before">
+        BEFORE
+      </div>
+
+
+      <figure class="comparison-card comparison-before">
+
+        <img
+          src="images/holdaway-before-1.png"
+          alt="Holdaway Financial Services old homepage before redesign"
+        >
+
+        <figcaption>
+          The original homepage.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="comparison-card comparison-before">
+
+        <img
+          src="images/holdaway-before-2.png"
+          alt="Holdaway Financial Services old Who I Can Help page before redesign"
+        >
+
+        <figcaption>
+          The original Who I Can Help page.
+        </figcaption>
+
+      </figure>
+
+    </div>
+
+
+
+
+    <!-- AFTER -->
+
+    <div class="comparison-side">
+
+      <div class="comparison-side-title comparison-side-title-after">
+        AFTER
+      </div>
+
+
+      <figure class="comparison-card comparison-after">
+
+        <img
+          src="images/holdaway-financial-services.png"
+          alt="Holdaway Financial Services redesigned homepage"
+        >
+
+        <figcaption>
+          The redesigned homepage.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="comparison-card comparison-after">
+
+        <img
+          src="images/holdaway-after-2.png"
+          alt="Holdaway Financial Services redesigned internal page"
+        >
+
+        <figcaption>
+          The new design carried through the rest of the site.
+        </figcaption>
+
+      </figure>
+
+    </div>
+
+
+  </div>
+
+
+</div>
             <span>
               AFTER
             </span>
