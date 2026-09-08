@@ -7241,5 +7241,388 @@ a.service-card:hover {
   }
 
 }
+/* =========================================================
+   MOBILE RESCUE FIX
+   Keeps desktop untouched
+   ========================================================= */
 
+@media (max-width: 760px) {
+
+  /* Stop ANY element creating sideways page overflow */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  .site-header {
+    width: 100%;
+    padding: 10px 5%;
+    gap: 12px;
+  }
+
+  .header-logo {
+    width: 100px;
+    height: 65px;
+    flex-shrink: 0;
+  }
+
+  .header-logo img {
+    width: 95px;
+    max-width: 100%;
+  }
+
+  .header-cta {
+    max-width: 190px;
+    padding: 11px 13px;
+    font-size: .6rem;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 5px 5px 0 var(--black);
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    width: 100%;
+    min-height: auto;
+    display: block;
+
+    padding:
+      48px
+      5%
+      55px;
+
+    overflow: hidden;
+  }
+
+  .hero-copy-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .hero-eyebrow {
+    max-width: 100%;
+    font-size: .67rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+
+  /* ---------- MAIN WORDING ---------- */
+
+  .hero-serif {
+    width: 100%;
+
+    font-size:
+      clamp(3rem, 15vw, 4.3rem);
+
+    line-height: .82;
+    letter-spacing: -.045em;
+
+    overflow-wrap: normal;
+  }
+
+  .hero-website {
+    margin-top: 15px;
+  }
+
+
+  /* ---------- PERSONALITY SIGN ---------- */
+
+  .personality-strip {
+    width: calc(100% - 4px);
+    max-width: calc(100% - 4px);
+
+    min-height: 82px;
+
+    margin:
+      18px
+      0
+      18px;
+
+    padding:
+      12px
+      15px;
+
+    overflow: visible;
+  }
+
+  .personality-text {
+    max-width: 100%;
+
+    font-size:
+      clamp(2.7rem, 12vw, 3.7rem);
+
+    line-height: .86;
+
+    white-space: nowrap;
+  }
+
+  .personality-flamingo {
+    width: 125px;
+
+    right: -8px;
+    top: -78px;
+  }
+
+  .flamingo-whisper {
+    display: none;
+  }
+
+
+  /* ---------- SHOULD TOO ---------- */
+
+  .hero-should {
+    max-width: 100%;
+
+    font-size:
+      clamp(3rem, 13vw, 4rem);
+
+    line-height: .85;
+  }
+
+  .hero-should::after {
+    width: 72%;
+  }
+
+
+  /* ---------- PUNCHLINE / COPY ---------- */
+
+  .hero-punchline {
+    width: 100%;
+    max-width: 100%;
+
+    font-size:
+      clamp(1.65rem, 8vw, 2.15rem);
+
+    line-height: 1.05;
+
+    overflow-wrap: break-word;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: .98rem;
+    line-height: 1.55;
+
+    white-space: pre-line;
+  }
+
+
+  /* ---------- BUTTONS ---------- */
+
+  .hero-buttons {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    margin-top: 25px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* =====================================================
+     HERO ART
+     Scale the original artwork instead of cropping it
+     ===================================================== */
+
+  .hero-art {
+    width: 430px;
+    height: 500px;
+    min-height: 500px;
+
+    position: relative;
+
+    margin:
+      30px
+      0
+      -55px;
+
+    left: 50%;
+
+    transform:
+      translateX(-50%)
+      scale(.82);
+
+    transform-origin:
+      top center;
+  }
+
+
+  /* Splash remains decorative but centred */
+
+  .hero-splash-outer {
+    width: 800px;
+    height: 430px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+      translate(-50%, -50%)
+      rotate(4deg);
+  }
+
+  .hero-splash-inner {
+    width: 620px;
+    height: 360px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+      translate(-50%, -50%)
+      rotate(-6deg);
+  }
+
+
+  /* Badge */
+
+  .hero-badge {
+    width: 325px;
+    height: 325px;
+
+    left: 53px;
+    top: 90px;
+  }
+
+
+  /* Main flamingo */
+
+  .hero-main-flamingo {
+    width: 285px;
+
+    left: -3px;
+    top: 102px;
+  }
+
+
+  /* NO */
+
+  .hero-logo-no {
+    left: 250px;
+    top: 110px;
+
+    font-size: 3.8rem;
+  }
+
+
+  /* Beige graphic */
+
+  .hero-beige-word {
+    width: 275px;
+
+    left: 145px;
+    top: 205px;
+  }
+
+
+  /* Websites */
+
+  .hero-logo-websites {
+    left: 175px;
+    top: 345px;
+
+    font-size: 2.55rem;
+
+    white-space: nowrap;
+  }
+
+
+  /* ---------- HOME SECTIONS ---------- */
+
+  .work-section,
+  .services-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .work-heading,
+  .services-heading {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .work-heading h2,
+  .services-heading h2,
+  .home-cta h2,
+  .home-pricing-teaser h2 {
+    overflow-wrap: break-word;
+  }
+
+
+  /* ---------- CARDS ---------- */
+
+  .work-grid,
+  .services-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .work-card,
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------- TICKER ---------- */
+
+  .brand-strip {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .site-footer,
+  .site-footer-expanded {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Extra-small phones */
+
+@media (max-width: 400px) {
+
+  .hero-serif {
+    font-size: 3rem;
+  }
+
+  .personality-text {
+    font-size: 2.65rem;
+  }
+
+  .hero-should {
+    font-size: 3rem;
+  }
+
+  .hero-art {
+    transform:
+      translateX(-50%)
+      scale(.74);
+
+    margin-bottom: -90px;
+  }
+
+}
 }}
