@@ -3,32 +3,6 @@
 
 <head>
 
-  <!-- Google Analytics - default consent denied -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('consent', 'default', {
-      'analytics_storage': 'denied'
-    });
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-9L3397MG7G"
-  ></script>
-
-  <script>
-    gtag('js', new Date());
-
-    gtag('config', 'G-9L3397MG7G');
-  </script>
-
-
   <meta charset="UTF-8">
 
   <meta
@@ -42,7 +16,7 @@
   >
 
   <title>
-    No Beige Websites | Bespoke Websites With Personality
+    No Beige Websites | Besoke Websites With Personality
   </title>
 
 
@@ -69,6 +43,11 @@
     rel="stylesheet"
     href="style.css?v=11"
   >
+
+
+  <!-- COOKIE CONSENT + GOOGLE ANALYTICS -->
+
+  <script src="cookies.js"></script>
 
 </head>
 
@@ -1208,89 +1187,6 @@
       });
 
     }
-
-  </script>
-
-
-
-  <!-- ======================================================
-       COOKIE CONSENT SCRIPT
-       ====================================================== -->
-
-  <script>
-
-    const cookieBanner =
-      document.getElementById('cookie-banner');
-
-    const acceptCookies =
-      document.getElementById('cookie-accept');
-
-    const rejectCookies =
-      document.getElementById('cookie-reject');
-
-    const cookieChoice =
-      localStorage.getItem('noBeigeAnalyticsConsent');
-
-
-    function allowAnalytics() {
-
-      gtag('consent', 'update', {
-        'analytics_storage': 'granted'
-      });
-
-    }
-
-
-    function denyAnalytics() {
-
-      gtag('consent', 'update', {
-        'analytics_storage': 'denied'
-      });
-
-    }
-
-
-    if (cookieChoice === 'accepted') {
-
-      allowAnalytics();
-
-    } else if (cookieChoice === 'rejected') {
-
-      denyAnalytics();
-
-    } else {
-
-      cookieBanner.hidden = false;
-
-    }
-
-
-    acceptCookies.addEventListener('click', function () {
-
-      localStorage.setItem(
-        'noBeigeAnalyticsConsent',
-        'accepted'
-      );
-
-      allowAnalytics();
-
-      cookieBanner.hidden = true;
-
-    });
-
-
-    rejectCookies.addEventListener('click', function () {
-
-      localStorage.setItem(
-        'noBeigeAnalyticsConsent',
-        'rejected'
-      );
-
-      denyAnalytics();
-
-      cookieBanner.hidden = true;
-
-    });
 
   </script>
 
