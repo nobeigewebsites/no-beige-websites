@@ -75,7 +75,7 @@
 
 
 
-    <!-- NAVIGATION -->
+    <!-- DESKTOP NAVIGATION -->
 
     <nav class="main-nav">
 
@@ -102,48 +102,53 @@
         WHO THE HELL AM I?
       </a>
 
+      <a href="make-good-loud.html">
+        MAKE GOOD LOUD
+      </a>
+
       <a href="contact.html">
         CONTACT
       </a>
 
     </nav>
 
-</nav>
 
 
-<button
-  class="mobile-menu-toggle"
-  type="button"
-  aria-label="Open navigation menu"
-  aria-expanded="false"
-  aria-controls="mobile-menu"
->
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+    <!-- MOBILE MENU BUTTON -->
 
-<nav
-  class="mobile-menu"
-  id="mobile-menu"
-  aria-label="Mobile navigation"
->
-  <a href="index.html">HOME</a>
-  <a href="services.html">WHAT I DO</a>
-  <a href="work.html">THE WORK</a>
-  <a href="pricing.html">PRICING</a>
-  <a href="about.html">WHO THE HELL AM I?</a>
-  <a href="contact.html">CONTACT</a>
-</nav>
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
 
-<!-- CTA -->
 
-<a
-  href="contact.html"
-  class="header-cta"
->
-  LET'S TALK
+    <!-- MOBILE NAVIGATION -->
+
+    <nav
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+    >
+
+      <a href="index.html">HOME</a>
+      <a href="services.html">WHAT I DO</a>
+      <a href="work.html">THE WORK</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="about.html">WHO THE HELL AM I?</a>
+      <a href="make-good-loud.html">MAKE GOOD LOUD</a>
+      <a href="contact.html">CONTACT</a>
+
+    </nav>
+
+
 
     <!-- CTA -->
 
@@ -171,9 +176,7 @@
     <section class="hero">
 
 
-      <!-- ==================================================
-           HERO LEFT
-           ================================================== -->
+      <!-- HERO LEFT -->
 
       <div class="hero-copy-wrap">
 
@@ -303,9 +306,7 @@
 
 
 
-      <!-- ==================================================
-           HERO RIGHT
-           ================================================== -->
+      <!-- HERO RIGHT -->
 
       <div class="hero-art">
 
@@ -895,6 +896,107 @@
 
 
     <!-- ======================================================
+         MAKE GOOD LOUD
+         ====================================================== -->
+
+    <section class="home-mgl">
+
+
+      <!-- BACKGROUND ECHO -->
+
+      <div
+        class="home-mgl-echo"
+        aria-hidden="true"
+      >
+        GOOD GOOD GOOD
+      </div>
+
+
+      <div class="home-mgl-inner">
+
+
+        <div class="home-mgl-heading">
+
+
+          <p class="home-mgl-eyebrow">
+            THE NO BEIGE GIVEBACK
+          </p>
+
+
+          <h2>
+
+            <span class="home-mgl-make">
+              MAKE
+            </span>
+
+            <span class="home-mgl-good">
+              GOOD
+            </span>
+
+            <span class="home-mgl-loud">
+              LOUD.
+            </span>
+
+          </h2>
+
+
+        </div>
+
+
+
+        <div class="home-mgl-copy">
+
+
+          <p class="home-mgl-script">
+            Good work shouldn't whisper.
+          </p>
+
+
+          <p>
+
+            Every so often, No Beige Websites chooses
+            one small independent charity and gives
+            their website a complete custom redesign.
+
+          </p>
+
+
+          <p class="home-mgl-on-us">
+            On us.
+          </p>
+
+
+          <p>
+
+            No sad little template.
+            No cut-down version because it's free.
+            A proper No Beige website built around
+            who they are and the good they're doing.
+
+          </p>
+
+
+          <a
+            href="make-good-loud.html"
+            class="home-mgl-link"
+          >
+            DISCOVER MAKE GOOD LOUD
+            <span>→</span>
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- ======================================================
          FINAL CTA
          ====================================================== -->
 
@@ -989,6 +1091,10 @@
         ABOUT
       </a>
 
+      <a href="make-good-loud.html">
+        MAKE GOOD LOUD
+      </a>
+
       <a href="contact.html">
         CONTACT
       </a>
@@ -1023,23 +1129,44 @@
 
   </footer>
 
+
+
+  <!-- ======================================================
+       MOBILE MENU
+       ====================================================== -->
+
   <script>
-  const menuButton = document.querySelector('.mobile-menu-toggle');
-  const mobileMenu = document.querySelector('.mobile-menu');
 
-  if (menuButton && mobileMenu) {
-    menuButton.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('is-open');
+    const menuButton =
+      document.querySelector('.mobile-menu-toggle');
 
-      menuButton.classList.toggle('is-open', isOpen);
+    const mobileMenu =
+      document.querySelector('.mobile-menu');
 
-      menuButton.setAttribute(
-        'aria-expanded',
-        isOpen ? 'true' : 'false'
-      );
-    });
-  }
-</script>
+
+    if (menuButton && mobileMenu) {
+
+      menuButton.addEventListener('click', () => {
+
+        const isOpen =
+          mobileMenu.classList.toggle('is-open');
+
+        menuButton.classList.toggle(
+          'is-open',
+          isOpen
+        );
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          isOpen ? 'true' : 'false'
+        );
+
+      });
+
+    }
+
+  </script>
+
 
 </body>
 
