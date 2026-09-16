@@ -44,6 +44,11 @@
     href="style.css?v=11"
   >
 
+
+  <!-- COOKIE CONSENT + GOOGLE ANALYTICS -->
+
+  <script src="cookies.js"></script>
+
 </head>
 
 
@@ -134,15 +139,25 @@
       aria-label="Mobile navigation"
     >
 
-      <a href="index.html">HOME</a>
+      <a href="index.html">
+        HOME
+      </a>
 
-      <a href="services.html">WHAT I DO</a>
+      <a href="services.html">
+        WHAT I DO
+      </a>
 
-      <a href="work.html">THE WORK</a>
+      <a href="work.html">
+        THE WORK
+      </a>
 
-      <a href="pricing.html">PRICING</a>
+      <a href="pricing.html">
+        PRICING
+      </a>
 
-      <a href="about.html">WHO THE HELL AM I?</a>
+      <a href="about.html">
+        WHO THE HELL AM I?
+      </a>
 
       <a
         href="make-good-loud.html"
@@ -151,7 +166,9 @@
         MAKE GOOD LOUD
       </a>
 
-      <a href="contact.html">CONTACT</a>
+      <a href="contact.html">
+        CONTACT
+      </a>
 
     </nav>
 
@@ -484,6 +501,7 @@
           <span>◆</span>
 
           <div>
+
             <h3>
               CUSTOM DESIGN
             </h3>
@@ -492,6 +510,7 @@
               Designed for the charity rather than
               squeezed into somebody else's template.
             </p>
+
           </div>
 
         </div>
@@ -502,6 +521,7 @@
           <span>◆</span>
 
           <div>
+
             <h3>
               RESPONSIVE BUILD
             </h3>
@@ -510,6 +530,7 @@
               Built to work properly across desktop,
               tablet and mobile.
             </p>
+
           </div>
 
         </div>
@@ -520,6 +541,7 @@
           <span>◆</span>
 
           <div>
+
             <h3>
               THEIR ACTUAL PERSONALITY
             </h3>
@@ -528,6 +550,7 @@
               Because charities aren't interchangeable
               and their websites shouldn't be either.
             </p>
+
           </div>
 
         </div>
@@ -538,6 +561,7 @@
           <span>◆</span>
 
           <div>
+
             <h3>
               A WEBSITE WITH A JOB TO DO
             </h3>
@@ -548,6 +572,7 @@
               attracting volunteers, raising awareness
               or encouraging support.
             </p>
+
           </div>
 
         </div>
@@ -778,8 +803,6 @@
         </div>
 
 
-       
-
         <a
           href="mailto:nobeigewebsites@gmail.com?subject=Make%20Good%20Loud%20-%20Charity%20Nomination&body=CHARITY%20NAME%3A%0D%0A%0D%0ACHARITY%20WEBSITE%3A%0D%0A%0D%0AWHY%20DO%20YOU%20THINK%20THEY%20DESERVE%20A%20MAKE%20GOOD%20LOUD%20WEBSITE%3F%0D%0A%0D%0AYOUR%20NAME%3A%0D%0A%0D%0AHOW%20DO%20YOU%20KNOW%20THE%20CHARITY%3F%20%28OPTIONAL%29%3A%0D%0A%0D%0AANYTHING%20ELSE%20WE%20SHOULD%20KNOW%3F%0D%0A"
           class="btn btn-pink mgl-nominate-button"
@@ -932,58 +955,121 @@
     </nav>
 
 
+    <nav
+      class="footer-legal"
+      aria-label="Legal navigation"
+    >
+
+      <a href="terms.html">
+        TERMS & CONDITIONS
+      </a>
+
+      <a href="privacy.html">
+        PRIVACY
+      </a>
+
+      <a href="cookies.html">
+        COOKIES
+      </a>
+
+      <a href="disclaimer.html">
+        DISCLAIMER
+      </a>
+
+    </nav>
+
+
   </footer>
 
 
 
   <!-- ======================================================
-       MOBILE MENU SCRIPT
+       COOKIE CONSENT
+       ====================================================== -->
+
+  <div
+    class="cookie-banner"
+    id="cookie-banner"
+    role="dialog"
+    aria-label="Cookie preferences"
+    aria-live="polite"
+    hidden
+  >
+
+    <div class="cookie-banner-copy">
+
+      <strong>
+        COOKIES. THE USEFUL KIND, NOT THE CHOCOLATE KIND. 🍪
+      </strong>
+
+      <p>
+        I use analytics to see how people use No Beige Websites —
+        things like which pages get visited and how people found the site.
+        It helps me work out what's working and what's being completely ignored.
+      </p>
+
+      <a href="cookies.html">
+        READ THE COOKIE POLICY
+      </a>
+
+    </div>
+
+
+    <div class="cookie-banner-actions">
+
+      <button
+        type="button"
+        id="cookie-accept"
+        class="cookie-btn"
+      >
+        ACCEPT ANALYTICS
+      </button>
+
+      <button
+        type="button"
+        id="cookie-reject"
+        class="cookie-btn"
+      >
+        NO THANKS
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       MOBILE MENU
        ====================================================== -->
 
   <script>
 
-    const menuToggle =
+    const menuButton =
       document.querySelector('.mobile-menu-toggle');
 
     const mobileMenu =
       document.querySelector('.mobile-menu');
 
 
-    if (menuToggle && mobileMenu) {
+    if (menuButton && mobileMenu) {
 
-      menuToggle.addEventListener('click', function () {
+      menuButton.addEventListener('click', () => {
 
         const isOpen =
-          mobileMenu.classList.toggle('open');
+          mobileMenu.classList.toggle('is-open');
 
-        menuToggle.classList.toggle('open', isOpen);
-
-        menuToggle.setAttribute(
-          'aria-expanded',
+        menuButton.classList.toggle(
+          'is-open',
           isOpen
         );
 
+        menuButton.setAttribute(
+          'aria-expanded',
+          isOpen ? 'true' : 'false'
+        );
+
       });
-
-
-      mobileMenu
-        .querySelectorAll('a')
-        .forEach(function (link) {
-
-          link.addEventListener('click', function () {
-
-            mobileMenu.classList.remove('open');
-
-            menuToggle.classList.remove('open');
-
-            menuToggle.setAttribute(
-              'aria-expanded',
-              'false'
-            );
-
-          });
-
-        });
 
     }
 
