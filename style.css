@@ -7750,3 +7750,1010 @@ a.service-card:hover {
   }
 
 }}}
+
+
+/* ==========================================================
+   MAKE GOOD LOUD
+   THE NO BEIGE GIVEBACK
+   ========================================================== */
+
+.make-good-loud-page {
+  overflow-x: hidden;
+}
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.mgl-hero {
+  position: relative;
+  min-height: 820px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 110px 7% 90px;
+  background:
+    radial-gradient(
+      circle at 82% 28%,
+      rgba(255, 47, 146, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 70% 75%,
+      rgba(241, 196, 82, 0.16),
+      transparent 30%
+    ),
+    #f6efe5;
+}
+
+.mgl-hero::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -160px;
+  top: -160px;
+  border: 3px solid #ff2f92;
+  border-radius: 50%;
+  opacity: 0.18;
+}
+
+.mgl-hero::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -80px;
+  top: -70px;
+  border: 3px solid #ff2f92;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+.mgl-hero-inner {
+  position: relative;
+  z-index: 4;
+  width: min(760px, 100%);
+}
+
+.mgl-eyebrow,
+.mgl-small-heading {
+  margin: 0 0 18px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ff2f92;
+}
+
+.mgl-title {
+  margin: 0;
+  line-height: 0.76;
+  text-transform: uppercase;
+}
+
+.mgl-title span {
+  display: block;
+}
+
+.mgl-make {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(5rem, 11vw, 10rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  color: #171717;
+}
+
+.mgl-good {
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  margin-left: 5%;
+  padding: 0.04em 0.12em 0.08em;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(5rem, 11vw, 10rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  color: #f6efe5;
+  background: #ff2f92;
+  transform: rotate(-2deg);
+}
+
+.mgl-loud {
+  margin-left: 15%;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(6rem, 14vw, 13rem);
+  font-weight: 900;
+  letter-spacing: -0.09em;
+  color: #171717;
+}
+
+.mgl-hero-line {
+  margin: 45px 0 10px;
+  font-family: "Caveat", cursive;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: #ff2f92;
+  transform: rotate(-2deg);
+}
+
+.mgl-hero-copy {
+  max-width: 650px;
+  margin: 0 0 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.mgl-hero-copy strong {
+  color: #171717;
+  font-weight: 900;
+}
+
+.mgl-hero-button {
+  margin-top: 10px;
+}
+
+
+/* HERO ECHO */
+
+.mgl-echo {
+  position: absolute;
+  right: -1vw;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%) rotate(-8deg);
+  pointer-events: none;
+}
+
+.mgl-echo span {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(5rem, 10vw, 11rem);
+  font-weight: 900;
+  line-height: 0.72;
+  letter-spacing: -0.08em;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 47, 146, 0.15);
+}
+
+.mgl-echo span:nth-child(2) {
+  transform: translateX(30px);
+  opacity: 0.75;
+}
+
+.mgl-echo span:nth-child(3) {
+  transform: translateX(60px);
+  opacity: 0.5;
+}
+
+.mgl-echo span:nth-child(4) {
+  transform: translateX(90px);
+  opacity: 0.25;
+}
+
+
+/* ==========================================================
+   MOVING STRIP
+   ========================================================== */
+
+.mgl-strip {
+  width: 100%;
+  overflow: hidden;
+  padding: 18px 0;
+  background: #171717;
+  color: #f6efe5;
+  transform: rotate(-1deg) scale(1.02);
+}
+
+.mgl-strip-track {
+  width: max-content;
+  white-space: nowrap;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  animation: mglTicker 24s linear infinite;
+}
+
+@keyframes mglTicker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ==========================================================
+   SHARED HEADINGS
+   ========================================================== */
+
+.mgl-section-heading {
+  max-width: 920px;
+  margin-bottom: 60px;
+}
+
+.mgl-section-heading h2,
+.mgl-promise > h2,
+.mgl-catch h2,
+.mgl-projects h2,
+.mgl-final h2 {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.mgl-section-heading h2 span,
+.mgl-promise > h2 span,
+.mgl-catch h2 span,
+.mgl-projects h2 span,
+.mgl-final h2 span {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: none;
+  color: #ff2f92;
+}
+
+
+/* ==========================================================
+   WHY
+   ========================================================== */
+
+.mgl-why {
+  position: relative;
+  padding: 140px 7%;
+  background: #fff;
+}
+
+.mgl-why-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 8%;
+  align-items: start;
+}
+
+.mgl-why-big {
+  position: sticky;
+  top: 130px;
+}
+
+.mgl-why-big p {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: #171717;
+}
+
+.mgl-why-big p::after {
+  content: "And their websites should show it.";
+  display: block;
+  margin-top: 22px;
+  font-family: "Caveat", cursive;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1;
+  color: #ff2f92;
+  transform: rotate(-2deg);
+}
+
+.mgl-why-copy {
+  border-left: 3px solid #ff2f92;
+  padding-left: 45px;
+}
+
+.mgl-why-copy p {
+  margin: 0 0 28px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: #444;
+}
+
+.mgl-why-copy p:nth-child(3) {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.mgl-why-copy strong {
+  color: #171717;
+}
+
+
+/* ==========================================================
+   PROMISE
+   ========================================================== */
+
+.mgl-promise {
+  position: relative;
+  padding: 140px 7%;
+  overflow: hidden;
+  background: #171717;
+}
+
+.mgl-promise .mgl-small-heading {
+  color: #f1c452;
+}
+
+.mgl-promise > h2 {
+  max-width: 1000px;
+  color: #f6efe5;
+}
+
+.mgl-promise > h2 span {
+  color: #ff2f92;
+}
+
+.mgl-promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 80px;
+}
+
+.mgl-promise-card {
+  position: relative;
+  min-height: 330px;
+  padding: 40px 35px;
+  border: 1px solid rgba(246, 239, 229, 0.2);
+  background: rgba(255, 255, 255, 0.035);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.mgl-promise-card:nth-child(2) {
+  transform: translateY(35px);
+}
+
+.mgl-promise-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  border-color: #ff2f92;
+  background: rgba(255, 47, 146, 0.08);
+}
+
+.mgl-promise-card:nth-child(2):hover {
+  transform: translateY(27px) rotate(1deg);
+}
+
+.mgl-card-number {
+  display: block;
+  margin-bottom: 50px;
+  font-family: "Caveat", cursive;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ff2f92;
+}
+
+.mgl-promise-card h3 {
+  margin: 0 0 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.5rem, 2.2vw, 2.3rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #f6efe5;
+}
+
+.mgl-promise-card p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+  color: rgba(246, 239, 229, 0.72);
+}
+
+.mgl-promise-statement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.mgl-promise-statement span {
+  font-family: "Caveat", cursive;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #f1c452;
+  transform: rotate(-2deg);
+}
+
+.mgl-promise-statement strong {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  color: #f6efe5;
+}
+
+
+/* ==========================================================
+   WHAT THEY GET
+   ========================================================== */
+
+.mgl-get {
+  padding: 140px 7%;
+  background: #f6efe5;
+}
+
+.mgl-get-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.mgl-get-item {
+  display: flex;
+  gap: 25px;
+  min-height: 220px;
+  padding: 40px 35px 40px 0;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.mgl-get-item:nth-child(odd) {
+  border-right: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.mgl-get-item:nth-child(even) {
+  padding-left: 40px;
+}
+
+.mgl-get-item > span {
+  color: #ff2f92;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
+.mgl-get-item h3 {
+  margin: 0 0 15px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #171717;
+}
+
+.mgl-get-item p {
+  max-width: 500px;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.75;
+  color: #555;
+}
+
+
+/* ==========================================================
+   WHO CAN BE NOMINATED
+   ========================================================== */
+
+.mgl-who {
+  padding: 140px 7%;
+  background: #ff2f92;
+}
+
+.mgl-who-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 9%;
+  align-items: center;
+}
+
+.mgl-who .mgl-small-heading {
+  color: #171717;
+}
+
+.mgl-who-heading h2 {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(3.5rem, 7vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+  color: #f6efe5;
+}
+
+.mgl-who-heading h2 span {
+  display: block;
+  margin: 8px 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #171717;
+}
+
+.mgl-who-copy {
+  padding: 45px;
+  background: #f6efe5;
+  transform: rotate(1.5deg);
+  box-shadow: 14px 14px 0 #171717;
+}
+
+.mgl-who-copy p {
+  margin: 0 0 22px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+.mgl-who-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.mgl-self-nominate {
+  margin-top: 35px !important;
+  padding-top: 25px;
+  border-top: 2px dashed #ff2f92;
+  font-family: "Caveat", cursive !important;
+  font-size: 1.7rem !important;
+  font-weight: 700;
+  line-height: 1.2 !important;
+  color: #171717 !important;
+}
+
+
+/* ==========================================================
+   THE CATCH
+   ========================================================== */
+
+.mgl-catch {
+  padding: 140px max(7%, calc((100% - 1050px) / 2));
+  text-align: center;
+  background: #fff;
+}
+
+.mgl-catch h2 {
+  margin-bottom: 45px;
+}
+
+.mgl-catch-lead {
+  max-width: 850px;
+  margin: 0 auto 35px !important;
+  font-size: clamp(1.4rem, 2.5vw, 2rem) !important;
+  font-weight: 800;
+  line-height: 1.45 !important;
+  color: #171717 !important;
+}
+
+.mgl-catch > p:not(.mgl-small-heading) {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.mgl-catch-final {
+  margin-top: 50px !important;
+  padding-top: 35px;
+  border-top: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.mgl-catch-final strong {
+  display: block;
+  margin-top: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-style: italic;
+  color: #ff2f92;
+}
+
+
+/* ==========================================================
+   NOMINATION
+   ========================================================== */
+
+.mgl-nominate {
+  position: relative;
+  padding: 150px 7%;
+  overflow: hidden;
+  background: #171717;
+}
+
+.mgl-nominate::before {
+  content: "LOUD";
+  position: absolute;
+  right: -3%;
+  top: 3%;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(9rem, 25vw, 27rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.1em;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(246, 239, 229, 0.045);
+  pointer-events: none;
+}
+
+.mgl-nominate-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mgl-nominate .mgl-small-heading {
+  color: #f1c452;
+}
+
+.mgl-nominate h2 {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 900;
+  line-height: 0.86;
+  letter-spacing: -0.07em;
+  color: #f6efe5;
+}
+
+.mgl-nominate h2 span {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #ff2f92;
+}
+
+.mgl-nominate-intro {
+  max-width: 650px;
+  margin: 35px 0 60px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(246, 239, 229, 0.76);
+}
+
+.mgl-nomination-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 900px;
+  margin-bottom: 55px;
+}
+
+.mgl-nomination-detail {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  border: 1px solid rgba(246, 239, 229, 0.16);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.mgl-nomination-detail > span {
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff2f92;
+}
+
+.mgl-nomination-detail p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.55;
+  color: rgba(246, 239, 229, 0.7);
+}
+
+.mgl-nomination-detail strong {
+  color: #f6efe5;
+}
+
+.mgl-nominate-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 0.95rem;
+}
+
+.mgl-nominate-note {
+  margin: 18px 0 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  color: rgba(246, 239, 229, 0.5);
+}
+
+
+/* ==========================================================
+   PROJECTS
+   ========================================================== */
+
+.mgl-projects {
+  padding: 140px 7%;
+  text-align: center;
+  background: #f6efe5;
+}
+
+.mgl-projects h2 {
+  margin-bottom: 25px;
+}
+
+.mgl-projects > p:not(.mgl-small-heading) {
+  margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.mgl-project-placeholder {
+  position: relative;
+  max-width: 1000px;
+  min-height: 300px;
+  margin: 65px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px dashed rgba(23, 23, 23, 0.22);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 47, 146, 0.08),
+      rgba(241, 196, 82, 0.08)
+    );
+}
+
+.mgl-project-placeholder::before {
+  content: "MAKE GOOD LOUD";
+  position: absolute;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(4rem, 10vw, 10rem);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  color: rgba(23, 23, 23, 0.035);
+  white-space: nowrap;
+  transform: rotate(-6deg);
+}
+
+.mgl-project-placeholder span {
+  position: relative;
+  z-index: 2;
+  padding: 15px 24px;
+  font-family: "Caveat", cursive;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: #ff2f92;
+  background: #f6efe5;
+  transform: rotate(-3deg);
+}
+
+
+/* ==========================================================
+   FINAL CTA
+   ========================================================== */
+
+.mgl-final {
+  position: relative;
+  padding: 120px 7%;
+  overflow: hidden;
+  text-align: center;
+  background: #ff2f92;
+}
+
+.mgl-final > p {
+  margin: 0 0 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #171717;
+}
+
+.mgl-final h2 {
+  margin-bottom: 45px;
+  color: #f6efe5;
+}
+
+.mgl-final h2 span {
+  color: #171717;
+}
+
+.mgl-final .btn-pink {
+  background: #171717;
+  color: #f6efe5;
+  border-color: #171717;
+}
+
+.mgl-final .btn-pink:hover {
+  background: #f6efe5;
+  color: #171717;
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 1000px) {
+
+  .mgl-hero {
+    min-height: auto;
+    padding-top: 120px;
+  }
+
+  .mgl-echo {
+    right: -12%;
+    opacity: 0.5;
+  }
+
+  .mgl-why-grid,
+  .mgl-who-inner {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .mgl-why-big {
+    position: static;
+  }
+
+  .mgl-promise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mgl-promise-card,
+  .mgl-promise-card:nth-child(2) {
+    min-height: auto;
+    transform: none;
+  }
+
+  .mgl-promise-card:hover,
+  .mgl-promise-card:nth-child(2):hover {
+    transform: translateY(-5px);
+  }
+
+  .mgl-get-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mgl-get-item,
+  .mgl-get-item:nth-child(odd),
+  .mgl-get-item:nth-child(even) {
+    padding: 35px 0;
+    border-right: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+  .mgl-hero {
+    padding: 100px 6% 75px;
+  }
+
+  .mgl-title {
+    line-height: 0.8;
+  }
+
+  .mgl-make {
+    font-size: clamp(4.2rem, 22vw, 7rem);
+  }
+
+  .mgl-good {
+    margin-left: 0;
+    font-size: clamp(4.2rem, 22vw, 7rem);
+  }
+
+  .mgl-loud {
+    margin-left: 4%;
+    font-size: clamp(5rem, 25vw, 8rem);
+  }
+
+  .mgl-hero-line {
+    margin-top: 35px;
+  }
+
+  .mgl-echo {
+    display: none;
+  }
+
+  .mgl-why,
+  .mgl-promise,
+  .mgl-get,
+  .mgl-who,
+  .mgl-catch,
+  .mgl-nominate,
+  .mgl-projects,
+  .mgl-final {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .mgl-why,
+  .mgl-promise,
+  .mgl-get,
+  .mgl-who,
+  .mgl-catch,
+  .mgl-projects {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .mgl-nominate {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mgl-why-copy {
+    padding-left: 25px;
+  }
+
+  .mgl-promise-grid {
+    margin-top: 50px;
+  }
+
+  .mgl-promise-card {
+    padding: 30px 25px;
+  }
+
+  .mgl-card-number {
+    margin-bottom: 30px;
+  }
+
+  .mgl-promise-statement {
+    margin-top: 70px;
+  }
+
+  .mgl-who-copy {
+    padding: 30px 25px;
+    transform: rotate(0.5deg);
+    box-shadow: 8px 8px 0 #171717;
+  }
+
+  .mgl-nomination-details {
+    grid-template-columns: 1fr;
+  }
+
+  .mgl-nominate-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mgl-project-placeholder {
+    min-height: 220px;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .mgl-strip-track {
+    animation: none;
+  }
+
+  .mgl-promise-card {
+    transition: none;
+  }
+
+}
+
