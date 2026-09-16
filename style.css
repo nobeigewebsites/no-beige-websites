@@ -8757,3 +8757,652 @@ a.service-card:hover {
 
 }
 
+
+/* ==========================================================
+   MAKE GOOD LOUD — COLOUR + HOMEPAGE UPGRADE
+   ========================================================== */
+
+
+/* ==========================================================
+   HOMEPAGE FEATURE
+   ========================================================== */
+
+.home-mgl {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 120px 7%;
+  background:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(0, 185, 194, 0.35),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 139, 50, 0.28),
+      transparent 30%
+    ),
+    #171717;
+}
+
+
+/* giant background GOOD */
+
+.home-mgl-echo {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -3%;
+  width: 110%;
+  transform: translateY(-50%) rotate(-5deg);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(8rem, 20vw, 20rem);
+  font-weight: 900;
+  line-height: 0.7;
+  letter-spacing: -0.09em;
+  white-space: nowrap;
+
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.055);
+
+  pointer-events: none;
+}
+
+
+.home-mgl-inner {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(50px, 8vw, 120px);
+  align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.home-mgl-heading {
+  position: relative;
+}
+
+
+.home-mgl-eyebrow {
+  display: inline-block;
+  margin: 0 0 28px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #171717;
+  background: #f1c452;
+
+  padding: 10px 15px;
+
+  transform: rotate(-2deg);
+}
+
+
+.home-mgl-heading h2 {
+  margin: 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  line-height: 0.76;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+
+.home-mgl-heading h2 span {
+  display: block;
+}
+
+
+.home-mgl-make {
+  font-size: clamp(5rem, 9vw, 9rem);
+  color: #fff8ed;
+}
+
+
+.home-mgl-good {
+  position: relative;
+  z-index: 2;
+
+  width: max-content;
+
+  margin: 5px 0 5px 7%;
+
+  padding: 0.02em 0.15em 0.08em;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(5rem, 9vw, 9rem);
+  font-style: italic;
+  font-weight: 900;
+
+  color: #171717;
+  background: #f52282;
+
+  transform: rotate(-3deg);
+
+  box-shadow: 12px 12px 0 #00b9c2;
+}
+
+
+.home-mgl-loud {
+  margin-left: 13%;
+
+  font-size: clamp(6rem, 11vw, 11rem);
+
+  color: #fff8ed;
+}
+
+
+/* scribble */
+
+.home-mgl-heading::after {
+  content: "because good things deserve attention.";
+
+  position: absolute;
+  left: 4%;
+  bottom: -65px;
+
+  font-family: "Caveat", cursive;
+  font-size: clamp(1.6rem, 2.5vw, 2.6rem);
+  font-weight: 700;
+
+  color: #f1c452;
+
+  transform: rotate(-3deg);
+}
+
+
+/* RIGHT SIDE */
+
+.home-mgl-copy {
+  position: relative;
+
+  padding: clamp(35px, 5vw, 55px);
+
+  background: #fff8ed;
+
+  border-radius:
+    35px 8px
+    45px 12px;
+
+  box-shadow:
+    16px 16px 0 #f52282,
+    27px 27px 0 #00b9c2;
+
+  transform: rotate(1.5deg);
+}
+
+
+.home-mgl-copy::before {
+  content: "GOOD";
+
+  position: absolute;
+  right: -18px;
+  top: -35px;
+
+  padding: 8px 15px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+
+  color: #171717;
+  background: #ff8b32;
+
+  transform: rotate(8deg);
+}
+
+
+.home-mgl-script {
+  margin: 0 0 25px !important;
+
+  font-family: "Caveat", cursive !important;
+  font-size: clamp(2rem, 3vw, 3rem) !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+
+  color: #f52282 !important;
+
+  transform: rotate(-2deg);
+}
+
+
+.home-mgl-copy p {
+  margin: 0 0 22px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: #333;
+}
+
+
+.home-mgl-on-us {
+  width: max-content;
+
+  margin: 25px 0 !important;
+  padding: 8px 18px;
+
+  font-family: "DM Sans", sans-serif !important;
+  font-size: clamp(2rem, 4vw, 3.4rem) !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+
+  color: #fff8ed !important;
+  background: #171717;
+
+  transform: rotate(-2deg);
+}
+
+
+.home-mgl-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 18px;
+  padding: 16px 20px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+
+  color: #fff8ed;
+  background: #f52282;
+
+  border: 2px solid #171717;
+
+  box-shadow: 6px 6px 0 #171717;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.home-mgl-link span {
+  font-size: 1.3rem;
+}
+
+
+.home-mgl-link:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0 #171717;
+}
+
+
+
+/* ==========================================================
+   FULL MAKE GOOD LOUD PAGE — MORE COLOUR
+   ========================================================== */
+
+
+/* WHY — lose the giant white void */
+
+.make-good-loud-page .mgl-why {
+  background:
+    linear-gradient(
+      112deg,
+      #fffdf8 0%,
+      #fffdf8 54%,
+      #fff0f6 54%,
+      #fff0f6 100%
+    );
+}
+
+
+.make-good-loud-page .mgl-why::before {
+  content: "";
+
+  position: absolute;
+  right: 5%;
+  top: 70px;
+
+  width: 150px;
+  height: 150px;
+
+  background: #00b9c2;
+
+  border-radius:
+    60% 40%
+    35% 65%;
+
+  opacity: 0.14;
+
+  transform: rotate(18deg);
+}
+
+
+.make-good-loud-page .mgl-why::after {
+  content: "GOOD";
+
+  position: absolute;
+  right: 5%;
+  bottom: 40px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(5rem, 12vw, 12rem);
+  font-weight: 900;
+
+  color: rgba(245, 34, 130, 0.055);
+
+  transform: rotate(-7deg);
+
+  pointer-events: none;
+}
+
+
+/* make the left statement feel like an actual feature */
+
+.make-good-loud-page .mgl-why-big {
+  position: sticky;
+  top: 130px;
+
+  padding: 40px;
+
+  background: #f1c452;
+
+  border-radius:
+    8px 45px
+    10px 35px;
+
+  box-shadow:
+    12px 12px 0 #f52282,
+    22px 22px 0 #00b9c2;
+
+  transform: rotate(-2deg);
+}
+
+
+.make-good-loud-page .mgl-why-big p {
+  color: #171717;
+}
+
+
+.make-good-loud-page .mgl-why-big p::after {
+  color: #f52282;
+}
+
+
+/* text side becomes a deliberate cream card */
+
+.make-good-loud-page .mgl-why-copy {
+  position: relative;
+
+  padding: 45px;
+
+  border-left: 0;
+
+  background: #fff8ed;
+
+  box-shadow: 10px 10px 0 #171717;
+}
+
+
+.make-good-loud-page .mgl-why-copy::before {
+  content: "WHY?";
+
+  position: absolute;
+  right: 25px;
+  top: -24px;
+
+  padding: 8px 15px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+
+  color: #fff8ed;
+  background: #f52282;
+
+  transform: rotate(4deg);
+}
+
+
+
+/* WHAT THEY GET — add alternating colour */
+
+.make-good-loud-page .mgl-get {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(0, 185, 194, 0.18),
+      transparent 25%
+    ),
+    #fff8ed;
+}
+
+
+.make-good-loud-page .mgl-get-item {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.make-good-loud-page .mgl-get-item:nth-child(1) {
+  background: rgba(245, 34, 130, 0.08);
+}
+
+
+.make-good-loud-page .mgl-get-item:nth-child(2) {
+  background: rgba(0, 185, 194, 0.09);
+}
+
+
+.make-good-loud-page .mgl-get-item:nth-child(3) {
+  background: rgba(255, 139, 50, 0.1);
+}
+
+
+.make-good-loud-page .mgl-get-item:nth-child(4) {
+  background: rgba(201, 152, 59, 0.1);
+}
+
+
+.make-good-loud-page .mgl-get-item:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* CATCH SECTION */
+
+.make-good-loud-page .mgl-catch {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 12% 25%,
+      rgba(255, 139, 50, 0.25),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 88% 70%,
+      rgba(0, 185, 194, 0.18),
+      transparent 28%
+    ),
+    #fff8ed;
+}
+
+
+.make-good-loud-page .mgl-catch::before {
+  content: "NO CATCH";
+
+  position: absolute;
+  left: -3%;
+  bottom: -25px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(6rem, 15vw, 15rem);
+  font-weight: 900;
+
+  color: rgba(23, 23, 23, 0.035);
+
+  transform: rotate(5deg);
+
+  pointer-events: none;
+}
+
+
+.make-good-loud-page .mgl-catch-final {
+  position: relative;
+  z-index: 2;
+
+  max-width: 750px;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding: 35px;
+
+  background: #f1c452;
+
+  border: 2px solid #171717;
+
+  box-shadow: 10px 10px 0 #f52282;
+
+  transform: rotate(-1deg);
+}
+
+
+
+/* PROJECTS PLACEHOLDER — make it much less beige */
+
+.make-good-loud-page .mgl-projects {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8ed 0%,
+      #fff8ed 55%,
+      #e7fbfc 55%,
+      #e7fbfc 100%
+    );
+}
+
+
+.make-good-loud-page .mgl-project-placeholder {
+  border: 3px dashed #171717;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(245, 34, 130, 0.18),
+      rgba(0, 185, 194, 0.18),
+      rgba(255, 139, 50, 0.18)
+    );
+
+  box-shadow:
+    12px 12px 0 #f52282;
+}
+
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .home-mgl-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-mgl-heading {
+    max-width: 700px;
+  }
+
+  .home-mgl-copy {
+    max-width: 650px;
+  }
+
+  .home-mgl-heading::after {
+    position: static;
+
+    display: block;
+
+    margin-top: 35px;
+
+    transform: rotate(-2deg);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .home-mgl {
+    padding: 90px 6%;
+  }
+
+  .home-mgl-make,
+  .home-mgl-good {
+    font-size: clamp(4rem, 22vw, 6.5rem);
+  }
+
+  .home-mgl-loud {
+    margin-left: 4%;
+
+    font-size: clamp(4.8rem, 25vw, 7.5rem);
+  }
+
+  .home-mgl-good {
+    margin-left: 0;
+
+    box-shadow: 7px 7px 0 #00b9c2;
+  }
+
+  .home-mgl-copy {
+    padding: 30px 24px;
+
+    box-shadow:
+      8px 8px 0 #f52282,
+      15px 15px 0 #00b9c2;
+
+    transform: none;
+  }
+
+
+  .make-good-loud-page .mgl-why {
+    background: #fff0f6;
+  }
+
+  .make-good-loud-page .mgl-why-big {
+    position: static;
+
+    padding: 30px 25px;
+
+    box-shadow:
+      7px 7px 0 #f52282,
+      13px 13px 0 #00b9c2;
+  }
+
+  .make-good-loud-page .mgl-why-copy {
+    padding: 35px 25px;
+
+    box-shadow: 7px 7px 0 #171717;
+  }
+
+}
+
+
