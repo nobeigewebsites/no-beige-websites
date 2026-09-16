@@ -41,6 +41,11 @@
     href="style.css?v=11"
   >
 
+
+  <!-- COOKIE CONSENT + GOOGLE ANALYTICS -->
+
+  <script src="cookies.js"></script>
+
 </head>
 
 
@@ -70,6 +75,8 @@
 
 
 
+    <!-- DESKTOP NAVIGATION -->
+
     <nav class="main-nav">
 
       <a href="index.html">
@@ -92,9 +99,49 @@
         WHO THE HELL AM I?
       </a>
 
+      <a href="make-good-loud.html">
+        MAKE GOOD LOUD
+      </a>
+
       <a href="contact.html">
         CONTACT
       </a>
+
+    </nav>
+
+
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <nav
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+    >
+
+      <a href="index.html">HOME</a>
+      <a href="services.html">WHAT I DO</a>
+      <a href="work.html">THE WORK</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="about.html">WHO THE HELL AM I?</a>
+      <a href="make-good-loud.html">MAKE GOOD LOUD</a>
+      <a href="contact.html">CONTACT</a>
 
     </nav>
 
@@ -207,14 +254,12 @@
           </span>
 
           <strong>
-            SEPTEMBER 2026
+            16 SEPTEMBER 2026
           </strong>
 
           <p>
-
             These Terms apply to No Beige Websites and
-            nobeigewebsites.github.io/no-beige-websites/
-
+            nobeigewebsites.co.uk
           </p>
 
         </aside>
@@ -242,7 +287,7 @@
             <p>
 
               Welcome to No Beige Websites
-              (https://nobeigewebsites.github.io/no-beige-websites/)
+              (nobeigewebsites.co.uk)
               ("we", "our", "us").
 
             </p>
@@ -978,21 +1023,179 @@
        FOOTER
        ====================================================== -->
 
-  <footer class="site-footer">
+  <footer class="site-footer site-footer-expanded">
 
-    <strong>
-      NO BEIGE WEBSITES
-    </strong>
 
-    <span>
-      BESPOKE WEBSITES WITH PERSONALITY
-    </span>
+    <div class="footer-brand">
 
-    <span>
-      © 2026 No Beige Websites
-    </span>
+      <strong>
+        NO BEIGE WEBSITES
+      </strong>
+
+      <span>
+        BESPOKE WEBSITES WITH PERSONALITY
+      </span>
+
+      <span>
+        © 2026 No Beige Websites
+      </span>
+
+    </div>
+
+
+    <nav
+      class="footer-nav"
+      aria-label="Footer navigation"
+    >
+
+      <a href="services.html">
+        WHAT I DO
+      </a>
+
+      <a href="work.html">
+        THE WORK
+      </a>
+
+      <a href="pricing.html">
+        PRICING
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="make-good-loud.html">
+        MAKE GOOD LOUD
+      </a>
+
+      <a href="contact.html">
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <nav
+      class="footer-legal"
+      aria-label="Legal navigation"
+    >
+
+      <a href="terms.html">
+        TERMS & CONDITIONS
+      </a>
+
+      <a href="privacy.html">
+        PRIVACY
+      </a>
+
+      <a href="cookies.html">
+        COOKIES
+      </a>
+
+      <a href="disclaimer.html">
+        DISCLAIMER
+      </a>
+
+    </nav>
+
 
   </footer>
+
+
+
+
+  <!-- ======================================================
+       COOKIE CONSENT
+       ====================================================== -->
+
+  <div
+    class="cookie-banner"
+    id="cookie-banner"
+    role="dialog"
+    aria-label="Cookie preferences"
+    aria-live="polite"
+    hidden
+  >
+
+    <div class="cookie-banner-copy">
+
+      <strong>
+        COOKIES. THE USEFUL KIND, NOT THE CHOCOLATE KIND. 🍪
+      </strong>
+
+      <p>
+        I use analytics to see how people use No Beige Websites —
+        things like which pages get visited and how people found the site.
+        It helps me work out what's working and what's being completely ignored.
+      </p>
+
+      <a href="cookies.html">
+        READ THE COOKIE POLICY
+      </a>
+
+    </div>
+
+
+    <div class="cookie-banner-actions">
+
+      <button
+        type="button"
+        id="cookie-accept"
+        class="cookie-btn"
+      >
+        ACCEPT ANALYTICS
+      </button>
+
+      <button
+        type="button"
+        id="cookie-reject"
+        class="cookie-btn"
+      >
+        NO THANKS
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- ======================================================
+       MOBILE MENU
+       ====================================================== -->
+
+  <script>
+
+    const menuButton =
+      document.querySelector('.mobile-menu-toggle');
+
+    const mobileMenu =
+      document.querySelector('.mobile-menu');
+
+
+    if (menuButton && mobileMenu) {
+
+      menuButton.addEventListener('click', () => {
+
+        const isOpen =
+          mobileMenu.classList.toggle('is-open');
+
+        menuButton.classList.toggle(
+          'is-open',
+          isOpen
+        );
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          isOpen ? 'true' : 'false'
+        );
+
+      });
+
+    }
+
+  </script>
 
 
 </body>
