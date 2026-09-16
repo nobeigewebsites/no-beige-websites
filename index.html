@@ -1249,20 +1249,91 @@
 
   </script>
 
+    <!-- ======================================================
+       COOKIE CONSENT SCRIPT
+       ====================================================== -->
 
-  <!-- COOKIE CONSENT SCRIPT -->
   <script>
-    ...cookie code...
+
+    const cookieBanner =
+      document.getElementById('cookie-banner');
+
+    const acceptCookies =
+      document.getElementById('cookie-accept');
+
+    const rejectCookies =
+      document.getElementById('cookie-reject');
+
+    const cookieChoice =
+      localStorage.getItem('noBeigeAnalyticsConsent');
+
+
+    function allowAnalytics() {
+
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+
+    }
+
+
+    function denyAnalytics() {
+
+      gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+
+    }
+
+
+    if (cookieChoice === 'accepted') {
+
+      allowAnalytics();
+
+    } else if (cookieChoice === 'rejected') {
+
+      denyAnalytics();
+
+    } else {
+
+      cookieBanner.hidden = false;
+
+    }
+
+
+    acceptCookies.addEventListener('click', function () {
+
+      localStorage.setItem(
+        'noBeigeAnalyticsConsent',
+        'accepted'
+      );
+
+      allowAnalytics();
+
+      cookieBanner.hidden = true;
+
+    });
+
+
+    rejectCookies.addEventListener('click', function () {
+
+      localStorage.setItem(
+        'noBeigeAnalyticsConsent',
+        'rejected'
+      );
+
+      denyAnalytics();
+
+      cookieBanner.hidden = true;
+
+    });
+
   </script>
 
-</body>
-
-</html>
-
 
 </body>
 
 </html>
 
 
-
+  
